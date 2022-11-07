@@ -1,0 +1,11 @@
+- class_name: 帐中人
+  class_desc: 
+  link_list:
+    - name: HHR
+      link: https://codehhr.cn/
+      avatar: https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/avatar/tusiji.png
+      descr: 前端、linux
+    - name: 子兔Antg
+      link: https://blog.csdn.net/weixin_44745147/
+      avatar: https://cdn.jsdelivr.net/gh/recreyed/img/avatar/antg.jpg
+      descr: java
