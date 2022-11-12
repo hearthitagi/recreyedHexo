@@ -24,5 +24,5 @@
   background: rgba(255,255,255,0.8)!important;
 }
 [data-theme=dark] #recent-posts>.recent-post-item {
-  background: rgba(35,35,35,0.5)!important;
+  background: rgba(35,35,35,0.8)!important;
 }
