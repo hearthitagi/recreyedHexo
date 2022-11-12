@@ -5,7 +5,7 @@ updated: 2022-01-28 11:46:43
 tags:
     - css
 categories:
-    - 前端基础
+    - 前端知识
 keywords:
 description:
     - 选择器

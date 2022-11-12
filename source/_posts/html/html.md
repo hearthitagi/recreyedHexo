@@ -5,7 +5,7 @@ updated: 2022-01-28 09:23:00
 tags:
     - html
 categories:
-    - 前端基础
+    - 前端知识
 keywords:
 description:
     - 浏览器内核

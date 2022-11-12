@@ -5,7 +5,7 @@ updated:
 tags:
     - BootStrap
 categories:
-    - 前端插件
+    - 前端知识
 keywords:
 description:
 top_img:

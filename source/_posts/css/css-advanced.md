@@ -5,7 +5,7 @@ updated: 2022-02-09 16:57:43
 tags:
     - css
 categories:
-    - 前端基础
+    - 前端知识
 keywords:
 description:
     - 显示省略号

@@ -5,7 +5,7 @@ updated:
 tags:
     - vue
 categories:
-    - 前端框架
+    - 前端知识
 keywords:
 description:
 top_img:

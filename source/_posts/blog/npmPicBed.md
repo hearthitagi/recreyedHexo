@@ -3,7 +3,9 @@ title: npm图床的使用
 date: 2022-10-25 23:38:20
 updated:
 tags:
+    - blog
 categories:
+    - 博客相关
 keywords:
 description:
 swiper_index: 2

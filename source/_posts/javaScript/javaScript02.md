@@ -5,7 +5,7 @@ updated:
 tags:
     - javaScript
 categories:
-    - 前端基础
+    - 前端知识
 keywords:
 description:
     - 内置对象(Math/Date/Array/String)

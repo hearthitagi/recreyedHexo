@@ -3,7 +3,9 @@ title: 博客的GithubAction自动部署
 date: 2022-10-25 23:41:55
 updated:
 tags:
+    - blog
 categories:
+    - 博客相关
 keywords:
 description:
 swiper_index: 1

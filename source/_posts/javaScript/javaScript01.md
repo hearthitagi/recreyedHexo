@@ -5,7 +5,7 @@ updated: 2022-02-09 17:00:43
 tags:
     - javaScript
 categories:
-    - 前端基础
+    - 前端知识
 keywords:
 description:
     - 基础
