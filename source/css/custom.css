@@ -19,10 +19,14 @@
 [data-theme="dark"] #page-header::before {
   background: transparent !important;
 }
-
+/* 首页文章背景透明 */
 #recent-posts>.recent-post-item {
   background: rgba(255,255,255,0.8)!important;
 }
 [data-theme="dark"] #recent-posts>.recent-post-item {
   background: rgba(35,35,35,0.8)!important;
+}
+/* 首页磁贴背景填充 */
+li.categoryBar-list-item{
+  background-size: cover!important;
 }
