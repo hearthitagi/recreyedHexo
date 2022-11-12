@@ -1,5 +1,5 @@
 ---
-title: npm图床的使用
+title: 图床的使用
 date: 2022-10-25 23:38:20
 updated:
 tags:
@@ -11,7 +11,7 @@ description:
 swiper_index: 2
 top_img:
 comments:
-cover:
+cover: https://f004.backblazeb2.com/file/recreyed/hexo/cc347b04-1368-4173-805d-42d447e15ae4.jpeg
 toc:
 toc_number:
 toc_style_simple:
