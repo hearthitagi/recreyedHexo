@@ -83,7 +83,7 @@ avatar:
 disable_top_img: false
 
 # 主页背景图
-index_img: https://cdn1.tianli0.top/gh/recreyed/img/bgPic/index-202210100957658.jpg
+index_img: 
 # 默认顶部图
 default_top_img: false
 # 时间轴(归档)顶部图
@@ -373,10 +373,10 @@ tag_ui: # 留空或 index
 # 网站背景图(可以设置颜色或图片)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 # background: url(https://cdn1.tianli0.top/gh/recreyed/img/bgPic/index-202210100957658.jpg)
-background: 
+background: url(https://cdn1.tianli0.top/gh/recreyed/img/bgPic/index-202210100957658.jpg)
 
 # Footer Background
-footer_bg: "rgba(255,255,255,0)"
+footer_bg: false
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside-bottom:
@@ -657,6 +657,7 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
   bottom:
     # - <script src="xxxx"></script>
 
