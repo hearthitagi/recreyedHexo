@@ -105,6 +105,13 @@ tag_per_img:
 #  - category name: xxxxx
 category_per_img:
 
+#随机背景图
+inject:
+  head:
+  bottom:
+    - <script async data-pjax src="/js/randombg.js"></script>
+
+#文章封面
 cover:
   # display the cover or not (是否显示文章封面)
   index_enable: true
