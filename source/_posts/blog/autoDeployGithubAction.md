@@ -6,6 +6,7 @@ tags:
 categories:
 keywords:
 description:
+swiper_index: 1
 top_img:
 comments:
 cover:
