@@ -83,7 +83,7 @@ avatar:
 disable_top_img: false
 
 # 主页背景图
-index_img: 
+index_img: transparent
 # 默认顶部图
 default_top_img: false
 # 时间轴(归档)顶部图
@@ -376,7 +376,7 @@ tag_ui: # 留空或 index
 background: url(https://cdn1.tianli0.top/gh/recreyed/img/bgPic/index-202210100957658.jpg)
 
 # Footer Background
-footer_bg: false
+footer_bg: transparent
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside-bottom:
