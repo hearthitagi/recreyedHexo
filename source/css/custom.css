@@ -2,31 +2,27 @@
 #footer {
   background: transparent !important;
 }
-
 #page-header {
   background: transparent !important;
 }
-
 /* 白天模式遮罩透明 */
 #footer::before {
   background: transparent !important;
 }
-
 #page-header::before {
   background: transparent !important;
 }
-
 /* 夜间模式遮罩透明 */
 [data-theme="dark"] #footer::before {
   background: transparent !important;
 }
-
 [data-theme="dark"] #page-header::before {
   background: transparent !important;
 }
 
-/* 翻页按钮居中 */
-#pagination {
-  width: 100%;
-  margin: auto;
+#recent-posts>.recent-post-item {
+  background: rgba(255,255,255,0.8)!important;
+}
+[data-theme=dark] #recent-posts>.recent-post-item {
+  background: rgba(35,35,35,0.5)!important;
 }
