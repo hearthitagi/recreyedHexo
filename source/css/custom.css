@@ -30,3 +30,6 @@
 .categoryBar-list>li.categoryBar-list-item{
   background-size: cover!important;
 }
+.categoryBar-list>li.categoryBar-list-item:hover{
+  transition: background-size 0.5s linear;
+}
