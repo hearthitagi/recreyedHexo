@@ -6,7 +6,7 @@ type: "link"
 comments:
 description:
 keywords:
-top_img: https://cdn1.tianli0.top/gh/recreyed/img/bgPic/yourenzhang-202210101004444.jpg
+top_img: 
 mathjax:
 katex:
 aside:

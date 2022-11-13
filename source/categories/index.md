@@ -6,7 +6,7 @@ type: "categories"
 comments:
 description:
 keywords:
-top_img: https://cdn1.tianli0.top/gh/recreyed/img/bgPic/fenlei-202210101001711.jpg
+top_img:
 mathjax:
 katex:
 aside:

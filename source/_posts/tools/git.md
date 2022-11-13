@@ -27,7 +27,7 @@ aside:
 ---
 ## 1.git命令
 
-![git命令大全](https://cdn1.tianli0.top/gh/recreyed/img/post/git202210101024128.jpg)
+![git命令大全](https://f004.backblazeb2.com/file/recreyed/hexo/4d753c90-f769-404d-9b40-7180ebf5bc81.jpeg)
 
 ## 2. 常用命令及原理
 
