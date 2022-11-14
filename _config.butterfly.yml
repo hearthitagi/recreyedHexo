@@ -84,23 +84,23 @@ avatar:
 disable_top_img: false
 
 # 主页背景图
-index_img: transparent
+index_img: 
 # 默认顶部图
-default_top_img: false
+default_top_img: https://img.recreyed.ml/202211142223334.jpg
 # 时间轴(归档)顶部图
-archive_img: 
+archive_img: false
 # 子标签顶部图 (不设置即为默认顶部图)
-tag_img: 
+tag_img: false
 # 子分类页面顶部图 (不设置即为默认顶部图)
-category_img: 
+category_img: false
 # 每个标签的顶部图
 # format:
 #  - tag name: xxxxx
-tag_per_img:
+tag_per_img: false
 # 每个分类的顶部图
 # format:
 #  - category name: xxxxx
-category_per_img:
+category_per_img: false
 
 #文章封面
 cover:
@@ -377,7 +377,7 @@ tag_ui: # 留空或 index
 background: url(https://img.recreyed.ml/202211142223334.jpg)
 
 # Footer Background
-footer_bg: transparent
+footer_bg: false
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside-bottom:
