@@ -11,7 +11,7 @@ description:
 swiper_index: 2
 top_img:
 comments:
-cover: https://f004.backblazeb2.com/file/recreyed/hexo/cc347b04-1368-4173-805d-42d447e15ae4.jpeg
+cover: https://img.recreyed.ml/202211142225451.jpg
 toc:
 toc_number:
 toc_style_simple:

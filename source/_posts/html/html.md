@@ -64,7 +64,7 @@ JS引擎：JS引擎则是解析Javascript语言，执行javascript语言来实�
 	<dt></dt>
 </dl>
 ```
-![上、右、下边框透明](https://f004.backblazeb2.com/file/recreyed/hexo/c9af8d84-e383-4a66-8e4a-5ee8b252511d.jpeg)
+![特殊字符](https://img.recreyed.ml/202211142245421.jpg)
 ## 4. 表格
 align对齐方式、border边框宽度、cellspacing单元格间距、cellpadding单元格内边距  
 

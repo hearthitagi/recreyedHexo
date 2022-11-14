@@ -146,7 +146,7 @@ swiper:
   custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
   custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
 
-  # hexo-butterfly-categories-card
+# hexo-butterfly-categories-card
 # see https://akilar.top/posts/a9131002/
 categoryBar:
   enable: true # 开关
@@ -160,9 +160,11 @@ categoryBar:
   row: 1 #显示行数，默认两行，超过行数切换为滚动显示
   message:
     - descr: 前端知识
-      cover: https://f004.backblazeb2.com/file/recreyed/hexo/970507bf-8abd-4b36-82b6-af372cabd752.jpeg
+      cover: https://img.recreyed.ml/categories-3.jpg
     - descr: 技术回顾
-      cover: https://f004.backblazeb2.com/file/recreyed/hexo/b39f7c3f-1b1f-4b5f-84bb-53231dfe65aa.jpeg
+      cover: https://img.recreyed.ml/categories-1.jpg
     - descr: 博客相关
-      cover: https://f004.backblazeb2.com/file/recreyed/hexo/c30d0e39-7315-46f6-9d57-8dd4fd590cac.jpeg
+      cover: https://img.recreyed.ml/categories-2.jpg
+    - descr: 生活
+      cover: https://img.recreyed.ml/categories-4.jpg
   custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css

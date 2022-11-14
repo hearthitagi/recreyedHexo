@@ -35,7 +35,7 @@ Asynchronous JavaScript + XML（异步JavaScript和XML）, 其本身不是一种
 
 ### 1.1 ajax原理
 
-<img src="https://f004.backblazeb2.com/file/recreyed/hexo/f79f4d12-0f22-4837-8f9d-70f119a2fbc4.jpeg" alt="ajax原理" style="zoom: 80%;" />
+<img src="https://img.recreyed.ml/202211142240223.jpg" alt="ajax原理" style="zoom: 80%;" />
 
 ## 2. ajax语法
 

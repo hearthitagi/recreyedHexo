@@ -87,9 +87,9 @@ height: 0px;
 border: 100px solid;
 border-color: blue red green orange;
 ```
-![盒子宽高为0时的边框](https://f004.backblazeb2.com/file/recreyed/hexo/916c56dc-b425-4fc1-b681-0db5ca742225.png)
+![盒子宽高为0时的边框](https://img.recreyed.ml/202211142243934.png)
 将上、右、下边框设为透明，便得到一个三角形
 `border-color: transparent transparent transparent orange;`
-![上、右、下边框透明](https://f004.backblazeb2.com/file/recreyed/hexo/b473ef29-f8f6-4ffa-9da2-2db47749a91f.png)
+![上、右、下边框透明](https://img.recreyed.ml/202211142244997.png)
 后续待更新
 (等比缩放。。。)

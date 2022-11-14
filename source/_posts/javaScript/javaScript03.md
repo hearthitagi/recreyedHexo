@@ -241,7 +241,7 @@ scrollTop和scrollLeft: （父元素的属性）
 获得的是内容卷曲出去的高度和宽度，当滚动条向下拉时，内容往上走，  
 获得的就是上面跑出盒子范围的那部分高度。滚动条向右拉同理  
 
-<img src="https://f004.backblazeb2.com/file/recreyed/hexo/32b537f8-b2a3-41d9-8cab-95ed318a597d.jpeg" alt="scrollTop" style="zoom: 67%;" />
+<img src="https://img.recreyed.ml/202211142245453.jpg" alt="scrollTop" style="zoom: 67%;" />
 scrollWidth和scrollHeight: （父元素的属性）  
 获得元素的实际宽度和高度，在内容没有超出盒子时，获得的是盒子的内部高度和宽度。  
 内容超出盒子时获得的是内容实际应有的高度和宽度。  

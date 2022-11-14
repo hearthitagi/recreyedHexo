@@ -25,7 +25,7 @@ aplayer:
 highlight_shrink:
 aside:
 ---
-![angular思维图(简)](https://f004.backblazeb2.com/file/recreyed/hexo/8060451b-7163-4479-80c8-5ccd186142d0.png)
+![angular思维图(简)](https://img.recreyed.ml/202211142239481.png)
 
 demo项目地址:[angular-demo](https://github.com/recreyed/angular-demo)
 

@@ -76,8 +76,8 @@ favicon: /img/favicon.png
 
 # 头像
 avatar:
-  #img: https://f004.backblazeb2.com/file/recreyed/hexo/88978a8f-1b03-4797-8fee-dc0cad2b637c.png
-  img: https://f004.backblazeb2.com/file/recreyed/hexo/88978a8f-1b03-4797-8fee-dc0cad2b637c.png
+  #img: https://img.recreyed.ml/avatar-1.png
+  img: https://img.recreyed.ml/avatar-1.png
   effect: false
 
 # 禁用所有banner图
@@ -88,11 +88,11 @@ index_img: transparent
 # 默认顶部图
 default_top_img: false
 # 时间轴(归档)顶部图
-archive_img: https://f004.backblazeb2.com/file/recreyed/hexo/970507bf-8abd-4b36-82b6-af372cabd752.jpeg
+archive_img: 
 # 子标签顶部图 (不设置即为默认顶部图)
-tag_img: https://f004.backblazeb2.com/file/recreyed/hexo/b39f7c3f-1b1f-4b5f-84bb-53231dfe65aa.jpeg
+tag_img: 
 # 子分类页面顶部图 (不设置即为默认顶部图)
-category_img: https://f004.backblazeb2.com/file/recreyed/hexo/c30d0e39-7315-46f6-9d57-8dd4fd590cac.jpeg
+category_img: 
 # 每个标签的顶部图
 # format:
 #  - tag name: xxxxx
@@ -113,7 +113,7 @@ cover:
   position: both
   # 文章默认封面
   default_cover:
-    - https://f004.backblazeb2.com/file/recreyed/hexo/e15ba39e-95cc-4d48-8b85-ff7291dce776.jpeg
+    - https://img.recreyed.ml/202211142223334.jpg
 # 图片加载失败默认展示
 error_img:
   flink: /img/friend_404.gif
@@ -179,12 +179,10 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-    #- img: https://f004.backblazeb2.com/file/recreyed/hexo/0cb6db1d-719e-435d-912b-430b8d3a4fc9.png
-    - img: https://f004.backblazeb2.com/file/recreyed/hexo/0cb6db1d-719e-435d-912b-430b8d3a4fc9.png
+    - img: https://img.recreyed.ml/reward-wx.png
       link:
       text: wechat
-    #- img: https://f004.backblazeb2.com/file/recreyed/hexo/59376c9b-f68a-4fc3-a628-38048eca5ce2.jpeg
-    - img: https://f004.backblazeb2.com/file/recreyed/hexo/59376c9b-f68a-4fc3-a628-38048eca5ce2.jpeg
+    - img: https://img.recreyed.ml/reward-ali.jpg
       link:
       text: alipay
 
@@ -259,7 +257,7 @@ valine:
   appKey: cmaONbFloKuSH7mf7ToCCiux
   avatar: monsterid
   serverURLs: https://hkxuu1j3.lc-cn-n1-shared.com # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  bg: https://f004.backblazeb2.com/file/recreyed/hexo/08bdfa62-01c6-4c9d-a365-d53b8e1a5a6d.webp
+  bg: https://img.recreyed.ml/pinglun.webp
   visitor: false
   option:
 
@@ -376,7 +374,7 @@ tag_ui: # 留空或 index
 
 # 网站背景图(可以设置颜色或图片)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)gh
-background: url(https://f004.backblazeb2.com/file/recreyed/hexo/e15ba39e-95cc-4d48-8b85-ff7291dce776.jpeg)
+background: url(https://img.recreyed.ml/202211142223334.jpg)
 
 # Footer Background
 footer_bg: transparent
