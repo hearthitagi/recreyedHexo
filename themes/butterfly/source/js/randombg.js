@@ -1,7 +1,8 @@
 //随机背景图片数组,图片可以换成图床链接，注意最后一条后面不要有逗号
 var backimg =[
     "url(https://img.recreyed.ml/202211142223334.jpg)",
-    "url(https://img.recreyed.ml/202211142234217.jpg)"
+    "url(https://img.recreyed.ml/202211142234217.jpg)",
+    "url(https://img.recreyed.ml/202211142334890.jpg)"
   ];
   //获取背景图片总数，生成随机数
   var bgindex =Math.floor(Math.random() * backimg.length);
