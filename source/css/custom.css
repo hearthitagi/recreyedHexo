@@ -5,20 +5,6 @@
 #page-header {
   background: transparent !important;
 }
-/* 白天模式遮罩透明 */
-#footer::before {
-  background: transparent !important;
-}
-#page-header::before {
-  background: transparent !important;
-}
-/* 夜间模式遮罩透明 */
-[data-theme="dark"] #footer::before {
-  background: transparent !important;
-}
-[data-theme="dark"] #page-header::before {
-  background: transparent !important;
-}
 /* 首页文章背景透明 */
 #recent-posts>.recent-post-item {
   background: rgba(255,255,255,0.8)!important;
