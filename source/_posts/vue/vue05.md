@@ -208,6 +208,13 @@ props: {
 
 2.  默认编译成a标签，可以通过tag设置包裹标签
 
+#### 3.1.2 编程时跳转
+ - this.$router可以进行函数式跳转  
+ - this.$router.push() 跳转到指定页面  
+ - this.$router.replace() 这个会替换掉当前界面，当前界面就会从页面栈里被移除  
+ - this.$router.back() 返回上一级  
+ - this.$router.go() 跳转到指定的界面  
+
 ### 3.2 路由重定向
 
 在`new VueRouter()`对象的`routes`属性中，使用`redirect`进行重定向
