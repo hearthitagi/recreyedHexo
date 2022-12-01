@@ -20,9 +20,9 @@ jobs:
         ref: main #2020年10月后github新建仓库默认分支改为main，注意更改
 
     - name: 安装 Node
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
-        node-version: "16.x"
+        node-version: "19.0.0"
 
     - name: 安装 Hexo
       run: |
