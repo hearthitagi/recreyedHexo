@@ -32,7 +32,7 @@ aplayer:
 highlight_shrink:
 aside:
 ---
-## css高级技巧_1
+## css高级技巧01
 ### 1.1 显示省略号
 ```css
 /* 强制文本同一行显示 */
@@ -42,7 +42,7 @@ overflow: hidden;
 /* 省略号 (缺一不可)*/
 text-overflow: ellipsis;
 ```
-### 1.2 行内块元素
+### 1.2 行内块元素对齐
 文本内容或行内元素相对于同一行内块元素垂直居中
 ```css
 vertical-align: middle;
@@ -91,5 +91,41 @@ border-color: blue red green orange;
 将上、右、下边框设为透明，便得到一个三角形
 `border-color: transparent transparent transparent orange;`
 ![上、右、下边框透明](https://img.recreyed.ml/202211142244997.png)
-后续待更新
-(等比缩放。。。)
+### 1.8 修改滚动条样式
+::-webkit-scrollbar 滚动条整体部分  
+::-webkit-scrollbar-thumb 滚动条里面的小方块，能向上向下移动（或往左往右移动，取决于是垂直滚动条还是水平滚动条）  
+::-webkit-scrollbar-track 滚动条的轨道（里面装有Thumb）  
+::-webkit-scrollbar-button 滚动条的轨道的两端按钮，允许通过点击微调小方块的位置。  
+::-webkit-scrollbar-track-piece 内层轨道，滚动条中间部分（除去）  
+::-webkit-scrollbar-corner 边角，即两个滚动条的交汇处  
+::-webkit-resizer 两个滚动条的交汇处上用于通过拖动调整元素大小的小控件  
+```css
+/* 整个滚动条 */
+    ::-webkit-scrollbar {
+      width: 3px;
+  height: 3px;
+}
+
+/* 滚动条有滑块的轨道部分 */
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+/* 滚动条滑块(竖向:vertical 横向:horizontal) */
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background-color:#f2f2f2;
+  border-radius: 5px;
+}
+
+/* 滚动条滑块hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #999999;
+}
+
+/* 同时有垂直和水平滚动条时交汇的部分 */
+::-webkit-scrollbar-corner {
+  display: block;    /* 修复交汇时出现的白块 */
+}
+```
