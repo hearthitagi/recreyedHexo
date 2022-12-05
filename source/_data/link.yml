@@ -1,6 +1,10 @@
 - class_name: 帐中人
   class_desc: 
   link_list:
+    - name: Recreyed
+      link: https://recreyed.ml/
+      avatar: https://img.recreyed.ml/avatar-1.png
+      descr: 前端
     - name: HHR
       link: https://codehhr.cn/
       avatar: https://codehhr.coding.net/p/codehhr/d/images/git/raw/master/avatar/tusiji.png
