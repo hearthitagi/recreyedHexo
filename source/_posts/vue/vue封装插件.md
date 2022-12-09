@@ -47,7 +47,7 @@ toast.install = function(Vue) {
 export default toast
 ```
 toast/toast.vue  
-```vue
+```html
 <template>
   <div class="toast" v-show="isShow">{{massage}}</div>
 </template>
