@@ -659,8 +659,10 @@ inject:
     - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
   bottom:
     # - <script src="xxxx"></script>
-    #随机背景图
+    # 随机背景图
     - <script async data-pjax src="/js/randombg.js"></script>
+    - <script async data-pjax src="/js/script.js"></script>
+    # 切换背景
 
 # CDN
 # Don't modify the following settings unless you know how they work
