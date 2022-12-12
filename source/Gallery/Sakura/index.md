@@ -23,3 +23,12 @@ highlight_shrink:
 ![](https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg)
 ![](https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg)
 {% endgallery %}
+
+<script>
+let time = ''
+let imgbox = document.querySelector('.fj-gallery')
+imgbox.addEventListener('contextmenu', e => e.preventDefault())
+imgbox.addEventListener('dragend', e => { changeBg('url(' + e.target.src + ')'); })
+imgbox.addEventListener('touchstart', e => { time = setTimeout(() => { changeBg('url(' + e.target.src + ')'); }, 500); })
+imgbox.addEventListener('touchend', ()=>{clearTimeout(time)})
+</script>
