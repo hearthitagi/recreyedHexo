@@ -13,6 +13,9 @@ aside:
 aplayer:
 highlight_shrink:
 ---
+{% note info  %}
+温馨提示：点击可以查看图片，`电脑端拖动图片/手机端长按图片` 可以实现切换壁纸哦~
+{% endnote %}
 {% gallery %}
 ![](https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg)
 ![](https://i.loli.net/2019/12/25/ryLVePaqkYm4TEK.jpg)
