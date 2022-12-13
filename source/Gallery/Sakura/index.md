@@ -17,14 +17,15 @@ highlight_shrink:
 温馨提示：点击可以查看图片，`电脑端拖动图片/手机端长按图片` 可以实现切换壁纸哦~
 {% endnote %}
 {% gallery %}
-![](https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg)
-![](https://i.loli.net/2019/12/25/ryLVePaqkYm4TEK.jpg)
-![](https://i.loli.net/2019/12/25/gEy5Zc1Ai6VuO4N.jpg)
-![](https://i.loli.net/2019/12/25/d6QHbytlSYO4FBG.jpg)
-![](https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg)
-![](https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg)
-![](https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg)
-![](https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg)
+![](https://img.recreyed.ml/202211142334890.jpg)
+![](https://img.recreyed.ml/202211142234217.jpg)
+![](https://img.recreyed.ml/202211142225482.jpg)
+![](https://img.recreyed.ml/202211142225451.jpg)
+![](https://img.recreyed.ml/202211142223334.jpg)
+![](https://img.recreyed.ml/categories-4.jpg)
+![](https://img.recreyed.ml/categories-3.jpg)
+![](https://img.recreyed.ml/categories-2.jpg)
+![](https://img.recreyed.ml/categories-1.jpg)
 {% endgallery %}
 
 <script>
