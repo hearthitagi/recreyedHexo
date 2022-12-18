@@ -16,6 +16,7 @@ swiper_index:
 top_img:
 comments:
 cover:
+    - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9OFEgNGAfHna3FgpL4JzDdvwZL5nMu4_4JQ&usqp=CAU
 toc:
 toc_number:
 toc_style_simple:
@@ -77,3 +78,6 @@ div:not(.box) {
 <div class="yi">我们被选中了</div>
 ```
 **注意:未指定`:not`前边的宿主选择器，`:not`会选中body；`:not`不能嵌套**
+
+
+参考文章：[浅谈逻辑选择器](https://www.cnblogs.com/coco1s/p/16283836.html)
