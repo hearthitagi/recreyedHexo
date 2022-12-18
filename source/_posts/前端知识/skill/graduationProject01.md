@@ -6,7 +6,7 @@ tags:
      - 毕业设计
      - mongoDB
 categories:
-     - 技术回顾
+     - 前端知识
 keywords:
 description:
      - mongoDB

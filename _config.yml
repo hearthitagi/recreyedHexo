@@ -161,10 +161,10 @@ categoryBar:
   message:
     - descr: 前端知识
       cover: https://img.recreyed.ml/categories-3.jpg
-    - descr: 技术回顾
-      cover: https://img.recreyed.ml/categories-1.jpg
     - descr: 博客相关
       cover: https://img.recreyed.ml/categories-2.jpg
     - descr: 生活
       cover: https://img.recreyed.ml/categories-4.jpg
+    - descr: 电子杂物
+      cover: https://img.recreyed.ml/categories-1.jpg
   custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css
