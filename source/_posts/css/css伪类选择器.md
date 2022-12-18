@@ -15,8 +15,7 @@ description:
 swiper_index:
 top_img:
 comments:
-cover:
-    - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9OFEgNGAfHna3FgpL4JzDdvwZL5nMu4_4JQ&usqp=CAU
+cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9OFEgNGAfHna3FgpL4JzDdvwZL5nMu4_4JQ&usqp=CAU
 toc:
 toc_number:
 toc_style_simple:
