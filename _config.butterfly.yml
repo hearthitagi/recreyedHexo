@@ -661,7 +661,7 @@ inject:
     # - <script src="xxxx"></script>
     # 随机背景图
     - <script async data-pjax src="/js/randombg.js"></script>
-    - <script async data-pjax src="/js/script.js"></script>
+    - <script async data-pjax src="/js/selectbg.js"></script>
     # 切换背景
 
 # CDN
