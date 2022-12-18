@@ -666,7 +666,7 @@ inject:
 
 # CDN
 # Don't modify the following settings unless you know how they work
-# 非必要請不要修改
+# 非必要請不要修改1
 CDN:
   # main
   main_css:
