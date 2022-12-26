@@ -405,8 +405,8 @@ font:
 # 标题字体
 # 左上角網站名字 主頁居中網站名字
 blog_title_font:
-  font_link: 
-  font-family: 
+  font_link: https://fonts.googleapis.com/css?family=Playball
+  font-family: Playball
 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
