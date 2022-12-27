@@ -27,12 +27,3 @@ highlight_shrink:
 ![](https://img.recreyed.ml/categories-2.jpg)
 ![](https://img.recreyed.ml/categories-1.jpg)
 {% endgallery %}
-
-<script>
-let time = ''
-let imgbox = document.querySelector('.fj-gallery')
-imgbox.addEventListener('contextmenu', e => e.preventDefault())
-imgbox.addEventListener('dragend', e => { changeBg('url(' + e.target.src + ')'); })
-imgbox.addEventListener('touchstart', e => { time = setTimeout(() => { changeBg('url(' + e.target.src + ')'); }, 500); })
-imgbox.addEventListener('touchend', ()=>{clearTimeout(time)})
-</script>

@@ -84,7 +84,7 @@ disable_top_img: false
 # 主页背景图
 index_img:
 # 默认顶部图
-default_top_img: https://img.recreyed.ml/202211142223334.jpg
+default_top_img: 
 # 时间轴(归档)顶部图
 archive_img: false
 # 子标签顶部图 (不设置即为默认顶部图)
@@ -431,7 +431,7 @@ tag_ui: # 留空或 index
 
 # 网站背景图(可以设置颜色或图片)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)gh
-background: url(https://img.recreyed.ml/202211142223334.jpg)
+background:
 
 # Footer Background
 footer_bg: false
@@ -718,10 +718,7 @@ inject:
   - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
   bottom:
   # - <script src="xxxx"></script>
-  # 随机背景图
-  - <script async data-pjax src="/js/randombg.js"></script>
-  - <script async data-pjax src="/js/selectbg.js"></script>
-  # 切换背景
+
 
 # CDN
 # Don't modify the following settings unless you know how they work
