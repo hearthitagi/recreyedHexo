@@ -4,6 +4,7 @@
 }
 #page-header {
   background: transparent !important;
+  height: 60px;
 }
 /* 首页文章背景透明 */
 /* #recent-posts>.recent-post-item {
