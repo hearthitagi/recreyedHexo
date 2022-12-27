@@ -263,7 +263,7 @@ valine:
 # see https://akilar.top/posts/8e1264d1/
 swiper:
   enable: true # 开关
-  priority: 5 #过滤器优先权
+  priority: 10 #过滤器优先权
   enable_page: / # 应用页面
   timemode: date #date/updated
   layout: # 挂载容器类型
@@ -286,7 +286,7 @@ categoryBar:
     type: id
     name: recent-posts
     index: 0
-  column: odd # odd：3列 | even：4列
+  column: even # odd：3列 | even：4列
   row: 1 #显示行数，默认两行，超过行数切换为滚动显示
   message:
   - descr: 前端知识
@@ -307,7 +307,7 @@ wowjs:
   animateitem:
   - class: recent-post-item #必填项，需要添加动画的元素的class
     style: animate__fadeIn #必填项，需要添加的动画
-    duration: 0.3s #选填项，动画持续时间，单位可以是ms也可以是s。例如3s，700ms。
+    duration: 0.5s #选填项，动画持续时间，单位可以是ms也可以是s。例如3s，700ms。
     delay: 0 #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
     offset: 0 #选填项，开始动画的距离（相对浏览器底部）
     iteration: 1 #选填项，动画重复的次数
@@ -674,7 +674,7 @@ snackbar:
   bg_dark: '#121212' # The background color of Toast Notification in dark mode
 
 # https://instant.page/
-# prefetch (預加載)
+# prefetch (预加载)
 instantpage: true
 
 # https://github.com/vinta/pangu.js
@@ -683,10 +683,10 @@ pangu:
   enable: false
   field: site # site/post
 
-# Lazyload (圖片懶加載)
+# Lazyload (图片懒加载)
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: false
+  enable: true
   field: site # site/post
   placeholder:
   blur: false
