@@ -1,16 +1,20 @@
 #recent-posts
   width: 60%
+  display: flex
+  flex-flow: row wrap
   & > .recent-post-item:not(:first-child)
     margin-top: 20px
 
   & > .recent-post-item
     @extend .cardHover
     display: flex
-    flex-direction: row
+    flex-flow: column nowrap
     align-items: center
-    justify-content: space-between
+    justify-content: center
     overflow: hidden
     height: 13em
+    width: calc((100% - 40px) / 2);
+    margin: 0 10px
 
     +maxWidth768()
       flex-direction: column
@@ -26,8 +30,8 @@
 
     .post_cover
       overflow: hidden
-      width: 40%
-      height: 100%
+      width: 100%
+      max-height: 60%
 
       +maxWidth768()
         width: 100%
@@ -43,8 +47,10 @@
           order: 0
 
     & >.recent-post-info
-      padding: 0 40px
-      width: 57%
+        padding: 15px 20px
+        width: 100%
+        flex: 1
+        text-align: center
 
       +maxWidth768()
         padding: 20px 20px 30px
