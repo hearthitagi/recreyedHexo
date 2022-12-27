@@ -108,7 +108,7 @@ cover:
   archives_enable: true
   # the position of cover in home page (文章封面显示的位置)
   # left/right/both
-  position: both
+  position: left
   # 文章默认封面
   default_cover:
     - https://img.recreyed.ml/202211142223334.jpg
