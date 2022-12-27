@@ -1,12 +1,13 @@
 ---
 title: 毕业设计技术总结 02
+tags:
+  - 毕业设计
+  - mongoose
+categories:
+  - 前端知识
+abbrlink: 364e6ce3
 date: 2022-02-28 14:42:12
 updated:
-tags:
-     - 毕业设计
-     - mongoose
-categories:
-     - 前端知识
 keywords:
 description:
 top_img:

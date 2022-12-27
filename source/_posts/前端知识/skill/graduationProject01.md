@@ -1,17 +1,18 @@
 ---
 title: 毕业设计技术总结 01
+tags:
+  - 毕业设计
+  - mongoDB
+categories:
+  - 前端知识
+description:
+  - mongoDB
+  - 概念
+  - 基础CURD命令
+abbrlink: af473d59
 date: 2022-02-22 17:14:07
 updated:
-tags:
-     - 毕业设计
-     - mongoDB
-categories:
-     - 前端知识
 keywords:
-description:
-     - mongoDB
-     - 概念
-     - 基础CURD命令
 top_img:
 comments:
 cover:

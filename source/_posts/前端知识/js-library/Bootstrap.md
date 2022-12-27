@@ -1,11 +1,12 @@
 ---
 title: Bootstrap
+tags:
+  - BootStrap
+categories:
+  - 前端知识
+abbrlink: d352c4d3
 date: 2022-02-22 17:05:54
 updated:
-tags:
-    - BootStrap
-categories:
-    - 前端知识
 keywords:
 description:
 top_img:

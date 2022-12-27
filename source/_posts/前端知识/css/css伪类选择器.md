@@ -1,21 +1,23 @@
 ---
 title: css伪类选择器
+tags:
+  - css
+categories:
+  - 前端知识
+description:
+  - ':is选择器'
+  - ':where选择器'
+  - ':not选择器'
+  - ':has'
+cover: >-
+  https://www.modis.co.jp/-/media/Images/Modis/www/candidate/insight/thumbnail_column_90.jpg
+abbrlink: ebd9ab17
 date: 2022-12-18 18:41:16
 updated:
-tags:
-	- css
-categories:
-    - 前端知识
 keywords:
-description:
-    - :is选择器
-    - :where选择器
-    - :not选择器
-    - :has
 swiper_index:
 top_img:
 comments:
-cover: https://www.modis.co.jp/-/media/Images/Modis/www/candidate/insight/thumbnail_column_90.jpg
 toc:
 toc_number:
 toc_style_simple:

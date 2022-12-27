@@ -1,11 +1,12 @@
 ---
 title: js遍历获取本地图片
+tags:
+  - javaScript
+categories:
+  - 前端知识
+abbrlink: ecb3bd1e
 date: 2022-12-05 12:37:19
 updated:
-tags:
-    - javaScript
-categories:
-    - 前端知识
 keywords:
 description:
 swiper_index:

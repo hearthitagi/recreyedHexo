@@ -1,12 +1,13 @@
 ---
 title: three.js实现3d地球
+tags:
+  - three.js
+  - angular
+categories:
+  - 前端知识
+abbrlink: 7446b8e7
 date: 2022-03-28 13:03:33
 updated: 2022-04-12 19:00:21
-tags:
-    - three.js
-    - angular
-categories:
-    - 前端知识
 keywords:
 description:
 top_img:

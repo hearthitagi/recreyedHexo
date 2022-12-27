@@ -1,21 +1,23 @@
 ---
 title: css3基础
+tags:
+  - css
+categories:
+  - 前端知识
+description:
+  - 新增选择器
+  - 新增样式
+  - 渐变过渡
+  - 转换
+  - 动画
+  - 弹性容器
+  - 响应式布局
+  - less
+copyright_url: 'https://recreyed.github.io/2022/01/26/css3/'
+abbrlink: 3a395d0a
 date: 2022-01-26 15:04:45
 updated: 2022-01-28 15:33:45
-tags:
-	- css
-categories:
-    - 前端知识
 keywords:
-description:
-    - 新增选择器
-    - 新增样式
-    - 渐变过渡
-    - 转换
-    - 动画
-    - 弹性容器
-    - 响应式布局
-    - less
 top_img:
 comments:
 cover:
@@ -25,7 +27,6 @@ toc_style_simple:
 copyright:
 copyright_author:
 copyright_author_href:
-copyright_url: https://recreyed.github.io/2022/01/26/css3/
 copyright_info:
 mathjax:
 katex:

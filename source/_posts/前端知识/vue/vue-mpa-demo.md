@@ -1,17 +1,18 @@
 ---
 title: vue多页面构建
+tags:
+  - vue
+categories:
+  - 前端知识
+description: vue多页面实现案例
+cover: 'https://anteku.jp/blog/wp-content/uploads/2021/11/vue-eyecatch-960x504-1.jpeg'
+abbrlink: '5325484'
 date: 2022-12-09 14:44:55
 updated:
-tags:
-    - vue
-categories:
-    - 前端知识
 keywords:
-description: vue多页面实现案例
 swiper_index:
 top_img:
 comments:
-cover: https://anteku.jp/blog/wp-content/uploads/2021/11/vue-eyecatch-960x504-1.jpeg
 toc:
 toc_number:
 toc_style_simple:

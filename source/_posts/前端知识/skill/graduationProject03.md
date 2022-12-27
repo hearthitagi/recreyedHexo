@@ -1,16 +1,17 @@
 ---
 title: 毕业设计技术总结 03
+tags:
+  - 毕业设计
+  - linux
+  - mongoDB
+  - mongoose
+  - express
+  - nginx
+categories:
+  - 前端知识
+abbrlink: 41495c75
 date: 2022-03-18 18:07:52
 updated:
-tags:
-     - 毕业设计
-     - linux
-     - mongoDB
-     - mongoose
-     - express
-     - nginx
-categories:
-     - 前端知识
 keywords:
 description:
 top_img:

@@ -82,7 +82,7 @@ avatar:
 disable_top_img: false
 
 # 主页背景图
-index_img: 
+index_img:
 # 默认顶部图
 default_top_img: https://img.recreyed.ml/202211142223334.jpg
 # 时间轴(归档)顶部图
@@ -111,7 +111,7 @@ cover:
   position: left
   # 文章默认封面
   default_cover:
-    - https://img.recreyed.ml/202211142223334.jpg
+  - https://img.recreyed.ml/202211142223334.jpg
 # 图片加载失败默认展示
 error_img:
   flink: /img/friend_404.gif
@@ -149,8 +149,8 @@ wordcount:
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
-  method: 1
-  length: 500 # if you set method to 2 or 3, the length need to config
+  method: false
+  length: 0 # if you set method to 2 or 3, the length need to config
 
 # url随标题变化
 # when you scroll in post, the URL will update according to header id.
@@ -177,12 +177,12 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-    - img: https://img.recreyed.ml/reward-wx.png
-      link:
-      text: wechat
-    - img: https://img.recreyed.ml/reward-ali.jpg
-      link:
-      text: alipay
+  - img: https://img.recreyed.ml/reward-wx.png
+    link:
+    text: wechat
+  - img: https://img.recreyed.ml/reward-ali.jpg
+    link:
+    text: alipay
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -190,7 +190,7 @@ post_edit:
   enable: false
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
-  url: 
+  url:
 
 # 相关文章
 related_post:
@@ -246,8 +246,8 @@ comments:
   text: false # 是否显示评论服务商的名字
   lazyload: false
   count: true # 是否在文章顶部显示评论数
-  card_post_count: true # 是否在首页文章卡片显示评论数
-  
+  card_post_count: false # 是否在首页文章卡片显示评论数
+
 # valine
 # https://valine.js.org
 valine:
@@ -258,6 +258,65 @@ valine:
   bg: https://img.recreyed.ml/pinglun.webp
   visitor: false
   option:
+
+# hexo-butterfly-swiper
+# see https://akilar.top/posts/8e1264d1/
+swiper:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  enable_page: / # 应用页面
+  timemode: date #date/updated
+  layout: # 挂载容器类型
+    type: id
+    name: recent-posts
+    index: 0
+  default_descr: 再怎么看我也不知道怎么描述它的啦！
+  swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css #swiper css依赖
+  swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
+  custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
+  custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
+
+# hexo-butterfly-categories-card
+# see https://akilar.top/posts/a9131002/
+categoryBar:
+  enable: true # 开关
+  priority: 5 #过滤器优先权
+  enable_page: / # 应用页面
+  layout: # 挂载容器类型
+    type: id
+    name: recent-posts
+    index: 0
+  column: odd # odd：3列 | even：4列
+  row: 1 #显示行数，默认两行，超过行数切换为滚动显示
+  message:
+  - descr: 前端知识
+    cover: https://img.recreyed.ml/categories-3.jpg
+  - descr: 博客相关
+    cover: https://img.recreyed.ml/categories-2.jpg
+  - descr: 生活
+    cover: https://img.recreyed.ml/categories-4.jpg
+  - descr: 电子杂物
+    cover: https://img.recreyed.ml/categories-1.jpg
+  custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css
+
+#文章展示动画
+wowjs:
+  enable: true #控制动画开关。true是打开，false是关闭
+  priority: 10 #过滤器优先级
+  mobile: false #移动端是否启用，默认移动端禁用
+  animateitem:
+  - class: recent-post-item #必填项，需要添加动画的元素的class
+    style: animate__fadeIn #必填项，需要添加的动画
+    duration: 0.3s #选填项，动画持续时间，单位可以是ms也可以是s。例如3s，700ms。
+    delay: 0 #选填项，动画开始的延迟时间，单位可以是ms也可以是s。例如3s，700ms。
+    offset: 0 #选填项，开始动画的距离（相对浏览器底部）
+    iteration: 1 #选填项，动画重复的次数
+  - class: card-widget
+    style: animate__fadeIn
+  animate_css: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css
+  wow_js: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js
+  wow_init_js: https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js
+
 
 # Chat Services
 # --------------------------------------
@@ -330,10 +389,10 @@ microsoft_clarity:
 # --------------------------------------
 
 site_verification:
-  # - name: google-site-verification
-  #   content: xxxxxx
-  # - name: baidu-site-verification
-  #   content: xxxxxxx
+# - name: google-site-verification
+#   content: xxxxxx
+# - name: baidu-site-verification
+#   content: xxxxxxx
 
 # Beautify/Effect (美化/效果)
 # --------------------------------------
@@ -430,7 +489,7 @@ subtitle:
   source: false
   # 如果关闭打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
-    - <span style="font-family:cursive;">你若明日死 那我的性命也将止于明日<br/>你若活过今日 那我也将陪你活过今日</span>
+  - <span style="font-family:cursive;">你若明日死 那我的性命也将止于明日<br/>你若活过今日 那我也将陪你活过今日</span>
 # Loading Animation (加载动画)
 preloader: false
 
@@ -500,7 +559,7 @@ busuanzi:
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  publish_date: 1/26/2022 14:23:31  
+  publish_date: 1/26/2022 14:23:31
 
 # Aside widget - Newest Comments
 newest_comments:
@@ -596,8 +655,8 @@ note:
 pjax:
   enable: false
   exclude:
-    # - xxxx
-    # - xxxx
+  # - xxxx
+  # - xxxx
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
@@ -649,20 +708,20 @@ Open_Graph_meta: true
 
 # Add the vendor prefixes to ensure compatibility
 css_prefix: true
-    
+
 # Inject
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    # - <link rel="stylesheet" href="/xxx.css">
-    - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
+  # - <link rel="stylesheet" href="/xxx.css">
+  - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
   bottom:
-    # - <script src="xxxx"></script>
-    # 随机背景图
-    - <script async data-pjax src="/js/randombg.js"></script>
-    - <script async data-pjax src="/js/selectbg.js"></script>
-    # 切换背景
+  # - <script src="xxxx"></script>
+  # 随机背景图
+  - <script async data-pjax src="/js/randombg.js"></script>
+  - <script async data-pjax src="/js/selectbg.js"></script>
+  # 切换背景
 
 # CDN
 # Don't modify the following settings unless you know how they work

@@ -1,17 +1,18 @@
 ---
 title: 博客的GithubAction自动部署
+tags:
+  - blog
+categories:
+  - 博客相关
+swiper_index: 1
+cover: 'https://img.recreyed.ml/202211142225482.jpg'
+abbrlink: da18bd0
 date: 2022-10-25 23:41:55
 updated:
-tags:
-    - blog
-categories:
-    - 博客相关
 keywords:
 description:
-swiper_index: 1
 top_img:
 comments:
-cover: https://img.recreyed.ml/202211142225482.jpg
 toc:
 toc_number:
 toc_style_simple:

@@ -1,11 +1,12 @@
 ---
 title: node
+tags:
+  - node
+categories:
+  - 前端知识
+abbrlink: 857fe845
 date: 2022-02-22 17:06:17
 updated:
-tags:
-    - node
-categories:
-    - 前端知识
 keywords:
 description:
 top_img:

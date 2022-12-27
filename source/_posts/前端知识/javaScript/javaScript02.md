@@ -1,17 +1,18 @@
 ---
 title: javaScript基础 02
+tags:
+  - javaScript
+categories:
+  - 前端知识
+description:
+  - 内置对象(Math/Date/Array/String)
+  - DOM操作
+  - DOM属性与事件
+  - 节点
+abbrlink: 17ade7a6
 date: 2022-01-26 15:07:29
 updated:
-tags:
-    - javaScript
-categories:
-    - 前端知识
 keywords:
-description:
-    - 内置对象(Math/Date/Array/String)
-    -  DOM操作
-    -  DOM属性与事件
-    -  节点
 top_img:
 comments:
 cover:

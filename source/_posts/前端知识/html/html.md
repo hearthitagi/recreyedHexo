@@ -1,20 +1,22 @@
 ---
 title: html基础
+tags:
+  - html
+categories:
+  - 前端知识
+description:
+  - 浏览器内核
+  - 标签
+  - 表格
+  - 表单
+  - h5
+  - h5表单
+  - h5音视频
+copyright_url: 'https://recreyed.github.io/2022/01/26/html/'
+abbrlink: 1a147173
 date: 2022-01-26 15:01:00
 updated: 2022-01-28 09:23:00
-tags:
-    - html
-categories:
-    - 前端知识
 keywords:
-description:
-    - 浏览器内核
-    - 标签
-    - 表格
-    - 表单
-    - h5
-    - h5表单
-    - h5音视频
 top_img:
 comments:
 cover:
@@ -24,7 +26,6 @@ toc_style_simple:
 copyright:
 copyright_author:
 copyright_author_href:
-copyright_url: https://recreyed.github.io/2022/01/26/html/
 copyright_info:
 mathjax:
 katex:

@@ -1,19 +1,21 @@
 ---
 title: css基础
+tags:
+  - css
+categories:
+  - 前端知识
+description:
+  - 选择器
+  - 标签的显示模式
+  - 背景
+  - 优先级
+  - 盒子模型
+  - 浮动与定位
+copyright_url: 'https://recreyed.github.io/2022/01/26/css/'
+abbrlink: eda1a9a9
 date: 2022-01-26 15:01:43
 updated: 2022-01-28 11:46:43
-tags:
-    - css
-categories:
-    - 前端知识
 keywords:
-description:
-    - 选择器
-    - 标签的显示模式
-    - 背景
-    - 优先级
-    - 盒子模型
-    - 浮动与定位
 top_img:
 comments:
 cover:
@@ -23,7 +25,6 @@ toc_style_simple:
 copyright:
 copyright_author:
 copyright_author_href:
-copyright_url: https://recreyed.github.io/2022/01/26/css/
 copyright_info:
 mathjax:
 katex:

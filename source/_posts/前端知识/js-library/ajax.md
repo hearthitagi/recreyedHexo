@@ -1,11 +1,12 @@
 ---
 title: ajax
+tags:
+  - ajax
+categories:
+  - 前端知识
+abbrlink: c5a6a264
 date: 2022-02-22 17:04:40
 updated:
-tags:
-    - ajax
-categories:
-    - 前端知识
 keywords:
 description:
 top_img:

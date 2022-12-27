@@ -6,6 +6,7 @@ tags:
     - javaScript
 categories:
     - 前端知识
+abbrlink: fece4293
 keywords:
 description:
 top_img:
@@ -24,7 +25,8 @@ katex:
 aplayer:
 highlight_shrink:
 aside:
----## 1. 面向对象
+--- 
+## 1. 面向对象
 
 这是一种编程思想，需要多加练习才能掌握，有点只可意会不可言传的味道。
 

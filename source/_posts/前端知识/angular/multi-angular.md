@@ -1,11 +1,12 @@
 ---
 title: 多模块angular项目的搭建
+tags:
+  - angular
+categories:
+  - 前端知识
+abbrlink: c9b1734a
 date: 2022-10-13 13:38:13
 updated:
-tags:
-    - angular
-categories:
-    - 前端知识
 keywords:
 description:
 top_img:

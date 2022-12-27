@@ -1,11 +1,12 @@
 ---
 title: vue基础 03
+tags:
+  - vue
+categories:
+  - 前端知识
+abbrlink: f9999bcb
 date: 2022-02-22 17:07:57
 updated:
-tags:
-    - vue
-categories:
-    - 前端知识
 keywords:
 description:
 top_img:

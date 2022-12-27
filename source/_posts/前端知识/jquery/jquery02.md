@@ -1,11 +1,12 @@
 ---
 title: jquery基础 02
+tags:
+  - jquery
+categories:
+  - 前端知识
+abbrlink: b83d806d
 date: 2022-01-26 15:10:57
 updated:
-tags:
-    - jquery
-categories:
-    - 前端知识
 keywords:
 description:
 top_img:

@@ -1,20 +1,21 @@
 ---
 title: javaScript基础 01
+tags:
+  - javaScript
+categories:
+  - 前端知识
+description:
+  - 基础
+  - 变量
+  - 流程控制
+  - 数组
+  - 函数
+  - 对象
+  - 预解析/作用域/报错
+abbrlink: 8ea4b61c
 date: 2022-01-26 15:06:00
 updated: 2022-02-09 17:00:43
-tags:
-    - javaScript
-categories:
-    - 前端知识
 keywords:
-description:
-    - 基础
-    - 变量
-    - 流程控制
-    - 数组
-    - 函数
-    - 对象
-    - 预解析/作用域/报错
 top_img:
 comments:
 cover:

@@ -1,11 +1,12 @@
 ---
 title: vue基础 02
+tags:
+  - vue
+categories:
+  - 前端知识
+abbrlink: 8e9eab5d
 date: 2022-02-22 17:07:46
 updated:
-tags:
-    - vue
-categories:
-    - 前端知识
 keywords:
 description:
 top_img:

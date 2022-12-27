@@ -1,17 +1,18 @@
 ---
 title: vue封装插件
+tags:
+  - vue
+categories:
+  - 前端知识
+description: vue插件全局封装
+cover: 'https://anteku.jp/blog/wp-content/uploads/2021/11/vue-eyecatch-960x504-1.jpeg'
+abbrlink: '18273814'
 date: 2022-12-09 14:59:24
 updated:
-tags:
-    - vue
-categories:
-    - 前端知识
 keywords:
-description: vue插件全局封装
 swiper_index:
 top_img:
 comments:
-cover: https://anteku.jp/blog/wp-content/uploads/2021/11/vue-eyecatch-960x504-1.jpeg
 toc:
 toc_number:
 toc_style_simple:

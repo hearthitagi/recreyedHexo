@@ -1,11 +1,12 @@
 ---
 title: blob转file并传给后端
+tags:
+  - javaScript
+categories:
+  - 前端知识
+abbrlink: 7b09e437
 date: 2022-12-05 12:42:27
 updated:
-tags:
-    - javaScript
-categories:
-    - 前端知识
 keywords:
 description:
 swiper_index:

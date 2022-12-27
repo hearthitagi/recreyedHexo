@@ -1,11 +1,12 @@
 ---
 title: angular基础 01
+tags:
+  - angular
+categories:
+  - 前端知识
+abbrlink: cb24f466
 date: 2022-03-19 20:31:01
 updated: 2022-04-12 16:30:18
-tags:
-    - angular
-categories:
-    - 前端知识
 keywords:
 description:
 top_img:
