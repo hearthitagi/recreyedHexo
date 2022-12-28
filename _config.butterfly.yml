@@ -431,7 +431,7 @@ tag_ui: # 留空或 index
 
 # 网站背景图(可以设置颜色或图片)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)gh
-background:
+background: '#49B202'
 
 # Footer Background
 footer_bg: false
