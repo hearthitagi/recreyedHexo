@@ -1,13 +1,39 @@
-/* 页脚与头图透明 */
+/* 页脚透明 */
 #footer {
   background: transparent !important;
 }
+/* 导航栏固定高度 */
 #page-header {
   height: 60px;
 }
-/* 首页文章背景透明 */
-[data-theme="dark"] #web_bg {
-  background: rgba(18,18,18);
+/* 边框 */
+#recent-posts > .recent-post-item,
+#aside-content .card-widget{
+  border: 1px solid #e3e8f7;
+}
+[data-theme="dark"] #recent-posts > .recent-post-item,
+[data-theme="dark"] #aside-content .card-widget{
+  border: 1px solid #42444a;
+}
+
+
+/* 黑夜背景 */
+canvas#universe {
+  display: none;
+}
+[data-theme="dark"] canvas#universe {
+  display: block;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
 }
 
 /* 首页磁贴背景填充 */

@@ -431,7 +431,7 @@ tag_ui: # 留空或 index
 
 # 网站背景图(可以设置颜色或图片)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)gh
-background: '#49B202'
+background: '#f7f9fe'
 
 # Footer Background
 footer_bg: false
@@ -718,6 +718,7 @@ inject:
   - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
   bottom:
   # - <script src="xxxx"></script>
+  - <script async data-pjax src="/js/dark.js"></script>
 
 
 # CDN
