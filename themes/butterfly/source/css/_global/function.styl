@@ -139,28 +139,12 @@ if hexo-config('enter_transitions')
   color: #FF0000
   animation: announ_animation .8s linear infinite
 
-.scroll-down-effects
-  animation: scroll-down-effect 1.5s infinite
-
 if hexo-config('avatar.effect') == true
   .avatar-img
     animation: avatar_turn_around 2s linear infinite
 
 .reward-main
   animation: donate_effcet .3s .1s ease both
-
-@keyframes scroll-down-effect
-  0%
-    top: 0
-    opacity: .4
-
-  50%
-    top: -16px
-    opacity: 1
-
-  100%
-    top: 0
-    opacity: .4
 
 @keyframes header-effect
   0%

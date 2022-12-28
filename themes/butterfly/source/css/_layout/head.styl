@@ -12,19 +12,8 @@
   &.full_page
     background-attachment: fixed
 
-    #site-info
-      position: absolute
-      top: $index_site_info_top
-      padding: 0 10px
-      width: 100%
-      display: none
-
   #site-title,
   #site-subtitle,
-  #scroll-down .scroll-down-effects
-    text-align: center
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, .15)
-    line-height: 1.5
 
   #site-title
     margin: 0
@@ -56,34 +45,12 @@
       text-shadow: 2px 2px 4px rgba(0, 0, 0, .15)
       font-size: 1.43em
 
-  #scroll-down
-    position: absolute
-    bottom: 0
-    width: 100%
-    cursor: pointer
-    display: none
-
-    .scroll-down-effects
-      position: relative
-      width: 100%
-      color: var(--light-grey)
-      font-size: 30px
-
   // page
   &.not-home-page
-    height: 400px
+    height: 60px
 
     +maxWidth768()
-      height: 280px
-
-  #page-site-info
-    position: absolute
-    top: 200px
-    padding: 0 10px
-    width: 100%
-
-    +maxWidth768()
-      top: 140px
+      height: 60px
 
   // post
   &.post-bg
@@ -110,26 +77,13 @@
       bottom: 22px
       padding: 0 22px
 
-  &.not-top-img
-    margin-bottom: 10px
-    height: 60px
-    background: 0
-
-    #nav
-      background: rgba(255, 255, 255, .8)
-      box-shadow: 0 5px 6px -5px rgba(133, 133, 133, .6)
-
-      a
-        color: var(--font-color)
-        text-shadow: none
+  
 
   &.full_page
     #nav
       position: fixed
       top: 0
       z-index: 91
-      background: rgba(255, 255, 255, .85)
-      box-shadow: 0 5px 6px -5px alpha($grey, .6)
       transition: transform .2s ease-in-out, opacity .2s ease-in-out
       transition: background .5s
 
@@ -141,7 +95,11 @@
 
         &:hover
           color: $light-blue
-
+  &.nav-fixed
+    #nav
+      background: rgba(255, 255, 255, .85)
+      backdrop-filter: saturate(180%) blur(20px);
+      box-shadow: 0 5px 6px -5px alpha($grey, .6)
   &.nav-visible
     #nav
       transition: all .5s
@@ -230,7 +188,7 @@
         display: none
 
 #nav
-  position: absolute
+  position: fixed
   top: 0
   z-index: 90
   display: flex
@@ -260,10 +218,7 @@
       color: var(--white)
 
   a
-    color: var(--light-grey)
-
-    &:hover
-      color: var(--white)
+    color: var(--font-color)
 
   #site-name
     text-shadow: 2px 2px 4px rgba($dark-black, .15)
@@ -346,7 +301,6 @@
   .site-page
     position: relative
     padding-bottom: 6px
-    text-shadow: 1px 1px 2px rgba($dark-black, .3)
     font-size: .78em
     cursor: pointer
 
