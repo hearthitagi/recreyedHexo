@@ -1,4 +1,6 @@
 mixin postUI(posts)
+  .recent-post-item#categories-list
+  <div>qweq</div>
   each article , index in page.posts.data
     .recent-post-item
       -
@@ -57,7 +59,7 @@ mixin postUI(posts)
                 a(href=url_for(item.path)).article-meta__tags #[=item.name]
                 if (index < article.tags.data.length - 1)
                   span.article-meta-link #[='•']
-          
+
           mixin countBlockInIndex
             - needLoadCountJs = true
             span.article-meta
@@ -66,7 +68,7 @@ mixin postUI(posts)
               if block
                 block
               span.article-meta-label= ' ' + _p('card_post_count')
-          
+
           if theme.comments.card_post_count
             case theme.comments.use[0]
               when 'Disqus'
