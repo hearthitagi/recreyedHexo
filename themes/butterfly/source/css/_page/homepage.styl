@@ -31,11 +31,11 @@
     .post_cover
       overflow: hidden
       width: 100%
-      max-height: 60%
+      height: 65%
 
       +maxWidth768()
         width: 100%
-        height: 230px
+        height: 45%
 
       img.post_bg
         @extend .imgHover
@@ -53,14 +53,14 @@
       text-align: center
 
       +maxWidth768()
-        padding: 20px 20px 30px
+        padding: 10px
         width: 100%
 
       &.no-cover
         width: 100%
 
         +maxWidth768()
-          padding: 30px 20px
+          padding: 10px
 
       & > .article-title
         @extend .limit-more-line
@@ -71,7 +71,11 @@
         -webkit-line-clamp: 2
 
         +maxWidth768()
-          font-size: 1.43em
+          font-size: 1.1em
+          display: block
+          overflow: hidden
+          text-overflow: ellipsis
+          white-space: nowrap
 
         &:hover
           color: $text-hover
