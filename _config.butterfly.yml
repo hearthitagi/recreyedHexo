@@ -259,6 +259,33 @@ valine:
   visitor: false
   option:
 
+# hexo-butterfly-categories-card
+# see https://akilar.top/posts/a9131002/
+categoryBar:
+  enable: true # 开关
+  priority: 10 #过滤器优先权
+  enable_page: / # 应用页面
+  layout: # 挂载容器类型
+    type: id
+    name: recent-posts
+    index: 0
+  column: even # odd：3列 | even：4列
+  row: 1 #显示行数，默认两行，超过行数切换为滚动显示
+  message:
+  - title: 前端知识
+    cover: https://img.recreyed.ml/categories-3.jpg
+    descr: 这是前端知识描述
+  - title: 博客相关
+    cover: https://img.recreyed.ml/categories-2.jpg
+    descr: 这是博客相关描述
+  - title: 生活账本
+    cover: https://img.recreyed.ml/categories-4.jpg
+    descr: 这是生活账本描述
+  - title: 电子杂物
+    cover: https://img.recreyed.ml/categories-1.jpg
+    descr: 这是电子杂物描述
+  custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css
+
 #文章展示动画
 wowjs:
   enable: true #控制动画开关。true是打开，false是关闭
