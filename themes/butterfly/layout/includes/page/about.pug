@@ -1,0 +1,32 @@
+#about-page
+    .author-box
+        .author-img
+            img.no-lightbox(src='https://img.recreyed.ml/avatar-1.png')
+
+    .author-content
+        .author-content-item.skills
+            .card-content
+                span.author-content-item-title 技能
+                .skills-style-group
+                    .tags-group-all
+                        .tags-group-wrapper
+                            each i in site.data.creativity
+                                - const evenNum = i.creativity_list.filter((x, index) => index % 2 === 0);
+                                - const oddNum = i.creativity_list.filter((x, index) => index % 2 === 1);
+                                each item, index in i.creativity_list
+                                    if ((index+1 <= evenNum.length) && (index+1 <= oddNum.length))
+                                        .tags-group-icon-pair
+                                            .tags-group-icon(style=`background: ${evenNum[index].color}`)
+                                                img.no-lightbox(title=evenNum[index].name, src=evenNum[index].icon)
+                                            .tags-group-icon(style=`background: ${oddNum[index].color}`)
+                                                img.no-lightbox(title=oddNum[index].name, src=oddNum[index].icon)
+
+                    .skills-list
+                        each i in site.data.creativity
+                            each item, index in i.creativity_list
+                                .skill-info
+                                    .skill-icon(style=`background: ${item.color}`)
+                                        img.no-lightbox(title=item.name, src=item.icon)
+                                    .skill-name
+                                        span=item.name
+
