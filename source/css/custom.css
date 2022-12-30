@@ -42,12 +42,16 @@ canvas#universe {
 /* 分类磁贴 */
 #recent-posts>.category-group {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
+  overflow: auto;
+  overflow-x: hidden;
   justify-content: space-around;
-  height: 145px;
-  padding: 10px;
+  height: 141px;
+  border: 10px solid #fff;
 }
-
+#recent-posts>.category-group::-webkit-scrollbar{
+  width: 0!important;
+}
 .category-wrap {
   width: 23%;
   height: 120px;
@@ -55,6 +59,15 @@ canvas#universe {
   position: relative;
   box-shadow: none;
   transition: all 0.2s;
+}
+@media screen and (max-width: 768px){
+  .category-wrap {
+    width: 47%;
+    margin-bottom: 10px;
+  }
+  .category-wrap:not(:nth-of-type(1),:nth-of-type(2)){
+    margin-bottom: 0;
+  }
 }
 
 .category-wrap:hover {

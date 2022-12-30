@@ -263,18 +263,21 @@ valine:
 categoryBar:
   enable: true # 开关
   message:
-  - title: 前端知识
-    cover: https://img.recreyed.ml/categories-3.jpg
-    descr: 这是前端知识描述
-  - title: 博客相关
-    cover: https://img.recreyed.ml/categories-2.jpg
-    descr: 这是博客相关描述
   - title: 生活相关
     cover: https://img.recreyed.ml/categories-4.jpg
     descr: 这是生活相关描述
   - title: 电子杂物
     cover: https://img.recreyed.ml/categories-1.jpg
     descr: 这是电子杂物描述
+  - title: 博客相关
+    cover: https://img.recreyed.ml/categories-2.jpg
+    descr: 这是博客相关描述
+  - title: 前端知识
+    cover: https://img.recreyed.ml/categories-3.jpg
+    descr: 这是前端知识描述
+  
+  
+  
 
 #文章展示动画
 wowjs:
