@@ -102,9 +102,9 @@ border-color: blue red green orange;
 ::-webkit-resizer 两个滚动条的交汇处上用于通过拖动调整元素大小的小控件  
 ```css
 /* 整个滚动条 */
-    ::-webkit-scrollbar {
-      width: 3px;
-  height: 3px;
+::-webkit-scrollbar {
+width: 3px;
+height: 3px;
 }
 
 /* 滚动条有滑块的轨道部分 */

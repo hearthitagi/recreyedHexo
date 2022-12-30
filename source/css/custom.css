@@ -44,7 +44,7 @@ canvas#universe {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  height: auto;
+  height: 145px;
   padding: 10px;
 }
 
