@@ -50,7 +50,7 @@ canvas#universe {
 
 .category-wrap {
   width: 23%;
-  height: 110px;
+  height: 120px;
   border-radius: 4px;
   position: relative;
   box-shadow: none;
@@ -76,10 +76,17 @@ canvas#universe {
   font-weight: bold;
 }
 
+.category-num {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: normal;
+}
+
 .category-descr {
-  margin-top: 15px;
+  margin-top: 10px;
   font-size: 15px;
   opacity: 0;
+  line-height: normal;
   transform: translateX(60px);
   transition: all 0.3s ease-in-out;
 }

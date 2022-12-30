@@ -3,15 +3,8 @@ extends includes/layout.pug
 block content
   include ./includes/mixins/post-ui.pug
   #recent-posts.recent-posts
-    //- if theme.categoryBar.enable
-    //-   .recent-post-item.category-group
-    //-     !=categories_card()
-    .recent-post-item.category-group!= list_categories()
-    .recent-post-item.category-group(style='width:100%;')
-      each item , index in theme.categoryBar.message
-        div.category-wrap(style='background: url(' +item.cover + ') center / cover')
-          a.category-link(href='/categories/' + item.title)
-            .category-title | #{item.title} 
-            .category-descr #{item.descr} 
+    if theme.categoryBar.enable
+      .recent-post-item.category-group(style='width:100%;')
+        !=categories_card()
     +postUI
     include includes/pagination.pug

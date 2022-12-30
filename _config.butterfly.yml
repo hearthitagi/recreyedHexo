@@ -259,8 +259,7 @@ valine:
   visitor: false
   option:
 
-# hexo-butterfly-categories-card
-# see https://akilar.top/posts/a9131002/
+#分类磁贴
 categoryBar:
   enable: true # 开关
   message:
