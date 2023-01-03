@@ -60,7 +60,7 @@ hexo.extend.filter.register('before_generate', () => {
     canvas_nest: 'https://npm.elemecdn.com/butterfly-extsrc@1/dist/canvas-nest.min.js',
 
     lazyload: 'https://npm.elemecdn.com/vanilla-lazyload/dist/lazyload.iife.min.js',
-    instantpage: 'https://npm.elemecdn.com/instant.page@5.1.1/instantpage.js',
+    instantpage: 'https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js',
     typed: 'https://npm.elemecdn.com/typed.js/lib/typed.min.js',
     pangu: 'https://npm.elemecdn.com/pangu/dist/browser/pangu.min.js',
 
