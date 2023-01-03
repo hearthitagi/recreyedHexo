@@ -34,6 +34,10 @@
       width: 100%
       height: 60%
 
+      +maxWidth768()
+        width: 100%
+        height: 50%
+
       img.post_bg
         @extend .imgHover
 
@@ -53,6 +57,7 @@
       +maxWidth768()
         padding: 10px
         width: 100%
+        height: 50%
 
       &.no-cover
         width: 100%
