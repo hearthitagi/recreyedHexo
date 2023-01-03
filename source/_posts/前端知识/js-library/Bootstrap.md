@@ -38,18 +38,18 @@ bootstrap是开源前端模板工具集，是由Twitter公司的两名前端工�
 
 > 线上CDN地址
 >
-> https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js
+> https://npm.elemecdn.com/bootstrap@3.4.1/dist/js/bootstrap.min.js
 >
-> https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css
+> https://npm.elemecdn.com/bootstrap@3.4.1/dist/css/bootstrap.min.css
 
 ##  2. 使用
 
 bootstrap是基于jQuery开发的，所以在引入bootstrap的js文件前要先引入jQuery
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+<script src="https://npm.elemecdn.com/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://npm.elemecdn.com/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://npm.elemecdn.com/bootstrap@3.4.1/dist/css/bootstrap.min.css">
 ```
 
 具体类名引用参考[bootstrap3官方文档](https://v3.bootcss.com/css/)或[菜鸟教程](https://www.runoob.com/bootstrap/bootstrap-grid-system.html)

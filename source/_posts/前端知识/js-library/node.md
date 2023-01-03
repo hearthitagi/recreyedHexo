@@ -139,7 +139,7 @@ template.render(source, data, options);//source 模板文件、data需要导入�
 1. 浏览器下使用（单html文件）
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/art-template@4.13.2/lib/template-web.js"></script>
+<script src="https://npm.elemecdn.com/art-template@4.13.2/lib/template-web.js"></script>
 <body>
     <div id="container"></div>
 </body>

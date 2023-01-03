@@ -30,7 +30,7 @@ aside:
 
 Vue是一套用于构建用户界面的**渐进式框架**。
 
-线上引用`https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js`
+线上引用`https://npm.elemecdn.com/vue@2.6.14/dist/vue.min.js`
 
 vue基础模板
 

@@ -36,7 +36,7 @@ jQuery 是一个着重简化 DOM 操作，AJAX 调用和事件 (en-US)处理的 
 
 > jsDelivr CDN
 >
-> `<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>`
+> `<script src="https://npm.elemecdn.com/jquery@3.5.1/dist/jquery.min.js"></script>`
 >
 > CDNJS CDN
 >
