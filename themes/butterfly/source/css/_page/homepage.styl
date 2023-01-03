@@ -32,11 +32,7 @@
     .post_cover
       overflow: hidden
       width: 100%
-      height: 65%
-
-      +maxWidth768()
-        width: 100%
-        height: 45%
+      height: 60%
 
       img.post_bg
         @extend .imgHover
@@ -50,6 +46,8 @@
     & >.recent-post-info
       padding: 15px 20px
       width: 100%
+      height: 40%
+
       text-align: center
 
       +maxWidth768()
@@ -71,7 +69,7 @@
         -webkit-line-clamp: 2
 
         +maxWidth768()
-          font-size: 1.1em
+          font-size: 1.5em
           display: block
           overflow: hidden
           text-overflow: ellipsis
