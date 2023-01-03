@@ -3,8 +3,7 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    width: 50%;
-    min-height: 450px;
+    min-height: 410px;
   }
   
   .author-content-item.skills .skills-style-group {
