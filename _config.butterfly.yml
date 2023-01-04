@@ -9,6 +9,7 @@ menu:
   仓库||fas fa-list:
     图片: /Gallery/ || fas fa-images
   友人帐: /link/ || fas fa-link
+  留言信: /comments/ || fas fa-envelope
   关于: /about/ || fas fa-heart
 
 # Code Blocks (代码)
@@ -265,6 +266,14 @@ waline:
   pageview: false
   option:
 
+# 留言信
+envelope_comment:
+  enable: true #开关
+  cover: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/violet.jpg #信笺封面图
+  message: #信笺内容，支持多行
+    - 愿我们有一天能与我们所爱的人重逢
+  bottom: 自动书记人偶 Violet Evergarden
+  height: #调整信笺划出高度，默认1050px
 #分类磁贴
 categoryBar:
   enable: true # 开关
@@ -594,7 +603,7 @@ rightside_item_order:
   hide: # readmode,translate,darkmode,hideAside
   show: # toc,chat,comment
 
-# Lightbox (圖片大圖查看模式)
+# Lightbox (图片预览)
 # --------------------------------------
 # You can only choose one, or neither (只能選擇一個 或者 兩個都不選)
 
