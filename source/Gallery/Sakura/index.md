@@ -13,9 +13,6 @@ aside:
 aplayer:
 highlight_shrink:
 ---
-{% note info  %}
-温馨提示：点击可以查看图片，`电脑端拖动图片/手机端长按图片` 可以实现切换壁纸哦~
-{% endnote %}
 {% gallery %}
 ![](https://img.recreyed.ml/202211142334890.jpg)
 ![](https://img.recreyed.ml/202211142234217.jpg)

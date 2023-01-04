@@ -242,7 +242,7 @@ addtoany:
 # --------------------------------------
 
 comments:
-  use: Valine
+  use: waline
   text: false # 是否显示评论服务商的名字
   lazyload: false
   count: true # 是否在文章顶部显示评论数
@@ -257,6 +257,12 @@ valine:
   serverURLs: https://hkxuu1j3.lc-cn-n1-shared.com # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   bg: https://img.recreyed.ml/pinglun.webp
   visitor: false
+  option:
+# waline
+waline:
+  serverURL: waline-comment-nsrqsqq7p-recreyed.vercel.app
+  bg: https://img.recreyed.ml/pinglun.webp
+  pageview: false
   option:
 
 #分类磁贴
