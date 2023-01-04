@@ -1,6 +1,6 @@
 /**
  * Butterfly
- * for categories card
+ * 分类磁贴
  */
 'use strict'
 hexo.extend.helper.register('categories_card', function (categories, options) {

@@ -486,7 +486,11 @@ subtitle:
   sub:
   - <span style="font-family:cursive;">你若明日死 那我的性命也将止于明日<br/>你若活过今日 那我也将陪你活过今日</span>
 # Loading Animation (加载动画)
-preloader: false
+preloader:
+  enable: true # true|false
+  load_color: '#37474f'  # '#37474f'
+  load_style: wizard # default|wizard|
+  load_image:  # url
 
 # aside (侧边栏)
 # --------------------------------------
