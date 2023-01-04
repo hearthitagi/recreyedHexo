@@ -87,7 +87,7 @@ hexo.extend.filter.register('before_generate', () => {
 
     // flickr-justified-gallery
     flickr_justified_gallery_js: 'https://npm.elemecdn.com/flickr-justified-gallery@2/dist/fjGallery.min.js',
-    flickr_justified_gallery_css: 'https://npm.elemecdn.com/flickr-justified-gallery@2/dist/fjGallery.min.css',
+    flickr_justified_gallery_css: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.css',
 
     // aplayer
     aplayer_css: 'https://npm.elemecdn.com/aplayer/dist/APlayer.min.css',
