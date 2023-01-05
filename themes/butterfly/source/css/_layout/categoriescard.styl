@@ -1,14 +1,4 @@
 if (hexo-config('categoryBar.enable')) {
-    @media screen and (max-width: 768px) {
-        .category-wrap {
-            width: 47%;
-            margin-bottom: 10px;
-        }
-
-        .category-wrap:not(:nth-of-type(1), :nth-of-type(2)) {
-            margin-bottom: 0;
-        }
-    }
     #recent-posts>.category-group {
         display: flex;
         flex-flow: row wrap;
@@ -16,7 +6,7 @@ if (hexo-config('categoryBar.enable')) {
         overflow-x: hidden;
         justify-content: space-around;
         height: 141px;
-        border: 10px solid #fff;
+        border: 10px solid #fff!important;
     }
 
     #recent-posts>.category-group::-webkit-scrollbar {
@@ -69,5 +59,15 @@ if (hexo-config('categoryBar.enable')) {
     .category-wrap:hover .category-descr {
         transform: translateX(0);
         opacity: 1;
+    }
+    @media screen and (max-width: 768px) {
+        .category-wrap {
+            width: 47%;
+            margin-bottom: 10px;
+        }
+
+        .category-wrap:not(:nth-of-type(1), :nth-of-type(2)) {
+            margin-bottom: 0;
+        }
     }
 }
