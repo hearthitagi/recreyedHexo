@@ -9,7 +9,7 @@
 }
 
 /* 边框 */
-#recent-posts>.recent-post-item,
+/* #recent-posts>.recent-post-item,
 #aside-content .card-widget {
   border: 1px solid #e3e8f7;
 }
@@ -17,7 +17,7 @@
 [data-theme="dark"] #recent-posts>.recent-post-item,
 [data-theme="dark"] #aside-content .card-widget {
   border: 1px solid #42444a;
-}
+} */
 
 /* 黑夜背景 */
 canvas#universe {

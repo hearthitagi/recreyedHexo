@@ -426,7 +426,8 @@ tag_ui: # 留空或 index
 
 # 网站背景图(可以设置颜色或图片)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)gh
-background: '#f7f9fe'
+# background: '#f7f9fe'
+background: url(https://img.recreyed.ml/202211142223334.jpg)
 
 # Footer Background
 footer_bg: false
@@ -706,6 +707,8 @@ inject:
   - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
   bottom:
   # - <script src="xxxx"></script>
+  - <script async data-pjax src="/js/randombg.js"></script>
+  - <script async data-pjax src="/js/selectBg.js"></script>
   - <script async data-pjax src="/js/dark.js"></script>
 
 

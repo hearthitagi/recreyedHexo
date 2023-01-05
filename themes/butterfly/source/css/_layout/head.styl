@@ -107,13 +107,17 @@
     }
   }
 
-  &.full_page {
+  &.full_page,
+  &.not-top-img,
+  &.not-home-page {
     #nav {
       position: fixed;
       top: 0;
       z-index: 91;
-      transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
-      transition: background 0.5s;
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: saturate(180%) blur(10px);
+      box-shadow: 0 5px 6px -5px alpha($grey, 0.6);
+      transition: transform 0.2s ease-in-out;
 
       a, #site-name, #toggle-menu {
         color: var(--font-color);
@@ -128,9 +132,7 @@
 
   &.nav-fixed {
     #nav {
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: saturate(180%) blur(20px);
-      box-shadow: 0 5px 6px -5px alpha($grey, 0.6);
+      transform: translateY(-60px);
       a {
         color: var(--font-color);
       }
@@ -139,7 +141,8 @@
 
   &.nav-visible {
     #nav {
-      transition: all 0.5s;
+      transform: translateY(0);
+      transition: transform 0.2s ease-in-out;
     }
 
     & + .layout {

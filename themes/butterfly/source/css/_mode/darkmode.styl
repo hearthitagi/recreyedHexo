@@ -39,9 +39,6 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
     --scrollbar-color: lighten(#121212, 5)
     --timeline-bg: lighten(#121212, 5)
 
-    #web_bg {
-      background: #18171d;
-    }
     #article-container
       code
         background: #2c2c2c
@@ -64,12 +61,12 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
         background-color: #525252
         color: #e2f1ff
 
-    // 頭部
+    // 导航栏
     #page-header
       #nav,
       &.nav-fixed > #nav,
       &.not-top-img > #nav
-        background: alpha(#121212, .8)
+        background: alpha(#121212, .4)
         box-shadow: 0 5px 6px -5px rgba(133, 133, 133, 0)
 
     #post-comment
