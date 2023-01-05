@@ -265,6 +265,7 @@ waline:
   bg: https://img.recreyed.ml/pinglun.webp
   pageview: false
   option:
+    imageUploader: false
 
 # 留言信
 envelope_comment:
