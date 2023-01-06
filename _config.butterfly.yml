@@ -8,6 +8,7 @@ menu:
   # 分类: /categories/ || fas fa-folder-open
   仓库||fas fa-list:
     图片: /Gallery/ || fas fa-images
+    图床: /picmanage/ || fas fa-images
   友人帐: /link/ || fas fa-link
   留言信: /comments/ || fas fa-envelope
   关于: /about/ || fas fa-heart
