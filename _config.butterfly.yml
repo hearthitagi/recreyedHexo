@@ -86,7 +86,7 @@ disable_top_img: false
 # 主页背景图
 index_img:
 # 默认顶部图
-default_top_img:
+default_top_img: transparent
 # 时间轴(归档)顶部图
 archive_img: false
 # 子标签顶部图 (不设置即为默认顶部图)
