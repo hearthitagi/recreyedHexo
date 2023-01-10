@@ -14,5 +14,5 @@ aplayer:
 highlight_shrink:
 ---
 <div class="gallery-group-main">
-{% galleryGroup '壁纸收藏' '尼桑，故乡的樱花开了' '/Gallery/Sakura' https://img.recreyed.ml/202211142225482.jpg %}
+{% galleryGroup '壁纸收藏' '桌面壁纸' '/Gallery/Sakura' https://img.recreyed.ml/202211142225482.jpg %}
 </div>
