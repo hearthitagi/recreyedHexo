@@ -500,7 +500,7 @@ preloader:
 
 aside:
   enable: true
-  hide: false
+  hide: true
   button: true
   mobile: true # 移动端是否展示
   position: right # left or right
