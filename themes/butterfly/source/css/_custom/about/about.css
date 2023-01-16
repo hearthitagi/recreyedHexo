@@ -4,6 +4,11 @@
   padding: 0 !important;
   background: transparent !important;
 }
+#about-page {
+  background: #f7f9fe;
+  padding: 20px 30px;
+  border-radius: 20px;
+}
 #about-page .author-box {
   position: relative;
   display: flex;
