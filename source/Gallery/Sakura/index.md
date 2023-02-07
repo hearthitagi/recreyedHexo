@@ -26,6 +26,7 @@ highlight_shrink:
 ![](https://img.recreyed.ml/categories-3.jpg)
 ![](https://img.recreyed.ml/categories-2.jpg)
 ![](https://img.recreyed.ml/categories-1.jpg)
+![](https://img.recreyed.ml/96475bde-c9b9-453d-af03-c81267192811.webp)
 {% endgallery %}
 
 <script>
