@@ -262,7 +262,7 @@ valine:
   option:
 # waline
 waline:
-  serverURL: https://waline-comment-flame.vercel.app
+  serverURL: https://comment.recreyed.tk
   bg: https://img.recreyed.ml/pinglun.webp
   pageview: false
   option:
