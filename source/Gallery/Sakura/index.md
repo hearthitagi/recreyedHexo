@@ -17,6 +17,8 @@ highlight_shrink:
 温馨提示：点击可以查看图片，`电脑端拖动图片/手机端长按图片` 可以实现切换壁纸哦~
 {% endnote %}
 {% gallery %}
+![](https://img.recreyed.tk/7e3a2422-07f6-42f7-bf29-1b91e306e63d.webp)
+![](https://img.recreyed.tk/96475bde-c9b9-453d-af03-c81267192811.webp)
 ![](https://img.recreyed.tk/202211142334890.jpg)
 ![](https://img.recreyed.tk/202211142234217.jpg)
 ![](https://img.recreyed.tk/202211142225482.jpg)
@@ -26,7 +28,6 @@ highlight_shrink:
 ![](https://img.recreyed.tk/categories-3.jpg)
 ![](https://img.recreyed.tk/categories-2.jpg)
 ![](https://img.recreyed.tk/categories-1.jpg)
-![](https://img.recreyed.tk/96475bde-c9b9-453d-af03-c81267192811.webp)
 {% endgallery %}
 
 <script>

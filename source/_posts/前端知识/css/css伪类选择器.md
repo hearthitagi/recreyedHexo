@@ -9,8 +9,7 @@ description:
   - ':where选择器'
   - ':not选择器'
   - ':has'
-cover: >-
-  https://www.modis.co.jp/-/media/Images/Modis/www/candidate/insight/thumbnail_column_90.jpg
+cover: 'https://img.recreyed.tk/202211142334890.jpg'
 abbrlink: ebd9ab17
 date: 2022-12-18 18:41:16
 updated:

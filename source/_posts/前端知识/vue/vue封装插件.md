@@ -5,7 +5,7 @@ tags:
 categories:
   - 前端知识
 description: vue插件全局封装
-cover: 'https://anteku.jp/blog/wp-content/uploads/2021/11/vue-eyecatch-960x504-1.jpeg'
+cover: 'https://img.recreyed.tk/cfc9c2ef-d65f-4005-aa2a-2457adb42876.jpeg'
 abbrlink: '18273814'
 date: 2022-12-09 14:59:24
 updated:
