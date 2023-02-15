@@ -88,10 +88,10 @@ height: 0px;
 border: 100px solid;
 border-color: blue red green orange;
 ```
-![盒子宽高为0时的边框](https://img.recreyed.ml/202211142243934.png)
+![盒子宽高为0时的边框](https://img.recreyed.tk/202211142243934.png)
 将上、右、下边框设为透明，便得到一个三角形
 `border-color: transparent transparent transparent orange;`
-![上、右、下边框透明](https://img.recreyed.ml/202211142244997.png)
+![上、右、下边框透明](https://img.recreyed.tk/202211142244997.png)
 ### 1.8 修改滚动条样式
 ::-webkit-scrollbar 滚动条整体部分  
 ::-webkit-scrollbar-thumb 滚动条里面的小方块，能向上向下移动（或往左往右移动，取决于是垂直滚动条还是水平滚动条）  

@@ -39,11 +39,11 @@ div:has(.box) {
     color: blue;
 }
 ```
-选择div下clss为box的元素
+选择包含类名为`.box`的div元素
 ```html
 <div>
     <P class='box'>我是蓝色的</P>
-    <P>我不是</P>
+    <P>我也是</P>
 </div>
 ```
 ## `:is`选择器
