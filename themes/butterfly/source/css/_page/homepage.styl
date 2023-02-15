@@ -41,26 +41,30 @@
       width: calc(50% + 87px);
       height: 100%;
 
-      +maxWidth768() {
-        width: 100%;
-        height: 50%;
-      }
-
       img.post_bg {
         @extend .imgHover;
       }
 
       &.left {
         margin-right: -85px;
-        clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%) ;
+        clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
       }
 
       &.right {
         order: 1;
         margin-left: -85px;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+      }
+      +maxWidth768() {
+        width: 100%;
+        height: 150px;
 
-        +maxWidth768() {
+        &.left, &.right {
+          margin: 0;
+          clip-path: none;
+        }
+
+        &.right {
           order: 0;
         }
       }
@@ -171,7 +175,8 @@
     .recent-post-info {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
       margin-left: -85px;
-      .content{
+
+      .content {
         padding-left: 115px;
       }
     }
@@ -181,8 +186,22 @@
     .recent-post-info {
       clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
       margin-right: -85px;
-      .content{
+
+      .content {
         padding-right: 115px;
+      }
+    }
+  }
+
+  & > .recent-post-item:has(.post_cover.left), & > .recent-post-item:has(.post_cover.right) {
+    +maxWidth768() {
+      .recent-post-info {
+        clip-path: none;
+        margin: 0;
+
+        .content {
+          padding: 0;
+        }
       }
     }
   }
