@@ -11,6 +11,7 @@ categories:
   - 博客相关
 keywords:
 description:
+    基于vue3前端，express作中间件，vercel部署的backblaze图床管理工具开发记录。
 top_img:
 comments:
 cover: https://img.recreyed.tk/wallhaven-x677lz.webp
