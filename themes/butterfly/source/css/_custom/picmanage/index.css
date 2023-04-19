@@ -1,0 +1,6 @@
+#page:has(#picmanage-page) {
+    border: 0;
+    box-shadow: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+}
