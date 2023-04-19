@@ -30,4 +30,3 @@ highlight_shrink:
 aside:
 ---
 项目地址：[bz-view](https://github.com/recreyed/bz-view)
-
