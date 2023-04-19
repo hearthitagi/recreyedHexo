@@ -4,7 +4,6 @@ tags:
   - blog
 categories:
   - 博客相关
-swiper_index: 2
 cover: 'https://img.recreyed.tk/202211142225451.jpg'
 abbrlink: 5e840c0e
 date: 2022-10-25 23:38:20
