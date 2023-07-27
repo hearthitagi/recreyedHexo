@@ -273,7 +273,8 @@ envelope_comment:
   enable: true #开关
   cover: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/violet.jpg #信笺封面图
   message: #信笺内容，支持多行
-    - 愿我们有一天能与我们所爱的人重逢
+    - “为什么要写信”
+    - “因为人有心意想传达给别人”
   bottom: 自动书记人偶 Violet Evergarden
   height: #调整信笺划出高度，默认1050px
 #分类磁贴

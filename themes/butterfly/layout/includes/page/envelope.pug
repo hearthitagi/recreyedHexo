@@ -9,7 +9,7 @@
                     .formmain
                         img.no-lightbox.headerimg(src=url_for(theme.envelope_comment.cover))
                         .comments-main
-                            h3.title3=`来自` + config.author + `的留言:`
+                            h3.title3= config.author + `的留言:`
                             .comments
                                 each i in theme.envelope_comment.message
                                     div=`${i}`
