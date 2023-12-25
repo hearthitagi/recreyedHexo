@@ -4,7 +4,7 @@ tags:
   - blog
 categories:
   - 博客相关
-cover: 'https://img.recreyed.tk/202211142225451.jpg'
+cover: 'https://img.hitagi.site/202211142225451.jpg'
 abbrlink: 5e840c0e
 date: 2022-10-25 23:38:20
 updated:

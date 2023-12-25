@@ -14,7 +14,7 @@ description:
   基于vue3前端，express作中间件，vercel部署的backblaze图床管理工具开发记录。
 top_img:
 comments:
-cover: https://img.recreyed.tk/wallhaven-x677lz.webp
+cover: https://img.hitagi.site/wallhaven-x677lz.webp
 toc:
 toc_number:
 toc_style_simple:

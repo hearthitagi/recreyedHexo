@@ -76,8 +76,8 @@ favicon: /img/favicon.svg
 
 # 头像
 avatar:
-  #img: https://img.recreyed.tk/avatar-1.png
-  img: https://img.recreyed.tk/avatar-1.png
+  #img: https://img.hitagi.site/avatar-1.png
+  img: https://img.hitagi.site/avatar-1.png
   effect: false
 
 # 禁用所有banner图
@@ -113,7 +113,7 @@ cover:
   position: both
   # 文章默认封面
   default_cover:
-  - https://img.recreyed.tk/202211142223334.jpg
+  - https://img.hitagi.site/202211142223334.jpg
 # 图片加载失败默认展示
 error_img:
   flink: /img/friend_404.gif
@@ -179,10 +179,10 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-  - img: https://img.recreyed.tk/reward-wx.png
+  - img: https://img.hitagi.site/reward-wx.png
     link:
     text: wechat
-  - img: https://img.recreyed.tk/reward-ali.jpg
+  - img: https://img.hitagi.site/reward-ali.jpg
     link:
     text: alipay
 
@@ -257,13 +257,13 @@ valine:
   appKey: cmaONbFloKuSH7mf7ToCCiux
   avatar: monsterid
   serverURLs: https://hkxuu1j3.lc-cn-n1-shared.com # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
-  bg: https://img.recreyed.tk/pinglun.webp
+  bg: https://img.hitagi.site/pinglun.webp
   visitor: false
   option:
 # waline
 waline:
-  serverURL: https://comment.recreyed.tk
-  bg: https://img.recreyed.tk/pinglun.webp
+  serverURL: https://comment.hitagi.site
+  bg: https://img.hitagi.site/pinglun.webp
   pageview: false
   option:
     imageUploader: false
@@ -282,16 +282,16 @@ categoryBar:
   enable: true # 开关
   message:
   - title: 生活相关
-    cover: https://img.recreyed.tk/categories-4.jpg
+    cover: https://img.hitagi.site/categories-4.jpg
     descr: 这是生活相关描述
   - title: 电子杂物
-    cover: https://img.recreyed.tk/categories-1.jpg
+    cover: https://img.hitagi.site/categories-1.jpg
     descr: 这是电子杂物描述
   - title: 博客相关
-    cover: https://img.recreyed.tk/categories-2.jpg
+    cover: https://img.hitagi.site/categories-2.jpg
     descr: 这是博客相关描述
   - title: 前端知识
-    cover: https://img.recreyed.tk/categories-3.jpg
+    cover: https://img.hitagi.site/categories-3.jpg
     descr: 这是前端知识描述
   
   
@@ -430,7 +430,7 @@ tag_ui: # 留空或 index
 # 网站背景图(可以设置颜色或图片)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)gh
 # background: '#f7f9fe'
-background: url(https://img.recreyed.tk/e0d615a6-6507-4334-9758-718130984d26.webp)
+background: url(https://img.hitagi.site/e0d615a6-6507-4334-9758-718130984d26.webp)
 
 # Footer Background
 footer_bg: false

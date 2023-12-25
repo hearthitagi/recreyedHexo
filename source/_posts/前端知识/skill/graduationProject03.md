@@ -37,7 +37,7 @@ aside:
 - 部署环境为阿里云服务器，操作系统：Centos 8
 
 云服务器防火墙开启这些端口供外部访问
-![阿里云防火墙](https://img.recreyed.tk/202211142241039.png)
+![阿里云防火墙](https://img.hitagi.site/202211142241039.png)
 ### 1.1 安装mongoDB
 在此之前，由于在2021年12月31日，CentOS 8操作系统版本结束了生命周期，CentOS 8的源地址`http://mirror.centos.org/centos/8/`内容已移除。所以继续使用阿里云默认源会报错，所以需要换源配置。  
 详见这篇文章 [CentOS 8 EOL如何切换源](https://help.aliyun.com/document_detail/405635.html)  
