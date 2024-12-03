@@ -35,8 +35,8 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  fab fa-github: https://github.com/recreyed || Github
-  fas fa-envelope: mailto:recreyed@gmail.com || Email
+  fab fa-github: https://github.com/hearthitagi || Github
+  fas fa-envelope: mailto:1760603940@qq.com || Email
 
 # search (搜索)
 # --------------------------------------
@@ -281,9 +281,6 @@ envelope_comment:
 categoryBar:
   enable: true # 开关
   message:
-  - title: 生活相关
-    cover: https://img.hitagi.site/categories-4.jpg
-    descr: 这是生活相关描述
   - title: 电子杂物
     cover: https://img.hitagi.site/categories-1.jpg
     descr: 这是电子杂物描述

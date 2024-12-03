@@ -28,7 +28,7 @@ highlight_shrink:
 aside:
 ---
 angular中引入three.js并实现简易3d地球  
-[项目地址](https://github.com/recreyed/3d-earth-three.js)
+[项目地址](https://github.com/hearthitagi/3d-earth-three.js)
 html中
 ```html
 <canvas #canvas></canvas>

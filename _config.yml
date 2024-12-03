@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: ReCreyed
+title: Kissshot
 subtitle: '快走吧,趁风暴来临前'
 description: ''
 keywords:
-author: ReCreyed
+author: Kissshot
 language: zh-CN
 timezone: ''
 
@@ -108,7 +108,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:recreyed/recreyed.github.io.git
+  repo: git@github.com:hearthitagi/kissshot.github.io.git
   branch: main
 # search
 search:

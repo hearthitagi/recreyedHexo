@@ -29,7 +29,7 @@ aside:
 ---
 具体实现后续补充  
 参考内容：[Vue 项目构建与开发入门](https://www.kancloud.cn/sllyli/vueproject/1244252)  
-代码仓库：[vue-mpa-demo](https://github.com/recreyed/vue-mpa-demo)  
+代码仓库：[vue-mpa-demo](https://github.com/hearthitagi/vue-mpa-demo)  
 ## 目录结构
 > ├── node_modules               # 项目依赖包目录  
 > ├── build                      # 项目 webpack 功能目录  
