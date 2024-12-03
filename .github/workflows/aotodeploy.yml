@@ -7,7 +7,7 @@ on:
       - main #2020年10月后github新建仓库默认分支改为main，注意更改
   release:
     types:
-      - published
+      - published 
 
 permissions:
   contents: write
