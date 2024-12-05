@@ -27,10 +27,6 @@ if (hexo-config('categoryBar.enable')) {
         transition: all 0.2s;
     }
 
-    .category-wrap:hover {
-        box-shadow: inset 0 0 10rem rgb(0 0 0 / 70%);
-    }
-
     .category-link {
         display: block;
         color: #f7f9fe;
@@ -52,19 +48,6 @@ if (hexo-config('categoryBar.enable')) {
         line-height: normal;
     }
 
-    .category-descr {
-        margin-top: 10px;
-        font-size: 15px;
-        opacity: 0;
-        line-height: normal;
-        transform: translateX(60px);
-        transition: all 0.3s ease-in-out;
-    }
-
-    .category-wrap:hover .category-descr {
-        transform: translateX(0);
-        opacity: 1;
-    }
     @media screen and (max-width: 768px) {
         .category-wrap {
             width: 47%;

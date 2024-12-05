@@ -13,7 +13,6 @@ hexo.extend.helper.register('categories_card', function (categories, options) {
       for (const themeCategory of hexo.theme.config.categoryBar.message) {
         if (item.name == themeCategory.title) {
           item.cover = themeCategory.cover
-          item.descr = themeCategory.descr
         }
       }
       categoriesList +=
@@ -21,7 +20,6 @@ hexo.extend.helper.register('categories_card', function (categories, options) {
           <a class="category-link" href="${item.path}" data-pjax-state="">
             <div class="category-title">| ${item.name} </div>
             <div class="category-num">${emojiList[index]} ${item.length} </div>
-            <div class="category-descr">${item.descr} </div>
           </a>
         </div>`
     });
