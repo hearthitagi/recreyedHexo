@@ -38,7 +38,10 @@ if hexo-config('darkmode.enable') || hexo-config('display_mode') == 'dark'
     --hlexpand-bg: linear-gradient(180deg, rgba(lighten(#121212, 2), .6), rgba(lighten(#121212, 2), .9))
     --scrollbar-color: lighten(#121212, 5)
     --timeline-bg: lighten(#121212, 5)
+    --postcover-bg: alpha(#121212, .9)
 
+    .recent-post-info
+      background: alpha(#121212, .9)!important
     #web_bg::before
       position: absolute
       width: 100%
