@@ -454,15 +454,15 @@ envelope_comment:
 categoryBar:
   enable: true # 开关
   message:
-  - title: 电子杂物
+  - title: 杂记
     cover: https://img.hitagi.site/categories-1.jpg
-    descr: 这是电子杂物描述
-  - title: 博客相关
+    descr: 这是杂记描述
+  - title: 博客
     cover: https://img.hitagi.site/categories-2.jpg
-    descr: 这是博客相关描述
-  - title: 前端知识
+    descr: 这是博客描述
+  - title: 代码
     cover: https://img.hitagi.site/categories-3.jpg
-    descr: 这是前端知识描述
+    descr: 这是代码描述
 #文章展示动画
 wowjs:
   enable: true #控制动画开关。true是打开，false是关闭
