@@ -41,6 +41,7 @@ ECMScirpt(js语法规范)、DOM(文档对象模型)、BOM(浏览器对象模型)
 2. 行内书写,js代码可以在html的标签中写
 3. 外部引入,在js文件中可以写js代码,script的标签中的src路径引入
 4. 还可以在控制台直接书写js代码
+
 ## 2. 变量
 声明变量 var
 `var age = 18;`
@@ -49,9 +50,11 @@ ECMScirpt(js语法规范)、DOM(文档对象模型)、BOM(浏览器对象模型)
 1. 由字母、数字、下划线、$符号组成，不能以数字开头
 2. 不能是关键字和保留字，例如：for、while。
 3. 区分大小写
+
 ### 2.1.2 命名规范
 1. 变量名必须有意义
 2. 遵守驼峰命名法。首字母小写，后面单词的首字母需要大写。
+
 ### 2.2 基本数据类型：
 隐式类型转化 例如：非纯数字字符串转化为数字类型，其值为NaN。
 1. number
@@ -59,12 +62,15 @@ ECMScirpt(js语法规范)、DOM(文档对象模型)、BOM(浏览器对象模型)
    - 浮点数：浮点数都是近似的，保留几位小数即可
    - 科学计数法 (5e-5 = 5乘以10的-5次方) 无穷大:infinity
    - NaN: 数字类型 代表非数字值。
+
 2. string
    - length属性：字符串长度
    - 字符串拼接直接加号 'string1'+'string2'(数字加字符串,隐式转换为字符串)
+
 3. boolean：true false
 4. undifined：声明但未赋值
 5. null：表示空
+
 ### 2.3 复杂数据类型：
 Object:
 ```javascript
@@ -93,6 +99,7 @@ console.log(typeof age);//typeof 函数 查看数据类型
    - Number() 十六进制转化为十进制、空内容转化为0、非纯数字内容转化为NaN  
    - parseInt() //转化成整数  
    - parseFloat() //转化成浮点数
+  
 2. 转化为字符串类型 函数toString()、String()(用于undifined和null)
 3. 转化为布尔类型 Boolean()
    - 0 NaN '' undefined null会转换成false，其它都会转换成true。
@@ -104,7 +111,7 @@ console.log(typeof age);//typeof 函数 查看数据类型
 ### 2.0 顺序结构
 默认从上而下顺序执行
 ### 2.1 分支结构
-- if判断
+#### if判断
 ```javascript
 if (200 >= age >= 65) {
     console.log("老年");
@@ -121,12 +128,13 @@ If语句会把后面的值隐式转换成布尔类型
 转换为true的有 ： 非空字符串 非0数字 true 任何对象
 转换成false的有 ： 空字符串 0 false null undefined
 
-- 三元运算符 表达式1 ? 表达式2 : 表达式3;  
+#### 三元运算符
+表达式1 ? 表达式2 : 表达式3;  
 ```javascript
 // 满足条件执行第一条，不满足条件执行第二条
 age >= 18 ? console.log("青年") : console.log("未成年");
 ```
-- switch...case判断  
+#### switch...case判断
 
 使用严格比较，数据类型和数值都要相同;  
 switch里的值默认为字符串，有需要时应使用强制类型转换
@@ -144,7 +152,7 @@ switch (Number(day)) {
 }
 ```
 ### 2.2 循环结构
-- while循环
+#### while循环
 ```javascript
 var a = 1;
 while (a <= 10) {
@@ -152,7 +160,7 @@ while (a <= 10) {
     a++;
 }
 ```
-- do...while循环
+#### do...while循环
 ```javascript
 var b = 1;
 do {
@@ -160,14 +168,13 @@ do {
     b++;
 } while (b < 10);
 ```
-- for循环
+#### for循环
 ```javascript
 for (var c = 1; c < 10; c++) {
     console.log(c);
 }
 ```
-- continue和break
-
+#### continue和break
 break:立即跳出整个循环，即循环结束  
 continue:立即跳出当前循环，继续下一次循环
 ### 2.3 调试
@@ -193,12 +200,15 @@ for (var i = 0; i < arr2.length; i++) {
 }
 ```
 ### 3.3 修改
+
 1. 直接赋值`arr2[3] = 7;`
 2. 数组方法: 
+
 - push: 从最后添加一个或多个值(返回值为数组的长度);
 - pop: 从最后删除一个值(返回值为删除的值);
 - unshift: 从开始添加一个或多个值(返回值为数组的长度)
 - shift: 从开头删除一个值(返回值为删除的值);
+
 ```javascript
 arr2.push(60, 70, 80);
 arr2.pop();
@@ -268,6 +278,7 @@ rate(100);
 #### 4.5.1 函数的覆盖问题
 - 两个同名的函数声明，后面覆盖前面的  
 - 两个同名的函数表达式，调用时执行紧挨着**调用语句**的上一条函数表达式
+
 #### 4.5.2 函数的内置对象
 arguments对象是比较特别的一个对象，实际上是函数的一个内置属性。
 arguments对象是一个伪数组; arguments数组中前几个元素是函数的参数
@@ -275,6 +286,7 @@ arguments对象是一个伪数组; arguments数组中前几个元素是函数的
 - arguments.callee.name:函数的名字
 - arguments.callee.length:形参的个数
 - arguments.length：实参的个数
+
 #### 4.5.3 自执行函数
 可以通过给匿名函数本身加括号的方式来一次性调用匿名函数，称为自执行函数
 ```javascript
@@ -287,17 +299,17 @@ arguments对象是一个伪数组; arguments数组中前几个元素是函数的
 ## 5. 对象
 任何事物都可以是对象，可以使用对象简化多参数的函数
 #### 5.1 创建对象的方法
-1. 字面量
+字面量
 ```javascript
 var obj = {	name: "zs",	age: 18 }
 ```
-2. new Object ()方法
+new Object ()方法
 ```javascript
 var obj = new Object ();
 obj.name = "zs";
 obj.age = 19;
 ```
-3. 工厂函数
+工厂函数
 ```javascript
 function Person(age, name) {
 //注意规范：函数名首字母大写
@@ -307,7 +319,7 @@ function Person(age, name) {
     return obj;
 }
 ```
-4. 自定义构造函数
+自定义构造函数
 ```javascript
 function Person(name, age){
     this.name = name;
@@ -317,7 +329,6 @@ var p1 = new Person('zs', 22);
 ```
 this：构造函数在被调用，用来创建对象时，this指向该对象
 #### 5.2 操作对象的属性
-- 取得对象的属性
 ```javascript
 var obj = {	name: "zs",	age: 18, 1: "shuzi"}
 // 取得单个属性时
@@ -361,7 +372,7 @@ JavaScript引擎在对JavaScript代码进行解释执行之前，会对JavaScrip
 #### 6.2.2 局部作用域（函数作用域）
 在函数内部的是局部作用域，代码只在函数的内部起作用
 函数执行完毕，局部作用域销毁
-### 6.5 javaScript报错
+### 6.3 javaScript报错
 ```javascript
 console.error();//错误信息
 console.warn();//警告信息

@@ -171,37 +171,24 @@ console.log(copy);//1，2，3，4，5
 
 深拷贝有四种方法：
 
-- 数组方法
-
-for循环
-
+数组深拷贝  
 ```javascript
+// for循环
 var list1 = [4, 3, 2, 1];
-    var list2 = [];
-    for (var i = 0; i < list1.length; i++) {
-        list2.push(list1[i]);
-    }
-```
-
-  slice切割
-
-```javascript
+var list2 = [];
+for (var i = 0; i < list1.length; i++) {
+  list2.push(list1[i]);
+}
+// slice切割
 var list3 = [9, 8, 7, 6]
 var list4 = list3.slice(0);
-```
-
-  concat拼接
-
-```javascript
+// concat拼接
 var list5 = [4, 5, 6, 7]
 var list6 = list5.concat();
 ```
-
-- 对象方法
-
-for...in遍历
-
+对象深拷贝
 ```javascript
+// for...in遍历
 var obj = {
     name: "jerry",
     age: 10

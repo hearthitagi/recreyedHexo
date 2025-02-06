@@ -95,10 +95,6 @@ document.getElementById("box1").removeEventListener("click", fun1);
 
 任何事件都有内置对象event;代表的是事件的状态
 
-兼容性写法(ie的锅):
-
-`var event = event || window.event;`
-
 事件源：event.target;
 
 ### 2.3 事件冒泡
@@ -159,16 +155,12 @@ hash属性 ：设置或返回从井号 (#) 开始的 URL（锚）；常用来实
 返回下一页面 history.forward()
 
 ## 4. 定时器
-
-- 周期定时器
-
-`setInterval(fun,time)` 参数: 函数，时间(以毫秒计时)；返回ID值
-
-停止周期计时器
-
-`clearInteval()` 参数为`setInterval(fun,time)`的ID值，通常将ID值赋给变量
-
 ```javascript
+// 周期定时器 参数: 函数，时间(以毫秒计时)；返回ID值
+setInterval(fun,time)
+// 停止周期计时器 参数为setInterval(fun,time)的ID值，通常将ID值赋给变量
+clearInteval(time1)
+// 
 var i = 1;
 var time1 = setInterval(fun1, 1000)
 function fun1() {
@@ -178,21 +170,14 @@ function fun1() {
     console.log(i++);
 }
 ```
-
-- 一次性计时器
-
-`setTimeout(fun,time)` 参数: 函数，时间(以毫秒计时)；返回ID值
-
-停止
-
-一次性计时器
-
-`clearTimeout()` 参数为`setTimeout(fun,time)`的ID值
-
 ```javascript
-var time2 = setTimeout(fun2, 11000) function fun2() {
+// 一次性计时器 参数: 函数，时间(以毫秒计时)；返回ID值
+setTimeout(fun,time)
+// 停止一次性计时器 参数为`setTimeout(fun,time)`的ID值
+var time2 = setTimeout(fun2, 11000) 
+function fun2() {
     console.log(123);
-    }
+}
 ```
 
 ## 5. js动画
@@ -220,47 +205,20 @@ window.onload = function () {
 
 ### 5.1 元素属性
 
-- offset系列  (element.offsetTop)
-offsetLeft: 获取元素距离最左边的距离：  
-offsetTop: 获取元素距离最上边的距离:  
-  - 1. 如果父元素没有定位，距离浏览器最左侧的距离
-  - 2. 如果父元素有定位，距离父元素最左侧的距离  
-offsetWidth: 获取元素的宽度，包括border及以内，不包括margin  
-offsetHeight: 获取元素的高度，包括border及以内，不包括margin  
-offsetParent: 获取元素的定位父级元素：  
-  - 如果元素fixed定位，得到null;
-  - 元素没有fixed情况下如果元素所有的父级元素都没定位，得到body;
-  - 元素没有fixed情况下，父级元素有定位，得到离他最近的有定位的父级元素
-
-- client系列  (element.clientTop)
-clientTop和clientLeft：获得上边框和左边框的宽度。  
-clientWidth和clientHeight:获取可视范围的宽度高度，即边框内部的，不包括border，包括padding  
-当盒子内部存在滚动条时，获得的高度和宽度不包括滚动条。
-
-- scroll系列   (element.scrollTop)
-scrollTop和scrollLeft: （父元素的属性）  
-获得的是内容卷曲出去的高度和宽度，当滚动条向下拉时，内容往上走，  
-获得的就是上面跑出盒子范围的那部分高度。滚动条向右拉同理  
-
-<img src="https://img.hitagi.site/202211142245453.jpg" alt="scrollTop" style="zoom: 67%;" />
-scrollWidth和scrollHeight: （父元素的属性）  
-获得元素的实际宽度和高度，在内容没有超出盒子时，获得的是盒子的内部高度和宽度。  
-内容超出盒子时获得的是内容实际应有的高度和宽度。  
-当盒子内部存在滚动条时，获得的高度和宽度不包括滚动条。
+|      属性类型     |     包含内容      |  典型用例  | 示例值（假设元素宽 200px，边框 2px，滚动条 17px） |
+| :--------------: | :--------------: | :----------------: | :-----------------: |
+|   offsetWidth    | 内容 + padding + 边框 + 滚动条 | 获取元素布局总宽度 | 200 + 2*2 + 17 = 221px |
+|  clientWidth      | 内容 + padding（不含滚动条、边框） |  获取可视区域宽度  | 200 - 17 = 183px  |
+|     scrollWidth  | 内容的完整宽度（含溢出部分） |    检测内容是否溢出   | 若内容未溢出，等于 clientWidth  |
+|     scrollTop    | 垂直滚动距离 |  监听滚动事件  |   0（未滚动时）    |
 
 ### 5.2 动画属性
 
-- clientX与clientY
+- clientX与clientY  
+  clientX 事件属性返回当事件被触发时鼠标指针相对于浏览器页面的水平坐标。  
+  clientY 事件属性返回当事件被触发时鼠标指针向对于浏览器页面的垂直坐标。
 
-clientX 事件属性返回当事件被触发时鼠标指针相对于浏览器页面的水平坐标。
-
-clientY 事件属性返回当事件被触发时鼠标指针向对于浏览器页面的垂直坐标。
-
-- pageX与pageY (pageY = clientY + 页面滚动出去的距离)
-
-pageX/Y：相对于文档边缘,包含滚动条距离
-
-clientX/Y：相对于当前页面且不包含滚动条距离
-
-> 有兼容性问题 从IE9以后才支持
+- pageX与pageY (pageY = clientY + 页面滚动出去的距离)  
+  pageX/Y：相对于文档边缘,包含滚动条距离  
+  clientX/Y：相对于当前页面且不包含滚动条距离
 

@@ -33,9 +33,7 @@ aplayer:
 highlight_shrink:
 aside:
 ---
-## 1. 常用编辑器
-dreamweaver、sublime、webstorm、Hbuilder、vscode
-## 2. 浏览器内核
+## 1. 浏览器内核
 分为渲染引擎和JS引擎  
 渲染引擎：它负责取得网页的内容（HTML、XML、图像等等）、整理讯息（例如加入CSS 等），以及计算网页的显示方式，然后会输出至显示器或打印机  
 JS引擎：JS引擎则是解析Javascript语言，执行javascript语言来实现网页的动态效果
@@ -43,8 +41,9 @@ JS引擎：JS引擎则是解析Javascript语言，执行javascript语言来实�
 - Firefox: Gecko
 - Chrome: Webkit 到 Blink
 - Safari: Webkit
-- Opera: Presto 到 Webkit 到 Blink
-## 3. 标签
+- Opera: Presto 到 Webkit 到 Blink  
+
+## 2. 标签
 ```html
 <b>粗体</b> <strong></strong>
 <i>斜体</i> <em></em>
@@ -65,15 +64,15 @@ JS引擎：JS引擎则是解析Javascript语言，执行javascript语言来实�
 	<dt></dt>
 </dl>
 ```
-![特殊字符](https://img.hitagi.site/202211142245421.jpg)
-## 4. 表格
-align对齐方式、border边框宽度、cellspacing单元格间距、cellpadding单元格内边距  
+[html常用特殊符号(html实体)](https://developer.mozilla.org/zh-CN/docs/Glossary/Entity)
 
+## 3. 表格
 合并单元格的步骤
 1. 先判断是跨行(rowspan)还是跨列(colspan)
 2. 把属性名和合并的行数写在第一个要合并的单元格上
 3. 把多余的单元格注释掉
 ```html
+<!-- align对齐方式、border边框宽度、cellspacing单元格间距、cellpadding单元格内边距 -->
 <table align="center" border="1" cellspacing="0" cellpadding="10">
     <caption>年中工资报表</caption>
     <thead>
@@ -186,8 +185,8 @@ action提交的地址、method提交的方式、name表单名字
 </form>
 ```
 ## 8. HTML5-media
-控件controls、循环loop、静音muted
 ```html
+<!-- 控件controls、循环loop、静音muted -->
 <audio src="音频地址" controls loop muted></audio>
 <audio controls>
     <source src="">

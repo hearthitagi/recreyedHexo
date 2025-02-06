@@ -95,6 +95,7 @@ arr.sort() // 默认把元素转换为String后按ASCII码排序，最后String�
 - 如果compareFunction(a,b)返回值小于0，那么a会被排到b之前
 - 如果compareFunction(a,b)返回值等于0，a和b的相对位置不变，不兼容所有浏览器
 - 如果compareFunction(a,b)返回值大于0，b会被排列到a之前。
+
 ```javascript
 arr.sort(function compareFunction(a, b) {
   if (condition) {
@@ -119,6 +120,7 @@ var arr2 = arr1.concat("ww")
 slice(start,end)  
 - 索引从start开始截取元素，到end结束，`[start,end)`，返回新数组
 - 不会改变原数组
+
 ```javascript
 var arr2 = [1,2,3,4,5];
 arr2.slice(0,3) //取[1,2,3]
@@ -126,6 +128,7 @@ arr2.slice(0,3) //取[1,2,3]
 splice(start,length)  
 - 索引从start开始截取元素，截取length个，返回新数组
 - 会改变元素的数组
+
 ```javascript
 var arr2 = [1,2,3,4,5];
 ```
@@ -169,6 +172,7 @@ str = 'hello';
 > 重新给字符串赋值，会重新在内存中开辟空间，这个特点就是字符串的不可变
 >
 > 由于字符串的不可变，在大量拼接字符串的时候会有效率问题
+
 #### 1.5.1 取值方法
 ```javascript
 charAt(0)     //获取指定位置处字符
@@ -190,35 +194,39 @@ split("")             //字符串转化成数组，以参数分割， 无参时�
 ```
 ## 2. DOM操作
 ### 2.1 获取DOM元素
-1. 通过id获取DOM元素;获取的是一个具体的DOM元素  
+通过id获取DOM元素;获取的是一个具体的DOM元素
+
 `document.getElementById("div1")`
-2. 通过选择器获取单个元素;获取的是同选择器的**第一个元素**
+
+通过选择器获取单个元素;获取的是同选择器的**第一个元素**
+
 `document.querySelector(".box")`
 > 以下方法获取的都是由元素构成的伪数组，使用时要加上**索引号**
 >
 > 伪数组有length属性，可以遍历；伪数组没有普通数组的内置方法
-1. 通过类名获取元素  
-`document.getElementsByClassName("box")[0]`
-2. 通过标签名获取元素  
-`document.getElementsByTagName("h1")[0]`
-3. 通过name名获取元素  
-`document.getElementsByName("username")[0]`
-4. 通过选择器获取所有元素  
-`document.querySelectorAll(".box")[0]`
+
+`document.getElementsByClassName("box")[0]`通过类名获取元素
+
+`document.getElementsByTagName("h1")[0]`通过标签名获取元素
+
+`document.getElementsByName("username")[0]`通过name名获取元素
+
+`document.querySelectorAll(".box")[0]`通过选择器获取所有元素
 ### 2.2 事件触发
 事件三要素: 事件源、事件类型(触发方式)、事件处理程序
-1. 内部书写
+
+内部书写
 ```html
 <button onclick="alert(999)">点击弹框</button>
 ```
-2. 行内触发方法: 写一个js方法，行内调用
+行内触发方法: 写一个js方法，行内调用
 ```html
 <button onclick=fn1()>点击弹框</button>
 <script>
 function fn1() { alert(888) }
 </script>
 ```
-3. html外书写
+html外书写
 ```html
 <button class="btn1">点击弹框</button>
 <script>
@@ -244,6 +252,7 @@ div1.onclick = function () {
 </script>
 ```
 表单默认属性也可以修改
+
 - value 用于大部分表单元素的内容获取(option除外)
 - type 可以获取input标签的类型(输入框或复选框等)
 - disabled 禁用属性
@@ -257,18 +266,20 @@ a标签绑定的onclick事件返回值为false
 link.onclick = function(){ return false }
 ```
 ### 3.2 DOM事件
-1.鼠标事件  
+#### 鼠标事件  
 获取/失去焦点`onfocus/onblur`  
 鼠标双击`ondblclick`  
 鼠标移入/移出`onmouseover/onmouseout`  
 鼠标进入/离开`onmouseenter/onmouseleave`
+
 > 区别: `onmouseenter/onmouseleave`强调进入；不支持冒泡
 >
 > 冒泡:子元素事件执行，会递归执行所有父元素的触发事件
-> 
-2.键盘事件  
+>
+
+#### 键盘事件  
 键盘按下/抬起`onkeydown/onkeyup`  
-3.浏览器事件  
+#### 浏览器事件  
 页面加载完成后执行`window.onload`  
 滚浏览器滚动条执行`window.onscroll`
 ### 3.3 文本内容属性
@@ -309,53 +320,25 @@ document.getElementById("b1").setAttribute("class", "box2");
 ## 4. 节点
 
 HTML 文档中的所有内容都是节点：
-
 - 整个文档是一个文档节点 document
 - 每个 HTML 元素是元素节点
 - HTML 元素内的文本是文本节点
 - 每个 HTML 属性是属性节点
 - 注释是注释节点
 
-1. 节点类型
+### 节点的操作
 
-   document的节点类型 9、标签的节点类型 1、属性的节点类型 2、文本的节点类型 3
+`document.createElement('tagName')`  
+创建节点
 
-2. 节点名称
+`parentNode.appendChild(childNode) `  
+添加节点，将一个节点添加到指定父节点的子节点列表末尾。类似于 CSS 里面的 after 伪元素。
 
-   document的节点名称 #document、标签的节点名称 大写的标签名、属性的节点名称 属性名、文本的节点名称 #text
+`parentNode.insertBefore(newChildNode, childNode)`  
+将一个节点添加到父节点的指定子节点前面。类似于 CSS 里面的 before 伪元素。
 
-3. 节点值
+`parentNode.removeChild(child)`  
+删除节点，从 DOM 中删除一个子节点，返回删除的节点。
 
-   document的节点值 null、标签的节点值 null、属性的节点值 属性值、文本的节点值 文本的内容
-
-4. 节点之间的关系
-
-   父节点--parentNode
-
-   父元素节点--parentElement
-
-   子节点--childNodes：标签节点、文本节点、注释节点  得到的是伪数组
-
-   子元素节点--children :标签节点
-
-   总结：firstChild、lastChild、previousSibling、nextSibling获取到的都是文本，如果没有就是文本节点名称#text，
-
-   firstElementChild、lastElementChild、previousElementSibling、nextElementSibling获取到的都是标签，如果没有就
-
-   是空
-
-5. 节点的操作
-  - 创建节点
-  `document.createElement('tagName')`  
-  - 添加节点
-  `parentNode.appendChild(childNode) `  
-  node.appendChild() 方法将一个节点添加到指定父节点的子节点列表末尾。类似于 CSS 里面的 after 伪元素。
-  `parentNode.insertBefore(newChildNode, childNode)`  
-  node.insertBefore() 方法将一个节点添加到父节点的指定子节点前面。类似于 CSS 里面的 before 伪元素。
-  - 删除节点
-  `parentNode.removeChild(child)`  
-  node.removeChild() 方法从 DOM 中删除一个子节点，返回删除的节点。
-  - 复制节点
-  `node.cloneNode(flase)`  
-  node.cloneNode() 方法返回调用该方法的节点的一个副本。参数为false不复制子节点，参数为true复制子节点。
-  
+`node.cloneNode(flase)`  
+复制节点，返回调用该方法的节点的一个副本。参数为false不复制子节点，参数为true复制子节点。

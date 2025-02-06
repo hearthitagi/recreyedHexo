@@ -240,10 +240,10 @@ Less 是一门 CSS 预处理语言，它扩展了 CSS 语言，增加了变量�
 @bgcolor1: red;
 @fontsize: 30px;
 h1 {
-width: @size;
-height: @sizeHeight;
-background-color: @bgcolor1;
-font-size: @fontsize;
+  width: @size;
+  height: @sizeHeight;
+  background-color: @bgcolor1;
+  font-size: @fontsize;
 }
 ```
 2. 将预处理less文件编译成css文件`lessc style.less style.css`
