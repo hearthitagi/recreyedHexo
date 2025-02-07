@@ -1,7 +1,6 @@
 ---
 title: 毕业设计技术总结 01
 tags:
-  - 毕业设计
   - mongoDB
   - mongoose
 categories:
