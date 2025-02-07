@@ -360,7 +360,7 @@ local_search:
 # 评论系统
 # --------------------------------------
 comments:
-  use: waline
+  use: [Waline,Twikoo]
   text: false # 是否显示评论服务商的名字
   lazyload: true
   count: true # 是否在文章顶部显示评论数
@@ -372,6 +372,12 @@ waline:
   pageview: false
   option:
     imageUploader: true
+twikoo:
+  envId: https://taupe-flan-bb5ab5.netlify.app/.netlify/functions/twikoo
+  region: ap-southeast-1
+  visitor: false
+  option:
+
 
 # --------------------------------------
 # 页面美化

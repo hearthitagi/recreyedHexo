@@ -29,7 +29,7 @@ hexo.extend.filter.register('before_generate', () => {
     disqusjs: 'https://npm.elemecdn.com/disqusjs@1/dist/disqus.js',
     disqusjs_css: 'https://npm.elemecdn.com/disqusjs@1/dist/disqusjs.css',
     utterances: 'https://utteranc.es/client.js',
-    twikoo: 'https://npm.elemecdn.com/twikoo/dist/twikoo.all.min.js',
+    twikoo: 'https://cdn.jsdelivr.net/npm/twikoo@1.6.41/dist/twikoo.all.min.js',
     waline: 'https://npm.elemecdn.com/@waline/client/dist/Waline.min.js',
     giscus: 'https://giscus.app/client.js',
 
