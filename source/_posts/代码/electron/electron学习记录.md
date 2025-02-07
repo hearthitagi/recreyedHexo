@@ -1,11 +1,12 @@
 ---
 title: electron学习记录
-date: 2024-12-23 11:00:57
-updated:
 tags:
   - electron
 categories:
   - 代码
+abbrlink: d98589a8
+date: 2024-12-23 11:00:57
+updated:
 keywords:
 description:
 top_img:

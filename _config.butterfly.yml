@@ -45,7 +45,7 @@ favicon: /img/favicon.svg
 # 头像设置
 avatar:
   # 头像图片链接
-  img: https://lsky.kissshot.site/img/2025/02/06/67a44befd393a.jpg
+  img: https://lsky.kissshot.site/img/2025/02/07/67a56c61e74fd.webp
   # 是否启用头像效果
   effect: false
 # 网站背景 可以设置为颜色或图片
@@ -455,13 +455,13 @@ categoryBar:
   enable: true # 开关
   message:
   - title: 杂记
-    cover: https://lsky.kissshot.site/img/2025/02/07/67a569505c91f.webp
+    cover: https://lsky.kissshot.site/img/2025/02/07/67a56dd0dcb11.webp
     descr: 这是杂记描述
   - title: 博客
-    cover: https://lsky.kissshot.site/img/2025/02/07/67a569505c8e0.webp
+    cover: https://lsky.kissshot.site/img/2025/02/07/67a56dd0e0852.webp
     descr: 这是博客描述
   - title: 代码
-    cover: https://lsky.kissshot.site/img/2025/02/07/67a569505c8e0.webp
+    cover: https://lsky.kissshot.site/img/2025/02/07/67a56dd0dbf76.webp
     descr: 这是代码描述
 #文章展示动画
 wowjs:
