@@ -362,12 +362,12 @@ local_search:
 comments:
   use: waline
   text: false # 是否显示评论服务商的名字
-  lazyload: false
-  count: false # 是否在文章顶部显示评论数
-  card_post_count: false # 是否在首页文章卡片显示评论数
+  lazyload: true
+  count: true # 是否在文章顶部显示评论数
+  card_post_count: true # 是否在首页文章卡片显示评论数
 # waline
 waline:
-  serverURL: https://comment.hitagi.site
+  serverURL: https://spontaneous-marigold-9c165f.netlify.app/.netlify/functions/comment
   bg: 
   pageview: false
   option:
