@@ -211,7 +211,7 @@ data: {
 
 ### 6.2 style
 
-- 对象语法
+**对象语法**  
 
 ```html
 <div :style="{ color: activeColor, fontSize: fontSize + 'px' }"></div>
@@ -229,7 +229,7 @@ data: {
 }
 ```
 
-- 数组语法
+**数组语法**  
 
 ```html
 <div :style="[baseStyles, overridStyles]"></div>

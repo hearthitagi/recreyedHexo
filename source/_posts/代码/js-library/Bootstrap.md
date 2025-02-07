@@ -80,7 +80,7 @@ bootstrap是基于jQuery开发的，所以在引入bootstrap的js文件前要先
 | `.container` 最大宽度 | None （自动）          | 750px                | 970px                        | 1170px                        |
 | 类前缀                | `.col-xs-`             | `.col-sm-`           | `.col-md-`                   | `.col-lg-`                    |
 
-- 响应式
+**响应式**  
 
 可以配合clearfix类和响应式工具类来实现响应式显示/隐藏元素；显示时可以后接`-block`或`-inline-block`来设置显示模式
 
@@ -91,7 +91,7 @@ bootstrap是基于jQuery开发的，所以在引入bootstrap的js文件前要先
 | visible-md | hidden-md |
 | visible-lg | hidden-lg |
 
-- 列偏移
+**列偏移**  
 
 可以使用`col-md-offset-n`来设置当前元素在网格系统中便宜的列数
 
@@ -200,7 +200,7 @@ bootstrap是基于jQuery开发的，所以在引入bootstrap的js文件前要先
 </div>
 ```
 
-3.2 tab切换
+### 3.2 tab切换
 
 ```html
 <ul class="nav nav-tabs">

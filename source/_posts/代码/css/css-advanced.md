@@ -87,11 +87,9 @@ width: 0px;
 height: 0px;
 border: 100px solid;
 border-color: blue red green orange;
+/* 将上、右、下边框设为透明，便得到一个三角形 */
+border-color: transparent transparent transparent orange;
 ```
-![盒子宽高为0时的边框](https://img.hitagi.site/202211142243934.png)
-将上、右、下边框设为透明，便得到一个三角形
-`border-color: transparent transparent transparent orange;`
-![上、右、下边框透明](https://img.hitagi.site/202211142244997.png)
 ### 1.8 修改滚动条样式
 ::-webkit-scrollbar 滚动条整体部分  
 ::-webkit-scrollbar-thumb 滚动条里面的小方块，能向上向下移动（或往左往右移动，取决于是垂直滚动条还是水平滚动条）  
@@ -106,25 +104,21 @@ border-color: blue red green orange;
 width: 3px;
 height: 3px;
 }
-
 /* 滚动条有滑块的轨道部分 */
 ::-webkit-scrollbar-track-piece {
   background-color: transparent;
   border-radius: 5px;
 }
-
 /* 滚动条滑块(竖向:vertical 横向:horizontal) */
 ::-webkit-scrollbar-thumb {
   cursor: pointer;
   background-color:#f2f2f2;
   border-radius: 5px;
 }
-
 /* 滚动条滑块hover */
 ::-webkit-scrollbar-thumb:hover {
   background-color: #999999;
 }
-
 /* 同时有垂直和水平滚动条时交汇的部分 */
 ::-webkit-scrollbar-corner {
   display: block;    /* 修复交汇时出现的白块 */

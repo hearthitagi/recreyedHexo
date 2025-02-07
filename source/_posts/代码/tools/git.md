@@ -26,88 +26,101 @@ aplayer:
 highlight_shrink:
 aside:
 ---
-## 1.git命令
 
-![git命令大全](https://img.hitagi.site/202211142245388.jpg)
+**Git 常用命令**
 
-## 2. 常用命令及原理
+## 1. 仓库配置
 
-HEAD，它始终指向当前所处分支的最新的提交点。你所处的分支变化了，或者产生了新的提交点，HEAD就会跟着改变。
+| 命令 | 说明 |
+|------|------|
+| `git config --global user.name "Your Name"` | 设置全局用户名 |
+| `git config --global user.email "email@example.com"` | 设置全局邮箱 |
+| `git config --list` | 查看当前配置信息 |
 
-1. init
+## 2. 创建与克隆仓库
 
-   初始化仓库
+| 命令 | 说明 |
+|------|------|
+| `git init` | 初始化新仓库 |
+| `git clone <repo_url>` | 克隆远程仓库到本地 |
 
-   `git init`
+## 3. 更改与提交
 
-2. add
+| 命令 | 说明 |
+|------|------|
+| `git status` | 查看工作区状态（修改/未跟踪文件） |
+| `git add <file>` | 添加文件到暂存区（`git add .` 添加所有文件） |
+| `git commit -m "提交说明"` | 提交暂存区的更改到本地仓库 |
+| `git commit --amend` | 修改最后一次提交 |
 
-   添加当前目录的所有文件到暂存区
+## 4. 分支管理
 
-   `git add filename`
+| 命令 | 说明 |
+|------|------|
+| `git branch` | 查看本地分支（`-a` 查看所有分支，包括远程） |
+| `git branch <branch_name>` | 创建新分支 |
+| `git checkout <branch_name>` | 切换到指定分支 |
+| `git checkout -b <new_branch>` | 创建并切换到新分支 |
+| `git switch <branch_name>` | 切换分支（推荐替代 `git checkout`） |
+| `git merge <branch_name>` | 合并指定分支到当前分支 |
+| `git branch -d <branch_name>` | 删除本地分支（`-D` 强制删除） |
 
-3. commit
+## 5. 远程仓库交互
 
-   将暂存区的内容提交到本地仓库
+| 命令 | 说明 |
+|------|------|
+| `git remote -v` | 查看远程仓库地址 |
+| `git remote add <name> <url>` | 添加远程仓库（如 `origin`） |
+| `git push <remote> <branch>` | 推送本地分支到远程（如 `git push origin main`） |
+| `git push -u <remote> <branch>` | 推送并设置上游分支（后续可简写 `git push`） |
+| `git pull <remote> <branch>` | 拉取远程分支并合并 |
+| `git fetch <remote>` | 从远程仓库拉取最新代码（不自动合并） |
 
-   `git commit -m "explanation"`
+## 6. 撤销与恢复
 
-4. branch
+| 命令 | 说明 |
+|------|------|
+| `git restore <file>` | 丢弃工作区的修改（Git 2.23+） |
+| `git restore --staged <file>` | 将文件移出暂存区（保留工作区修改） |
+| `git reset --soft HEAD^` | 撤销最后一次提交（保留修改到暂存区） |
+| `git reset --hard HEAD^` | 彻底撤销最后一次提交（慎用！） |
+| `git revert <commit_id>` | 创建一个新提交来撤销指定提交 |
 
-   | 命令                                      | 含义                                   |
-   | ----------------------------------------- | -------------------------------------- |
-   | **git branch**                            | **列出所有本地分支**                   |
-   | **git branch -r**                         | **列出所有远程分支**                   |
-   | **git branch -a**                         | **列出所有本地分支和远程分支**         |
-   | **git branch [branchName]**               | **新建一个分支，但依然停留在当前分支** |
-   | **git checkout -b [branchName]**          | **新建一个分支，并切换到该分支**       |
-   | **git checkout [branchName]**             | **切换到指定分支，并更新工作区**       |
-   | **git branch -d [branchName]**            | **删除分支**                           |
-   | **git push origin --delete [branchName]** | **删除远程分支**                       |
+## 7. 标签管理
 
-5. push
+| 命令 | 说明 |
+|------|------|
+| `git tag` | 查看所有标签 |
+| `git tag <tag_name>` | 创建轻量标签（指向当前提交） |
+| `git tag -a <tag_name> -m "标签说明"` | 创建含注释的标签 |
+| `git push <remote> --tags` | 推送所有标签到远程仓库 |
 
-   上传本地仓库分支到远程仓库分支，实现同步
+## 8. 查看日志与差异
 
-   | 命令                                   | 含义                                       |
-   | :------------------------------------- | :----------------------------------------- |
-   | **git push [repository url] [branch]** | **上传本地指定分支到远程仓库**             |
-   | **git push [repository url] --force**  | **强行推送当前分支到远程仓库，即使有冲突** |
-   | **git push [repository url] --all**    | **推送所有分支到远程仓库**                 |
+| 命令 | 说明 |
+|------|------|
+| `git log` | 查看提交历史（`--oneline` 简化显示） |
+| `git log -p <file>` | 查看文件的修改历史 |
+| `git diff` | 查看工作区与暂存区的差异 |
+| `git diff --staged` | 查看暂存区与仓库的差异 |
 
-6. clone
+## 9. 储藏临时修改
 
-   将远程仓库下载到本地
+| 命令 | 说明 |
+|------|------|
+| `git stash` | 储藏当前工作区和暂存区的修改 |
+| `git stash list` | 查看储藏列表 |
+| `git stash pop` | 恢复最新的储藏并删除储藏记录 |
+| `git stash apply` | 恢复储藏但不删除记录 |
 
-   `git clone [repository url]`
+## 10. 高级操作
 
-7. remote
+| 命令 | 说明 |
+|------|------|
+| `git rebase <branch>` | 变基操作（合并提交历史，保持线性） |
+| `git cherry-pick <commit_id>` | 将指定提交应用到当前分支 |
+| `git bisect` | 二分查找引入问题的提交 |
 
-   `git remote`命令列出所有远程主机。
-
-   `git remote -v`使用`-v`选项，可以参看远程主机的网址
-
-8. fetch
-
-   远程主机的版本库有了更新，需要将这些更新取回本地，这时就要用到
-
-   `git fetch [repository url]`
-
-9. merge
-
-   `git merge [branch]`合并指定分支到当前分支
-
-10. pull
-
-    `git pull`命令的作用是，取回远程主机某个分支的更新，再与本地的指定分支合并。远程分支是与当前分支合并
-
-    `git pull origin <远程分支名>`
-
-11. 其他命令
-
-| **git status**               | **显示有变更的文件**                         |
-| ---------------------------- | -------------------------------------------- |
-| **git log**                  | **显示当前分支的版本历史**                   |
-| **git diff**                 | **显示暂存区和工作区的差异**                 |
-| **git diff HEAD**            | **显示工作区与当前分支最新commit之间的差异** |
-| **git cherry-pick [commit]** | **选择一个commit，合并进当前分支**           |
+> **提示**  
+> - 使用 `git <command> --help` 查看命令详细帮助  
+> - 谨慎使用 `git reset --hard` 和 `git push -f`（强制推送）！

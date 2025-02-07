@@ -10,7 +10,7 @@ keywords:
 description:
 top_img:
 comments:
-cover: https://img.hitagi.site/7e3a2422-07f6-42f7-bf29-1b91e306e63d.webp
+cover:
 toc:
 toc_number:
 toc_style_simple:
@@ -25,7 +25,7 @@ aplayer:
 highlight_shrink:
 aside:
 ---
-[github仓库](https://github.com/hearthitagi/electron-demo)
+[demo仓库](https://github.com/hearthitagi/electron-demo)
 # 1. 安装
 `npm init`
 修改package.json为以下内容

@@ -1,11 +1,11 @@
 ---
-title: js常用封装方法01
+title: js节流与防抖
 tags:
   - javaScript
 categories:
   - 代码
-description: 平常用的js封装方法范例
-cover: 'https://img.hitagi.site/1706243554101.webp'
+description: 
+cover:
 abbrlink: 5ae4b622
 date: 2024-01-25 09:59:19
 updated:

@@ -38,13 +38,13 @@ node特性：事件驱动；非阻塞的I/O模型；轻量高效
 
 npm是node的包管理工具；用来管理javaScript相关的包
 
-- npm镜像源配置
+**npm镜像源配置**  
 
 因为npm默认镜像地址是国外地址，所以改成国内的淘宝镜像
 
-`npm config set registry https://registry.npm.taobao.org`
+`npm config set registry http://registry.npmmirror.com`
 
-- 安装包
+**安装包**  
 
 npm install -g全局安装 --save/-S生产环境 -dev/-D开发环境
 
@@ -74,10 +74,10 @@ fs.readdir('./node',function (error,data) {
 
 四步走：
 
-- 加载http核心模块
-- 创建一个Web服务器
-- 注册request请求事件
-- 绑定端口号，启动服务器
+1. 加载http核心模块
+2. 创建一个Web服务器
+3. 注册request请求事件
+4. 绑定端口号，启动服务器
 
 ```js
 var http = require('http');
@@ -98,9 +98,7 @@ http.createServer().on('request',function (request,response) {
 
 ### 3.3 模板引擎art-template
 
-第三方node模块
-
-- 核心方法
+**核心方法**  
 
 ```js
 // 基于模板名渲染模板
@@ -111,7 +109,7 @@ template.compile(source, options);
 template.render(source, data, options);//source 模板文件、data需要导入模板的数据
 ```
 
-- 常用语句
+**常用语句**  
 
 ```html
 <!-- 单 if 判断 -->
@@ -136,7 +134,7 @@ template.render(source, data, options);//source 模板文件、data需要导入�
 
 > `target`是一个数组，`each`用于对数组遍历，`$index` 是数组的下标， `$value`是数组的值
 
-1. 浏览器下使用（单html文件）
+**浏览器下使用（单html文件）**  
 
 ```html
 <script src="https://npm.elemecdn.com/art-template@4.13.2/lib/template-web.js"></script>
@@ -162,9 +160,7 @@ template.render(source, data, options);//source 模板文件、data需要导入�
 </script>
 ```
 
-2. node下使用
-
-html文件
+**node下使用**  
 
 ```html
 <tbody>
@@ -176,8 +172,6 @@ html文件
 </tbody>
 ```
 
-外部js文件
-
 ```js
 let result = [{name:vivy},{name:violet},{name:hitaki}]
 let html = template.render(data.toString(), { commentsList: results})
@@ -186,7 +180,7 @@ let html = template.render(data.toString(), { commentsList: results})
 
 ### 3.4 mysql
 
-引入流程
+**引入流程**  
 
 ```js
 var connection = mysql.createConnection({
@@ -204,7 +198,7 @@ connection.query(sql, function (error, results) {
 connection.end();
 ```
 
-sql增删改查语句
+**sql增删改查语句**  
 
 ```sql
 selelt * from table;//查询所有

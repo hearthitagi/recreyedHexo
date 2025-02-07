@@ -5,7 +5,7 @@ tags:
 categories:
   - 代码
 description: vue插件全局封装
-cover: 'https://img.hitagi.site/cfc9c2ef-d65f-4005-aa2a-2457adb42876.jpeg'
+cover: 
 abbrlink: '18273814'
 date: 2022-12-09 14:59:24
 updated:

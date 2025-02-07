@@ -9,7 +9,7 @@ description:
   - ':where选择器'
   - ':not选择器'
   - ':has'
-cover: 'https://img.hitagi.site/202211142334890.jpg'
+cover:
 abbrlink: ebd9ab17
 date: 2022-12-18 18:41:16
 updated:
@@ -45,7 +45,8 @@ div:has(.box) {
 </div>
 ```
 ## `:is`选择器
-![alt](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7d65f4a032f24920b8fc149fb8e91359~tplv-k3u1fbpfcp-zoom-1.image)
+![alt](https://lsky.kissshot.site/img/2025/02/07/67a55c3f31485.gif)  
+
 包装共性选择器。例如
 ```css
 :is(div, p) :is(span, i) {

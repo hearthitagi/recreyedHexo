@@ -3,6 +3,7 @@ title: 毕业设计技术总结 01
 tags:
   - 毕业设计
   - mongoDB
+  - mongoose
 categories:
   - 代码
 description:
@@ -34,8 +35,10 @@ aside:
 [中文文档](https://docs.mongoing.com/)  
 MongoDB是一种面向文档的数据库管理系统，是专为可扩展性，高性能和高可用性而设计的数据库。
 ### 1.1概念
+
 - 文档：mongodb将数据以BSON文档的形式存储，每一行数据即为一个文档，文档的值可以是任意BSON类型，或者是嵌套的其他文档，数组和文档数组；相当于关系数据库的行。  
 - 集合：MongoDB将文档存储在集合中。集合类似于关系数据库中的表。
+
 ### 1.2 基本CURD命令
 #### 插入文档
 `db.collection.insertOne()`将单个文档插入集合中。
@@ -117,3 +120,24 @@ db.inventory.replaceOne(
 `db.collection.deleteMany({}) `删除所有文档  
 `db.collection.deleteMany({ status : "A" })`删除所有status等于"A"的文档  
 `db.collection.deleteOne( { status: "D" } )`删除status等于"D"的第一个文档
+
+## 2、mongoose
+[mongoose](https://mongoosejs.com/docs/index.html)是node.js中操作mongodb的第三方库，它比原始的mongodb更方便，易用
+### 2.1 连接
+`mongoose.createConnection`第一个参数为mongodb地址,第二个是字符串解析器配置，第三个为回调函数。`mongoose.createConnection`有很多参数，只有地址为必选，其余都为可选
+```javascript
+// host:域名(本地为localhost)
+// port:端口号(mongodb默认为27017)
+// dbname:数据库名称 
+const db = mongoose.createConnection(
+    `mongodb://${configObj.host}:${configObj.port}/${configObj.dbname}`,
+    { useNewUrlParser: true, useUnifiedTopology: true },
+    (err) => {
+    if (err) { console.log('数据库连接失败',configObj); return;}
+    console.log('数据库连接成功');
+})
+```
+
+## 3、express
+
+## 4、在vue项目中的应用

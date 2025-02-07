@@ -12,7 +12,7 @@ description:
   这是一条描述内容
 top_img:
 comments:
-cover: https://img.hitagi.site/7e3a2422-07f6-42f7-bf29-1b91e306e63d.webp
+cover: 
 toc:
 toc_number:
 toc_style_simple:

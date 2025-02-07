@@ -35,8 +35,34 @@ Asynchronous JavaScript + XML（异步JavaScript和XML）, 其本身不是一种
 异步请求，局部刷新
 
 ### 1.1 ajax原理
+**AJAX（Asynchronous JavaScript and XML）原理简述：**
+AJAX 是一种基于 Web 技术的异步通信模型，允许浏览器在不重新加载整个页面的情况下，与服务器交换数据并局部更新页面内容。其核心是通过 JavaScript 异步发送 HTTP 请求，接收服务器返回的数据（如 JSON/XML），再利用 DOM 操作动态更新页面。
 
-<img src="https://img.hitagi.site/202211142240223.jpg" alt="ajax原理" style="zoom: 80%;" />
+**AJAX 工作流程**  
+1. 用户触发事件（如点击按钮、输入文本）。
+2. JavaScript 创建请求对象（如 XMLHttpRequest 或现代 Fetch API）。
+3. 向服务器发送异步请求（指定 URL、HTTP 方法、参数等）。
+4. 服务器处理请求（查询数据库、调用接口等），返回响应数据。
+5. 浏览器接收响应，通过回调函数或 Promise 处理数据（如解析 JSON）。
+6. 更新页面局部内容（修改 DOM 元素，无需刷新整个页面）。
+
+```plaintext
++------------+       AJAX 流程       +------------+
+|            | 1.触发事件（点击等）  |            |
+|   浏览器    | -------------------> | JavaScript  |
+|            |                      |            |
++------------+                      +------------+
+        |                                  |
+        | 2.创建XHR/Fetch请求并发送        |
+        | -------------------------------> |
+        |                                  |
+        | 3.服务器处理请求并返回数据       |
+        | <------------------------------- |
+        |                                  |
++------------+ 4.解析数据并更新DOM    +------------+
+|   更新页面  | <------------------- | 处理响应    |
++------------+                      +------------+
+```
 
 ## 2. ajax语法
 
@@ -119,79 +145,78 @@ onreadystatechange事件
 以下通过实例的方式来演示ajax原生使用
 
 - get请求
-
-```html
-<body>
-    <div id='myDiv'></div>
-</body>
-<script>
-// 兼容性处理
-var xmlhttp;
-if (window.XMLHttpRequest) {
-    // IE7+,和其他浏览器
-    xmlhttp = new XMLHttpRequest();
-} else {
-    // IE5,IE6
-    xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
-}
-//ajax打开链接
-xmlhttp.open(
-    "GET",
-    "http://wkt.myhope365.com/weChat/applet/course/banner/list?number=3",
-    true
-);
-//ajax发送请求
-xmlhttp.send();
-//检测请求状态
-xmlhttp.onreadystatechange = function () {
-    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-        let imgList = JSON.parse(xmlhttp.responseText).data;
-        console.log(imgList);
-        imgList.forEach((value) => {
-            $('#myDiv')[0].innerHTML += `<img src=${value.imgUrl}>`;
-        });
+    ```html
+    <body>
+        <div id='myDiv'></div>
+    </body>
+    <script>
+    // 兼容性处理
+    var xmlhttp;
+    if (window.XMLHttpRequest) {
+        // IE7+,和其他浏览器
+        xmlhttp = new XMLHttpRequest();
+    } else {
+        // IE5,IE6
+        xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
     }
-}
-</script>
-```
+    //ajax打开链接
+    xmlhttp.open(
+        "GET",
+        "http://wkt.myhope365.com/weChat/applet/course/banner/list?number=3",
+        true
+    );
+    //ajax发送请求
+    xmlhttp.send();
+    //检测请求状态
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            let imgList = JSON.parse(xmlhttp.responseText).data;
+            console.log(imgList);
+            imgList.forEach((value) => {
+                $('#myDiv')[0].innerHTML += `<img src=${value.imgUrl}>`;
+            });
+        }
+    }
+    </script>
+    ```
 
 - post请求
 
-```html
-<body>
-    <div id='myDiv'></div>
-</body>
-<script>
-// 兼容性处理
-var xmlhttp;
-if (window.XMLHttpRequest) {
-    // IE7+,和其他浏览器
-    xmlhttp = new XMLHttpRequest();
-} else {
-    // IE5,IE6
-    xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
-}
-//ajax打开链接
-xmlhttp.open(
-    "POST",
-    "http://wkt.myhope365.com//weChat/applet/course/list/type",
-    true
-);
-// ajax设置请求头
-xmlhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
-//ajax发送请求
-xmlhttp.send("type=free&pageNum=1&pageSize=5");
-//检测请求状态
-xmlhttp.onreadystatechange = function () {
-    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-        console.log(JSON.parse(xmlhttp.responseText).rows);
-        JSON.parse(xmlhttp.responseText).rows.forEach(item => {
-            $('#myDiv')[0].innerHTML += `<dl class="course"><dt><img src="${item.coverFileUrl}"alt="" /></dt><dt>${item.courseTitle}</dt><dt>共${item.learningNum}节课|${item.participationsCount}人报名</dt><dt>免费</dt></dl>`
-        });
+    ```html
+    <body>
+        <div id='myDiv'></div>
+    </body>
+    <script>
+    // 兼容性处理
+    var xmlhttp;
+    if (window.XMLHttpRequest) {
+        // IE7+,和其他浏览器
+        xmlhttp = new XMLHttpRequest();
+    } else {
+        // IE5,IE6
+        xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
     }
-}
-</script>
-```
+    //ajax打开链接
+    xmlhttp.open(
+        "POST",
+        "http://wkt.myhope365.com//weChat/applet/course/list/type",
+        true
+    );
+    // ajax设置请求头
+    xmlhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
+    //ajax发送请求
+    xmlhttp.send("type=free&pageNum=1&pageSize=5");
+    //检测请求状态
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            console.log(JSON.parse(xmlhttp.responseText).rows);
+            JSON.parse(xmlhttp.responseText).rows.forEach(item => {
+                $('#myDiv')[0].innerHTML += `<dl class="course"><dt><img src="${item.coverFileUrl}"alt="" /></dt><dt>${item.courseTitle}</dt><dt>共${item.learningNum}节课|${item.participationsCount}人报名</dt><dt>免费</dt></dl>`
+            });
+        }
+    }
+    </script>
+    ```
 
 ## 3. 引入jQuery的ajax实例
 
@@ -279,7 +304,7 @@ JSON.stringify({ "name":"vivy", "ability":"sing"});//将JSON对象转化为字�
 
 JSON的一种使用模式，用来解决跨域问题；
 
-- 同源策略
+**同源策略**  
 
 同源即协议、域名、端口号都相同。`http://`(同为http协议)`hearthitagi.com`(相同域名):`7070`(相同端口号)
 
@@ -291,7 +316,7 @@ JSON的一种使用模式，用来解决跨域问题；
 >
 > （3） AJAX 请求不能发送。
 
-- 跨域
+**跨域**  
 
 解决跨域问题的三种主要方式：
 
@@ -302,5 +327,3 @@ JSON的一种使用模式，用来解决跨域问题；
 ```
 response.setHeader("Access-Control-Allow-Origin", "*")
 ```
-
-以后应该会写一篇解决跨域的总结

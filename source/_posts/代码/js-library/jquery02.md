@@ -109,21 +109,17 @@ $.each(arr, function (index, value) {
 
 ## 3. HTML的页面尺寸操作
 
-- `width()` 和 `height()` 方法
+- `width()` 和 `height()` 方法  
+  设置或返回元素的宽度/高度（不包括内边距、边框或外边距）
 
-设置或返回元素的宽度/高度（不包括内边距、边框或外边距）
+- `innerWidth()` 和 `innerHeight()` 方法  
+  设置或返回元素的宽度（包括内边距）
 
-- `innerWidth()` 和 `innerHeight()` 方法
+- `outerWidth()` 和 `outerHeight()` 方法  
+  设置或返回元素的宽度（包括内边距和边框）
 
-设置或返回元素的宽度（包括内边距）
-
-- `outerWidth()` 和 `outerHeight()` 方法
-
-设置或返回元素的宽度（包括内边距和边框）
-
-- `scrollTop()` 和 `scrollLeft()` 方法
-
-设置或返回元素被滚动条卷曲的高度
+- `scrollTop()` 和 `scrollLeft()` 方法  
+  设置或返回元素被滚动条卷曲的高度
 
 ```js
 $("#div1").width(20);
@@ -134,23 +130,17 @@ $("#div1").scrollTop(0);
 
 ## 4. 添加/删除元素
 
-- `append()`和`prepend()` 方法
+- `append()`和`prepend()` 方法  
+  `append()`：添加到被选元素子元素的结尾  
+  `prepend()`：添加到被选元素子元素的开头
 
-`append()`：添加到被选元素子元素的结尾
+- `after()`和`before()`方法  
+  `after()`：添加到被选元素的后面  
+  `before()`：添加到被选元素的前面
 
-`prepend()`：添加到被选元素子元素的开头
-
-- `after()`和`before()`方法
-
-`after()`：添加到被选元素的后面
-
-`before()`：添加到被选元素的前面
-
-- `remove()`和`empty()`方法
-
-`remove()`：删除被选元素及其子元素
-
-`empty()`：清空被选元素，保留本身
+- `remove()`和`empty()`方法  
+  `remove()`：删除被选元素及其子元素  
+  `empty()`：清空被选元素，保留本身
 
 ## 5. 插件的引用
 

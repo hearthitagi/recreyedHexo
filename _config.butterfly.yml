@@ -45,11 +45,11 @@ favicon: /img/favicon.svg
 # 头像设置
 avatar:
   # 头像图片链接
-  img: https://img.hitagi.site/avatar-1.png
+  img: https://lsky.kissshot.site/img/2025/02/06/67a44befd393a.jpg
   # 是否启用头像效果
   effect: false
 # 网站背景 可以设置为颜色或图片
-background: url(https://img.hitagi.site/e0d615a6-6507-4334-9758-718130984d26.webp)
+background: url(https://lsky.kissshot.site/img/2025/02/06/67a4528aa1546.jpg)
 # 主页背景图
 index_img:
 # 默认顶部图
@@ -79,7 +79,7 @@ cover:
   position: both
   # 当未设置封面时，显示默认封面
   default_cover:
-    - https://img.hitagi.site/202211142223334.jpg
+    - https://lsky.kissshot.site/img/2025/02/07/67a56b2c9cb55.webp
 # 替换损坏的图片
 error_img:
   # 友链页面的错误图片
@@ -154,12 +154,12 @@ post_copyright:
 # 打赏
 reward:
   # 是否启用打赏
-  enable: true
+  enable: false
   QR_code:
-    - img: https://img.hitagi.site/reward-wx.png
+    - img: 
       link:
       text: 微信
-    - img: https://img.hitagi.site/reward-ali.jpg
+    - img: 
       link:
       text: 支付宝
 # 相关文章
@@ -368,7 +368,7 @@ comments:
 # waline
 waline:
   serverURL: https://comment.hitagi.site
-  bg: https://img.hitagi.site/pinglun.webp
+  bg: 
   pageview: false
   option:
     imageUploader: true
@@ -455,13 +455,13 @@ categoryBar:
   enable: true # 开关
   message:
   - title: 杂记
-    cover: https://img.hitagi.site/categories-1.jpg
+    cover: https://lsky.kissshot.site/img/2025/02/07/67a569505c91f.webp
     descr: 这是杂记描述
   - title: 博客
-    cover: https://img.hitagi.site/categories-2.jpg
+    cover: https://lsky.kissshot.site/img/2025/02/07/67a569505c8e0.webp
     descr: 这是博客描述
   - title: 代码
-    cover: https://img.hitagi.site/categories-3.jpg
+    cover: https://lsky.kissshot.site/img/2025/02/07/67a569505c8e0.webp
     descr: 这是代码描述
 #文章展示动画
 wowjs:

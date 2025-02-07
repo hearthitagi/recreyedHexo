@@ -8,7 +8,7 @@ tags:
 categories:
   - 博客
 description: 基于vue3前端，express作中间件，vercel部署的backblaze图床管理工具开发记录。
-cover: 'https://img.hitagi.site/wallhaven-x677lz.webp'
+cover: 
 abbrlink: 5951a346
 date: 2023-04-19 14:41:41
 updated:
@@ -40,7 +40,7 @@ aside:
 ### 2.1、前端vue3，参考[github代码](https://github.com/hearthitagi/bz-view)
 ### 2.2、中间件express代理请求
 因backblaze存储桶api有动态变化，采用个人比较熟悉的express来进行接口代理请求。
-### 2.3*、vercel部署express，并用cloudflare加速
+### 2.3、vercel部署express，并用cloudflare加速
 写好的[express代码](https://github.com/hearthitagi/bz-view/tree/main/serve)部署到vercel：
 1. 新建`vercel.json`
 ```json

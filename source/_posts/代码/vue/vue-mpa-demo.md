@@ -5,7 +5,7 @@ tags:
 categories:
   - 代码
 description: vue多页面实现案例
-cover: 'https://img.hitagi.site/96475bde-c9b9-453d-af03-c81267192811.webp'
+cover:
 abbrlink: '5325484'
 date: 2022-12-09 14:44:55
 updated:
