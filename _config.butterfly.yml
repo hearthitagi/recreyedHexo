@@ -14,7 +14,7 @@ menu:
   # 标签: /tags/ || fas fa-tags
   # 分类: /categories/ || fas fa-folder-open
   友人帐: /link/ || fas fa-link
-  留言信: /comments/ || fas fa-envelope
+  留言: /comments/ || fas fa-envelope
   关于: /about/ || fas fa-heart
 # 社交媒体链接
 # 格式: icon: 链接 || 描述 || 颜色
@@ -447,15 +447,6 @@ note:
 # --------------------------------------
 # 自定义内容
 # --------------------------------------
-# 留言信
-envelope_comment:
-  enable: true #开关
-  cover: https://npm.elemecdn.com/hexo-butterfly-envelope/lib/violet.jpg #信笺封面图
-  message: #信笺内容，支持多行
-    - “为什么要写信”
-    - “因为人有心意想传达给别人”
-  bottom: 自动书记人偶 Violet Evergarden
-  height: #调整信笺划出高度，默认1050px
 #分类磁贴
 categoryBar:
   enable: true # 开关

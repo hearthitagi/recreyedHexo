@@ -1,20 +1,20 @@
 #article-container
-    if top_img === false
-        h1.page-title= page.title
-    #maincontent
-        #form-wrap
-            img.no-lightbox#beforeimg(src='https://npm.elemecdn.com/hexo-butterfly-envelope/lib/before.png')
-            #envelope
-                form
-                    .formmain
-                        img.no-lightbox.headerimg(src=url_for(theme.envelope_comment.cover))
-                        .comments-main
-                            h3.title3= config.author + `的留言:`
-                            .comments
-                                each i in theme.envelope_comment.message
-                                    div=`${i}`
-                            .bottomcontent
-                                img.bottomimg(src='https://npm.elemecdn.com/hexo-butterfly-envelope/lib/line.png')
-                            p.bottomhr=`${theme.envelope_comment.bottom}`
-            img.no-lightbox#afterimg(src='https://npm.elemecdn.com/hexo-butterfly-envelope/lib/after.png')
-    != page.content
+    //- if top_img === false
+    //-     h1.page-title= page.title
+    //- #maincontent
+    //-     #form-wrap
+    //-         img.no-lightbox#beforeimg(src='https://npm.elemecdn.com/hexo-butterfly-envelope/lib/before.png')
+    //-         #envelope
+    //-             form
+    //-                 .formmain
+    //-                     img.no-lightbox.headerimg(src=url_for(theme.envelope_comment.cover))
+    //-                     .comments-main
+    //-                         h3.title3= config.author + `的留言:`
+    //-                         .comments
+    //-                             each i in theme.envelope_comment.message
+    //-                                 div=`${i}`
+    //-                         .bottomcontent
+    //-                             img.bottomimg(src='https://npm.elemecdn.com/hexo-butterfly-envelope/lib/line.png')
+    //-                         p.bottomhr=`${theme.envelope_comment.bottom}`
+    //-         img.no-lightbox#afterimg(src='https://npm.elemecdn.com/hexo-butterfly-envelope/lib/after.png')
+    //- != page.content
