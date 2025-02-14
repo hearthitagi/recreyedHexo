@@ -41,7 +41,9 @@ services:
 ## 2.2 动态域名
 ### 2.2.1 IPV6
 添加任务
-<img src="https://lsky.kissshot.site/img/2025/02/14/67aea56f750b3.png" alt="1739498847732.png" title="1739498847732.png" width="80%" />
+![|673x407](https://lsky.kissshot.site/img/2025/02/14/67aea56f750b3.png)
+
+![|367x468](https://lsky.kissshot.site/img/2025/02/14/67aeaa038abff.png)
 ## 2.3 SSl/TLS证书
 ## 2.4 web服务
 ## 2.5  STUN内网穿透
