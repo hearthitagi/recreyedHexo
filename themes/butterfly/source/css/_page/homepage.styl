@@ -7,6 +7,9 @@
   & > .recent-post-item:not(:nth-of-type(1)) {
     margin-top: 20px;
     background: transparent;
+    flex-direction: column;
+    width: calc(50% - 20px);
+    margin: 20px 10px;
   }
 
   & > .recent-post-item {
@@ -45,24 +48,12 @@
         @extend .imgHover;
       }
 
-      &.left {
-        margin-right: -85px;
-        clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
-      }
-
-      &.right {
-        order: 1;
-        margin-left: -85px;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-      }
-
       +maxWidth768() {
         width: 100%;
         height: 150px;
 
         &.left, &.right {
           margin: 0;
-          clip-path: none;
         }
 
         &.right {
@@ -74,7 +65,7 @@
     & >.recent-post-info {
       padding: 15px 20px;
       width: calc(50% + 87px);
-      height: 100%;
+      height: 45%;
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
@@ -172,10 +163,8 @@
     }
   }
 
-  & > .recent-post-item:has(.post_cover.left) {
+  & > .recent-post-item {
     .recent-post-info {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-      margin-left: -85px;
 
       .article-title {
         text-align: right;
@@ -192,30 +181,9 @@
     }
   }
 
-  & > .recent-post-item:has(.post_cover.right) {
-    .recent-post-info {
-      clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
-      margin-right: -85px;
-
-      .article-title {
-        text-align: left;
-      }
-
-      .article-meta-wrap {
-        text-align: left;
-      }
-
-      .content {
-        text-align: left;
-        padding-right: 115px;
-      }
-    }
-  }
-
   & > .recent-post-item:has(.post_cover.left), & > .recent-post-item:has(.post_cover.right) {
     +maxWidth768() {
       .recent-post-info {
-        clip-path: none;
         margin: 0;
 
         .content {
