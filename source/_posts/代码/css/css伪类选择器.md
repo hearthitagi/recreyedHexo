@@ -5,10 +5,6 @@ tags:
 categories:
   - 代码
 description:
-  - ':is选择器'
-  - ':where选择器'
-  - ':not选择器'
-  - ':has'
 cover:
 abbrlink: ebd9ab17
 date: 2022-12-18 18:41:16

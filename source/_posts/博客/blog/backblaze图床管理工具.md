@@ -1,10 +1,8 @@
 ---
 title: bz-view，backblaze图床管理工具
 tags:
-  - blog
   - vue
   - express
-  - vercel
 categories:
   - 博客
 description:

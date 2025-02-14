@@ -99,9 +99,9 @@ post_meta:
   page: # 主页页面
     date_type: created # 日期类型: created / updated / both
     date_format: date # 日期格式: date / relative
-    categories: true # 是否显示分类
+    categories: false # 是否显示分类
     tags: true # 是否显示标签
-    label: true # 是否显示描述文字
+    label: false # 是否显示描述文字
   post:
     date_type: both # 日期类型: created / updated / both
     date_format: date # 日期格式: date / relative
@@ -364,7 +364,7 @@ comments:
   text: false # 是否显示评论服务商的名字
   lazyload: true
   count: true # 是否在文章顶部显示评论数
-  card_post_count: true # 是否在首页文章卡片显示评论数
+  card_post_count: false # 是否在首页文章卡片显示评论数
 # waline
 waline:
   serverURL: https://spontaneous-marigold-9c165f.netlify.app/.netlify/functions/comment
