@@ -360,7 +360,7 @@ local_search:
 # 评论系统
 # --------------------------------------
 comments:
-  use: [Waline,Twikoo]
+  use: [Twikoo,Waline]
   text: false # 是否显示评论服务商的名字
   lazyload: true
   count: true # 是否在文章顶部显示评论数
