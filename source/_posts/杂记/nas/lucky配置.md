@@ -69,7 +69,7 @@ services:
 添加Web服务规则，除TLS必须关闭，其余与2.4第一步保持一致
 
 默认规则中：服务类型选重定向；默认目标地址输入`https://{hostAndPort}`；其余随意
-## 2.5  STUN内网穿透
+## 2.5 STUN内网穿透
 
 >网络类型必须为NAT1（全锥形网络）
 >参考教程：
@@ -91,7 +91,7 @@ services:
 >**2.4添加子规则**前端地址填写重定向后的域名，如`alist.stun.example.com`。后端地址同IPV6
 >**2.4添加重定向**不必为IPV4配置，使用下文中cloudflare的重定向
 
-## 2.6 利用webhook和cloudflare重定向固定穿透IP
+## 2.6 固定穿透IP
  
  **从cloudflare获取重定向权限的token** 
 
