@@ -114,7 +114,7 @@ url重定向：动态-表达式`wildcard_replace(http.request.full_uri, "*://*.e
 
 ![|568x420](https://lsky.kissshot.site/img/2025/02/14/67aed1552a4bb.png)
 
-点击保存前打开F12，找到如下图类似的请求，复制请求网址
+**点击保存前打开F12，找到如下图类似的请求，复制请求网址**
 ![|573x161](https://lsky.kissshot.site/img/2025/02/14/67aed3e984731.png)
 
 
