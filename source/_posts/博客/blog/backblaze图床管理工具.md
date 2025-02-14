@@ -7,7 +7,7 @@ tags:
   - vercel
 categories:
   - 博客
-description: 基于vue3前端，express作中间件，vercel部署的backblaze图床管理工具开发记录。
+description:
 cover: 
 abbrlink: 5951a346
 date: 2023-04-19 14:41:41
@@ -16,6 +16,8 @@ keywords:
 
 
 ---
+基于vue3前端，express作中间件，vercel部署的backblaze图床管理工具开发记录。
+
 项目地址：[bz-view](https://github.com/hearthitagi/bz-view)
 ## 1、存储桶配置，参考[这个文档](https://blazeb2.js.org/guide/prepare.html)
 ### 1.1、[注册](https://www.backblaze.com/b2/sign-up.html)并[登录](https://secure.backblaze.com/user_signin.htm)Backblaze存储桶

@@ -4,7 +4,7 @@ tags:
   - vue
 categories:
   - 代码
-description: vue插件全局封装
+description:
 cover: 
 abbrlink: '18273814'
 date: 2022-12-09 14:59:24
