@@ -10,22 +10,7 @@ date: 2022-03-28 13:03:33
 updated: 2022-04-12 19:00:21
 keywords:
 description:
-top_img:
-comments:
 cover:
-toc:
-toc_number:
-toc_style_simple:
-copyright:
-copyright_author:
-copyright_author_href:
-copyright_url:
-copyright_info:
-mathjax:
-katex:
-aplayer:
-highlight_shrink:
-aside:
 ---
 angular中引入three.js并实现简易3d地球  
 [项目地址](https://github.com/hearthitagi/3d-earth-three.js)

@@ -13,22 +13,7 @@ abbrlink: af473d59
 date: 2022-02-22 17:14:07
 updated:
 keywords:
-top_img:
-comments:
 cover:
-toc:
-toc_number:
-toc_style_simple:
-copyright:
-copyright_author:
-copyright_author_href:
-copyright_url:
-copyright_info:
-mathjax:
-katex:
-aplayer:
-highlight_shrink:
-aside:
 ---
 ## 1、mongoDB
 [中文文档](https://docs.mongoing.com/)  

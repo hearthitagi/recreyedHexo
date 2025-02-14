@@ -13,22 +13,7 @@ date: 2022-03-18 18:07:52
 updated:
 keywords:
 description:
-top_img:
-comments:
 cover:
-toc:
-toc_number:
-toc_style_simple:
-copyright:
-copyright_author:
-copyright_author_href:
-copyright_url:
-copyright_info:
-mathjax:
-katex:
-aplayer:
-highlight_shrink:
-aside:
 ---
 > 此篇开始简略描述实现过程
 > 此篇只负责流程，错误解决待之后整理

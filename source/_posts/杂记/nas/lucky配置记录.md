@@ -1,0 +1,39 @@
+---
+title: lucky配置记录
+tags:
+  - nas
+  - docker
+categories:
+  - 杂记
+date: 2025-02-11 13:16:00
+abbrlink: f402307
+cover: 
+updated: 
+description:
+---
+# 1.安装
+
+**docker compose**
+```yaml
+services:
+	lucky:
+	image: gdy666/lucky
+	container_name: lucky
+	volumes:
+		- /share/Container/lucky:/goodluck
+	network_mode: host
+	restart: always
+```
+
+> 注意：网络环境必须为host，详见[常见问题与反馈](https://lucky666.cn/docs/problemset)
+> 默认登陆地址 : http://IP地址:16601
+> 默认账号：666
+> 默认密码：666
+
+# 2.配置
+## 2.1 设置
+修改外网访问状态，监听端口，管理账号密码
+## 2.2 动态域名
+## 2.3 SSl/TLS证书
+## 2.4 web服务
+## 2.5  STUN内网穿透

@@ -11,21 +11,8 @@ date: 2022-12-09 14:59:24
 updated:
 keywords:
 
-top_img:
-comments:
-toc:
-toc_number:
-toc_style_simple:
-copyright:
-copyright_author:
-copyright_author_href:
-copyright_url:
-copyright_info:
-mathjax:
-katex:
-aplayer:
-highlight_shrink:
-aside:
+
+
 ---
 参考内容：[vue的组件插件化封装](https://blog.csdn.net/qq_46038620/article/details/119205367)
 ```javascript

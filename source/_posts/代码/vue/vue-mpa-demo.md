@@ -10,22 +10,6 @@ abbrlink: '5325484'
 date: 2022-12-09 14:44:55
 updated:
 keywords:
-
-top_img:
-comments:
-toc:
-toc_number:
-toc_style_simple:
-copyright:
-copyright_author:
-copyright_author_href:
-copyright_url:
-copyright_info:
-mathjax:
-katex:
-aplayer:
-highlight_shrink:
-aside:
 ---
 具体实现后续补充  
 参考内容：[Vue 项目构建与开发入门](https://www.kancloud.cn/sllyli/vueproject/1244252)  

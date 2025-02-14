@@ -14,21 +14,8 @@ abbrlink: ebd9ab17
 date: 2022-12-18 18:41:16
 updated:
 keywords:
-top_img:
-comments:
-toc:
-toc_number:
-toc_style_simple:
-copyright:
-copyright_author:
-copyright_author_href:
-copyright_url:
-copyright_info:
-mathjax:
-katex:
-aplayer:
-highlight_shrink:
-aside:
+
+
 ---
 ## `:has`选择器
 选择某元素下，符合条件的元素。例如

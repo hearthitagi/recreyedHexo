@@ -16,22 +16,7 @@ abbrlink: 8ea4b61c
 date: 2022-01-26 15:06:00
 updated: 2022-02-09 17:00:43
 keywords:
-top_img:
-comments:
 cover:
-toc:
-toc_number:
-toc_style_simple:
-copyright:
-copyright_author:
-copyright_author_href:
-copyright_url:
-copyright_info:
-mathjax:
-katex:
-aplayer:
-highlight_shrink:
-aside:
 ---
 ## 1. 基础
 ### 1.1 javaScript 的组成

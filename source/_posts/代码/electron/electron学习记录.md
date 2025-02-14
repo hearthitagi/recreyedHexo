@@ -9,22 +9,7 @@ date: 2024-12-23 11:00:57
 updated:
 keywords:
 description:
-top_img:
-comments:
 cover:
-toc:
-toc_number:
-toc_style_simple:
-copyright:
-copyright_author:
-copyright_author_href:
-copyright_url:
-copyright_info:
-mathjax:
-katex:
-aplayer:
-highlight_shrink:
-aside:
 ---
 [demo仓库](https://github.com/hearthitagi/electron-demo)
 # 1. 安装

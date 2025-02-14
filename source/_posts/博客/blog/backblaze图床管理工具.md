@@ -13,21 +13,8 @@ abbrlink: 5951a346
 date: 2023-04-19 14:41:41
 updated:
 keywords:
-top_img:
-comments:
-toc:
-toc_number:
-toc_style_simple:
-copyright:
-copyright_author:
-copyright_author_href:
-copyright_url:
-copyright_info:
-mathjax:
-katex:
-aplayer:
-highlight_shrink:
-aside:
+
+
 ---
 项目地址：[bz-view](https://github.com/hearthitagi/bz-view)
 ## 1、存储桶配置，参考[这个文档](https://blazeb2.js.org/guide/prepare.html)

@@ -13,22 +13,7 @@ abbrlink: 17ade7a6
 date: 2022-01-26 15:07:29
 updated:
 keywords:
-top_img:
-comments:
 cover:
-toc:
-toc_number:
-toc_style_simple:
-copyright:
-copyright_author:
-copyright_author_href:
-copyright_url:
-copyright_info:
-mathjax:
-katex:
-aplayer:
-highlight_shrink:
-aside:
 ---
 ## 1. 内置对象
 JavaScript中的对象分为4种：内置对象、自定义对象、浏览器对象、DOM对象。
