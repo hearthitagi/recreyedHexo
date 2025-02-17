@@ -4,15 +4,6 @@ tags:
   - css
 categories:
   - 代码
-description:
-  - 新增选择器
-  - 新增样式
-  - 渐变过渡
-  - 转换
-  - 动画
-  - 弹性容器
-  - 响应式布局
-  - less
 copyright_url:
 abbrlink: 3a395d0a
 date: 2022-01-26 15:04:45

@@ -4,14 +4,6 @@ tags:
   - html
 categories:
   - 代码
-description:
-  - 浏览器内核
-  - 标签
-  - 表格
-  - 表单
-  - h5
-  - h5表单
-  - h5音视频
 copyright_url:
 abbrlink: 1a147173
 date: 2022-01-26 15:01:00

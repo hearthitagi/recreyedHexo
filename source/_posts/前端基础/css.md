@@ -4,13 +4,6 @@ tags:
   - css
 categories:
   - 代码
-description:
-  - 选择器
-  - 标签的显示模式
-  - 背景
-  - 优先级
-  - 盒子模型
-  - 浮动与定位
 copyright_url:
 abbrlink: eda1a9a9
 date: 2022-01-26 15:01:43
