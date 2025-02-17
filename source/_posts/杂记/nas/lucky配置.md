@@ -3,6 +3,7 @@ title: nas docker lucky配置
 tags:
   - nas
   - docker
+  - lucky
 categories:
   - 杂记
 date: 2025-02-11 13:16:00
