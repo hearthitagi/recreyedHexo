@@ -6,9 +6,7 @@ categories:
   - 代码
 abbrlink: c5a6a264
 date: 2022-02-22 17:04:40
-updated:
-keywords:
-description:
+updated: 
 cover:
 ---
 ## 1. ajax简述
