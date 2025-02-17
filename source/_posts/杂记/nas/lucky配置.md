@@ -7,9 +7,8 @@ categories:
   - 杂记
 date: 2025-02-11 13:16:00
 abbrlink: f402307
-cover: 
-updated: 
-description:
+cover: https://lsky.kissshot.site/img/2025/02/17/67b29e0d87828.webp
+updated:
 ---
 # 1.安装
 
