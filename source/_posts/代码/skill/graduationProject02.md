@@ -1,11 +1,9 @@
 ---
 title: 毕业设计技术总结 02
 tags:
-  - linux
   - mongoDB
   - mongoose
   - express
-  - nginx
 categories:
   - 代码
 abbrlink: 41495c75

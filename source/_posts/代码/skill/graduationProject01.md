@@ -5,10 +5,6 @@ tags:
   - mongoose
 categories:
   - 代码
-description:
-  - mongoDB
-  - 概念
-  - 基础CURD命令
 abbrlink: af473d59
 date: 2022-02-22 17:14:07
 updated:
