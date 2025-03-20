@@ -235,7 +235,7 @@ aside:
     sort_order:
   card_newest_comments:
     # 是否显示最新评论卡片
-    enable: false
+    enable: true
     sort_order:
     # 显示评论数量
     limit: 5
@@ -277,7 +277,7 @@ aside:
     sort_order:
   card_post_series:
     # 是否显示系列文章卡片
-    enable: true
+    enable: false
     # 标题显示系列名称
     series_title: false
     # 排序方式：title 或 date
