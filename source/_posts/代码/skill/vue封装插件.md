@@ -10,9 +10,6 @@ abbrlink: '18273814'
 date: 2022-12-09 14:59:24
 updated:
 keywords:
-
-
-
 ---
 参考内容：[vue的组件插件化封装](https://blog.csdn.net/qq_46038620/article/details/119205367)
 ```javascript
