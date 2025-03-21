@@ -1,10 +1,5 @@
 extends includes/layout.pug
 
 block content
-  include ./includes/mixins/post-ui.pug
-  #recent-posts.recent-posts
-    if theme.categoryBar.enable
-      .recent-post-item.category-group(style='width:100%;')
-        !=categories_card()
-    +postUI
-    include includes/pagination.pug
+  include ./includes/mixins/indexPostUI.pug
+  +indexPostUI

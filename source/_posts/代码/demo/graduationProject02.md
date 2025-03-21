@@ -2,7 +2,6 @@
 title: 毕业设计技术总结 02
 tags:
   - mongoDB
-  - mongoose
   - express
 categories:
   - 代码

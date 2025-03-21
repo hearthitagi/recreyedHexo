@@ -1,5 +1,5 @@
 ---
-title: bz-view，backblaze图床管理工具
+title: backblaze图床管理工具
 tags:
   - vue
   - express

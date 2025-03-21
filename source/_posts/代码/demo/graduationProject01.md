@@ -2,7 +2,6 @@
 title: 毕业设计技术总结 01
 tags:
   - mongoDB
-  - mongoose
 categories:
   - 代码
 abbrlink: af473d59

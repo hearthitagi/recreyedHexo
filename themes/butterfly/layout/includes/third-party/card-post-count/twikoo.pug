@@ -18,16 +18,17 @@ script.
           includeReply: false
         }).then(function (res) {
           document.querySelectorAll('#recent-posts .twikoo-count').forEach((item,index) => {
-            item.innerText = res[index].count
+            item.textContent = res[index].count
           })
         }).catch(function (err) {
           console.log(err)
         })
       }
+
         if (typeof twikoo === 'object') {
           runTwikoo()
         } else {
-          getScript('!{theme.CDN.twikoo}').then(runTwikoo)
+          btf.getScript('!{url_for(theme.asset.twikoo)}').then(runTwikoo)
         }
     }
 
