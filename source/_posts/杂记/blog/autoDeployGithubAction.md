@@ -3,8 +3,8 @@ title: 博客的GithubAction自动部署
 tags:
   - blog
 categories:
-  - 博客
-cover: 
+  - 杂记
+cover:
 abbrlink: da18bd0
 date: 2022-10-25 23:41:55
 updated:

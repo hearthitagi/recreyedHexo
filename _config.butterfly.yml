@@ -1,4 +1,17 @@
 # --------------------------------------
+# 自定义内容
+# --------------------------------------
+#分类磁贴
+categoryBar:
+  enable: true # 开关
+  message:
+  - title: 杂记
+    cover: https://lsky.kissshot.site/img/2025/02/07/67a56dd0dcb11.webp
+  # - title: 博客
+  #   cover: https://lsky.kissshot.site/img/2025/02/07/67a56dd0e0852.webp
+  - title: 代码
+    cover: https://lsky.kissshot.site/img/2025/02/07/67a56dd0dbf76.webp
+# --------------------------------------
 # 导航设置
 # --------------------------------------
 
@@ -11,7 +24,9 @@ nav:
 
 menu:
   首页: / || fas fa-home
-  分类: /categories/ || fas fa-folder-open
+  分类||fas fa-folder-open:
+    代码: /categories/代码/ || fas fa-code
+    杂记: /categories/杂记/ || fas fa-mug-saucer
   友人帐: /link/ || fas fa-link
   留言: /comments/ || fas fa-envelope
   # 关于: /about/ || fas fa-heart
@@ -492,7 +507,7 @@ waline:
   pageview: false
   option:
     imageUploader: true
-    # reaction: false
+    reaction: false
 # Utterances
 # https://utteranc.es/
 

@@ -1,7 +1,10 @@
 mixin indexPostUI()
   - const indexLayout = theme.index_layout
-  - const masonryLayoutClass = (indexLayout === 6 || indexLayout === 7) ? 'masonry' : ''
+  - const masonryLayoutClass = (indexLayout === 6 || indexLayout === 7) ? 'masonry' : ''    
   #recent-posts.recent-posts.nc(class=masonryLayoutClass)
+    if theme.categoryBar.enable
+      .recent-post-item.category-group(style='width:100%;')
+        !=categories_card()
     .recent-post-items
       each article, index in page.posts.data
         .recent-post-item

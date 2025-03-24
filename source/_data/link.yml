@@ -1,4 +1,4 @@
-- class_name: 帐中人
+- class_name: 
   class_desc: 
   link_list:
     - name: Kissshot
@@ -7,7 +7,7 @@
       descr: 我
     - name: Antgeek
       link: https://blog.csdn.net/weixin_44745147/
-      avatar: https://profile-avatar.csdnimg.cn/1e81a9d092d84643918a1824bfe23a25_weixin_44745147.jpg
+      avatar: https://lsky.kissshot.site/img/2025/03/24/67e0ffe779f6c.jpg
       descr: 喜欢各种技术,前端后端大数据均有涉猎,目前从事大数据开发,正在逐步转型web3开发
     - name: Akilar
       link: https://akilar.top/
