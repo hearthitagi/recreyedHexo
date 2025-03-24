@@ -507,7 +507,7 @@ twikoo:
 # Artalk
 # https://artalk.js.org/guide/frontend/config.html
 artalk:
-  server: http://artalk.kissshot.site
+  server: https://artalk.kissshot.site
   site: hitagi-blog
   # Use Artalk visitor count as the page view count
   visitor: false
