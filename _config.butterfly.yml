@@ -499,16 +499,15 @@ waline:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId:
-  region:
-  # Use Twikoo visitor count as the page view count
+  envId: https://taupe-flan-bb5ab5.netlify.app/.netlify/functions/twikoo
+  region: ap-southeast-1
   visitor: false
   option:
 
 # Artalk
 # https://artalk.js.org/guide/frontend/config.html
 artalk:
-  server: https://artalk.v6.kissshot.site:33120
+  server: http://artalk.kissshot.site
   site: hitagi-blog
   # Use Artalk visitor count as the page view count
   visitor: false
