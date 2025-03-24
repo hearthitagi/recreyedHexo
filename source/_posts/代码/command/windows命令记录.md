@@ -1,5 +1,5 @@
 ---
-title: windows命令备忘
+title: windows命令记录
 tags:
   - windows
 categories:

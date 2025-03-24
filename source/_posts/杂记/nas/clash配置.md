@@ -16,7 +16,7 @@ updated:
 
 **docker compose**
 
-前置工作（以威联通Container Station为例）：
+前置工作（以qnapContainer Station为例）：
 
 - Container共享文件夹下新建clash文件夹
 

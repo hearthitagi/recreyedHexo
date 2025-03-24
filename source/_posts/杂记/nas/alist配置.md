@@ -16,7 +16,7 @@ updated:
 
 **docker compose**
 
-前置工作（以威联通Container Station为例）：
+前置工作（以qnapContainer Station为例）：
 
 - Container共享文件夹下新建alist文件夹
 - 创建需要alist映射到本地的共享文件夹，如（video，picture，files等）
