@@ -454,7 +454,7 @@ share:
     item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
 
 # --------------------------------------
-# Comments System
+# 评论
 # --------------------------------------
 
 comments:
@@ -462,7 +462,7 @@ comments:
   # Leave it empty if you don't need comments
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
   # Format of two comments system : Disqus,Waline
-  use: Artalk
+  use: [Artalk,Waline]
   # Display the comment name next to the button
   text: false
   # Lazyload: The comment system will be load when comment element enters the browser's viewport.
@@ -486,11 +486,13 @@ gitalk:
 # https://valine.js.org
 
 waline:
-  serverURL:
+  serverURL: https://spontaneous-marigold-9c165f.netlify.app/.netlify/functions/comment
   bg:
   # Use Waline pageview count as the page view count
   pageview: false
   option:
+    imageUploader: true
+    reaction: false
 # Utterances
 # https://utteranc.es/
 
@@ -506,10 +508,10 @@ twikoo:
 # Artalk
 # https://artalk.js.org/guide/frontend/config.html
 artalk:
-  server: https://artalk.stun.kissshot.site:14157
+  server: https://artalk.v6.kissshot.site:33120
   site: hitagi-blog
   # Use Artalk visitor count as the page view count
-  visitor: true
+  visitor: false
   option:
 
 # --------------------------------------
@@ -595,9 +597,9 @@ site_verification:
 
 theme_color:
   enable: true
-  main: "#B28FCE"
-  paginator: "#B28FCE"
-  button_hover: "#FF7242"
+  main: "#8076a3"
+  paginator: "#8076a3"
+  button_hover: "#ccccd6"
   text_selection: "#00c4b6"
   link_color: "#99a9bf"
   meta_color: "#858585"
@@ -607,7 +609,7 @@ theme_color:
   toc_color: "#00c4b6"
   blockquote_padding_color: "#49b1f5"
   blockquote_background_color: "#49b1f5"
-  scrollbar_color: "#B28FCE"
+  scrollbar_color: "#8076a3"
   meta_theme_color_light: "ffffff"
   meta_theme_color_dark: "#0d0d0d"
 
