@@ -16,11 +16,10 @@ script.
 
     const artalkChangeMode = theme => artalkItem && artalkItem.setDarkMode(theme === 'dark')
 
-    const initArtalk = (el = document, pageKey = location.pathname, url) => {
+    const initArtalk = (el = document, pageKey = location.pathname) => {
       artalkItem = Artalk.init({
         el: el.querySelector('#artalk-wrap'),
-        server: url,
-        //- server: '!{server}',
+        server: '!{server}',
         site: '!{site}',
         darkMode: document.documentElement.getAttribute('data-theme') === 'dark',
         ...option,
@@ -49,41 +48,12 @@ script.
       btf.addGlobalFn('themeChange', artalkChangeMode, 'artalk')
     }
 
-    const getFinalUrl = async (initialUrl) => {
-      let currentUrl = initialUrl
-      let redirectCount = 0
-      
-      while (redirectCount++ < 5) {
-        try {
-          const response = await fetch(currentUrl, {
-            method: 'HEAD',
-            redirect: 'manual',
-            credentials: 'omit'
-          })
-
-          if (response.status >= 300 && response.status < 400) {
-            currentUrl = response.headers.get('Location')
-          } else {
-            return currentUrl
-          }
-        } catch (error) {
-          console.error('追踪失败:', error)
-          return initialUrl // 降级返回原始地址
-        }
-      }
-      throw new Error('超过最大重定向次数')
-    }
-
     const loadArtalk = async (el, pageKey) => {
-      const finalServer = await getFinalUrl('!{server}')
-      console.log(finalServer)
-      if (typeof Artalk === 'object'){
-        initArtalk(el, pageKey, finalServer)
-      }
+      if (typeof Artalk === 'object') initArtalk(el, pageKey)
       else {
         await btf.getCSS('!{theme.asset.artalk_css}')
         await btf.getScript('!{theme.asset.artalk_js}')
-        initArtalk(el, pageKey, finalServer)
+        initArtalk(el, pageKey)
       }
     }
 
