@@ -22,7 +22,7 @@ keywords:
 
 ### 1.2、创建一个桶，并修改桶设定，生成Key
 ### 1.3、查看存储桶友好url
-### 1.4、cloudflare配置，参考[这篇文章](https://www.ivu4e.com/blog/cld-services/2022-06-18/1249.html)
+### 1.4、cloudflare配置，参考[这篇文章](https://ivu4e.cn/blog/cld-services/2022-06-18/1249.html)
 ## 2、图床管理工具开发
 ### 2.1、前端vue3，参考[github代码](https://github.com/hearthitagi/bz-view)
 ### 2.2、中间件express代理请求
