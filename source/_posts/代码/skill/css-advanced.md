@@ -34,6 +34,7 @@ border-color: transparent transparent transparent orange;
 ## 1.3 渐变边框
 
 设置两层背景：一层显示范围控制在padding以内，一层显示范围控制在border以内
+
 ```css
 .element {
     width: 100px;
