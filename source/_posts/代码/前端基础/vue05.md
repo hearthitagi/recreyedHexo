@@ -4,10 +4,8 @@ tags:
   - vue
 categories:
   - 代码
-abbrlink: 10fa3efe
 date: 2022-02-22 17:08:22
-keywords:
-description:
+updated: 2022-02-22 17:08:22
 cover:
 ---
 ## 1. vue父子组件传值

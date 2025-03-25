@@ -4,11 +4,9 @@ tags:
   - vue
 categories:
   - 代码
-description:
-cover:
-abbrlink: '5325484'
 date: 2022-12-09 14:44:55
-keywords:
+updated: 2022-12-09 14:44:55
+cover:
 ---
 具体实现后续补充  
 参考内容：[Vue 项目构建与开发入门](https://www.kancloud.cn/sllyli/vueproject/1244252)  

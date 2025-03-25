@@ -4,13 +4,9 @@ tags:
   - javaScript
 categories:
   - 代码
-description: 
-cover:
-abbrlink: 5ae4b622
 date: 2024-01-25 09:59:19
-keywords:
-
-
+updated: 2024-01-25 09:59:19
+cover:
 ---
 ## 节流与防抖
 - 节流：限制触发方法的频率。

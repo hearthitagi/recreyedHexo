@@ -5,10 +5,8 @@ tags:
   - angular
 categories:
   - 代码
-abbrlink: 7446b8e7
 date: 2022-03-28 13:03:33
-keywords:
-description:
+updated: 2022-03-28 13:03:33
 cover:
 ---
 angular中引入three.js并实现简易3d地球  

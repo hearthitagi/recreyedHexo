@@ -4,10 +4,8 @@ tags:
   - vue
 categories:
   - 代码
-abbrlink: 67fd0e68
 date: 2022-02-22 17:08:11
-keywords:
-description:
+updated: 2022-02-22 17:08:11
 cover:
 ---
 ## 1. vue组件

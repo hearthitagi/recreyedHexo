@@ -4,11 +4,9 @@ tags:
   - vue
 categories:
   - 代码
-description:
-cover: 
-abbrlink: '18273814'
 date: 2022-12-09 14:59:24
-keywords:
+updated: 2022-12-09 14:59:24
+cover:
 ---
 参考内容：[vue的组件插件化封装](https://blog.csdn.net/qq_46038620/article/details/119205367)
 ```javascript

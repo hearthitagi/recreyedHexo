@@ -4,10 +4,8 @@ tags:
   - javaScript
 categories:
   - 代码
-abbrlink: 1b98b338
 date: 2022-03-31 15:23:20
-keywords:
-description:
+updated: 2022-03-31 15:23:20
 cover:
 ---
 在遇到树形结构数据，js进行遍历时，return不会跳出整个函数。需要用到throw

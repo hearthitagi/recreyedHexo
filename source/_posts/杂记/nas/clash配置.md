@@ -7,7 +7,7 @@ tags:
 categories:
   - 杂记
 date: 2025-02-17 11:37:00
-abbrlink: 5df89f22
+updated: 2025-02-17 11:37:00
 cover: https://lsky.kissshot.site/img/2025/02/17/67b2b3314d412.webp
 ---
 >主要用于nas和docker容器科学上网

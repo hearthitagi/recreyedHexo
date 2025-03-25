@@ -1,13 +1,11 @@
 ---
 title: javaScript基础 04
-date: 2022-01-26 15:08:16
 tags:
-    - javaScript
+  - javaScript
 categories:
-    - 代码
-abbrlink: fece4293
-keywords:
-description:
+  - 代码
+date: 2022-01-26 15:08:16
+updated: 2022-01-26 15:08:16
 cover:
 --- 
 ## 1. 面向对象

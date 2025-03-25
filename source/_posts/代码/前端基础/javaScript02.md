@@ -4,9 +4,8 @@ tags:
   - javaScript
 categories:
   - 代码
-abbrlink: 17ade7a6
 date: 2022-01-26 15:07:29
-keywords:
+updated: 2022-01-26 15:07:29
 cover:
 ---
 ## 1. 内置对象

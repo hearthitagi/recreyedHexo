@@ -4,8 +4,8 @@ tags:
   - jquery
 categories:
   - 代码
-abbrlink: 2134d1d7
-date: 2022-01-26 15:10:34 
+date: 2022-01-26 15:10:34
+updated: 2022-01-26 15:10:34
 cover:
 ---
 jQuery 是一个着重简化 DOM 操作，AJAX 调用和事件 (en-US)处理的 JavaScript 库。一些前端 JavaScript 开发者经常会用到它。

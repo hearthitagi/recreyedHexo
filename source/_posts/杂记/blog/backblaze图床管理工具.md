@@ -5,13 +5,9 @@ tags:
   - express
 categories:
   - 杂记
-description:
-cover: 
-abbrlink: 5951a346
 date: 2023-04-19 14:41:41
-keywords:
-
-
+updated: 2023-04-19 14:41:41
+cover: 
 ---
 基于vue3前端，express作中间件，vercel部署的backblaze图床管理工具开发记录。
 

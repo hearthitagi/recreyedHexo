@@ -7,7 +7,7 @@ tags:
 categories:
   - 杂记
 date: 2025-02-17 10:37:00
-abbrlink: 58s5f8agd
+updated: 2025-02-17 10:37:00
 cover: https://lsky.kissshot.site/img/2025/02/17/67b2ade614b23.webp
 ---
 >主要用于通过复制的方式从云盘向nas传文件

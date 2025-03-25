@@ -4,24 +4,9 @@ tags:
   - css
 categories:
   - 代码
-copyright_url:
-abbrlink: 3a395d0a
-date: 2022-01-26 15:04:45 2022-01-28 15:33:45
-keywords:
-
+date: 2022-01-26 15:04:45
+updated: 2022-01-28 15:33:45
 cover:
-toc:
-toc_number:
-toc_style_simple:
-copyright:
-copyright_author:
-copyright_author_href:
-copyright_info:
-mathjax:
-katex:
-aplayer:
-highlight_shrink:
-aside:
 ---
 ## 1. 新增选择器
 ### 1.1 属性选择器
