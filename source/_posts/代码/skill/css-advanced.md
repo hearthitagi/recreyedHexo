@@ -8,8 +8,8 @@ abbrlink: c1dc5784
 date: 2022-01-28 11:46:26
 cover:
 ---
-## css高级技巧01
-### 1.1 显示省略号
+# css高级技巧01
+## 1.1 超出显示省略号
 ```css
 /* 强制文本同一行显示 */
 white-space: nowrap;
@@ -18,8 +18,10 @@ overflow: hidden;
 /* 省略号 (缺一不可)*/
 text-overflow: ellipsis;
 ```
-### 1.2 三角形
+## 1.2 三角形
+
 三角形: 盒子的宽高设为0，边框填满盒子、transparent边框透明
+
 ```css
 width: 0px;
 height: 0px;
@@ -28,7 +30,23 @@ border-color: blue red green orange;
 /* 将上、右、下边框设为透明，便得到一个三角形 */
 border-color: transparent transparent transparent orange;
 ```
-### 1.3 修改滚动条样式
+
+## 1.3 渐变边框
+
+设置两层背景：一层显示范围控制在padding以内，一层显示范围控制在border以内
+```css
+.element {
+    width: 100px;
+    height: 100px;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: linear-gradient(to right, #fff, #fff), linear-gradient(90deg, #9b5be4, #6891e2);
+}
+```
+
+## 1.4 修改滚动条样式
 ::-webkit-scrollbar 滚动条整体部分  
 ::-webkit-scrollbar-thumb 滚动条里面的小方块，能向上向下移动（或往左往右移动，取决于是垂直滚动条还是水平滚动条）  
 ::-webkit-scrollbar-track 滚动条的轨道（里面装有Thumb）  
@@ -62,3 +80,4 @@ height: 3px;
   display: block;    /* 修复交汇时出现的白块 */
 }
 ```
+
