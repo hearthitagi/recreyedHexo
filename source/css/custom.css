@@ -2,3 +2,8 @@
 #footer {
     display: none;
 }
+
+/* 文章标题字体 */
+.nav-page-title .site-name{
+    font-family: initial;
+}

@@ -1,7 +1,7 @@
 ---
 title: Bootstrap
 tags:
-  - BootStrap
+  - bootstrap
 categories:
   - 代码
 abbrlink: d352c4d3
