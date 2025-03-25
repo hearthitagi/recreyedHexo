@@ -28,7 +28,7 @@ keywords:
 ### 2.2、中间件express代理请求
 因backblaze存储桶api有动态变化，采用个人比较熟悉的express来进行接口代理请求。
 ### 2.3、vercel部署express，并用cloudflare加速
-写好的[express代码](https://github.com/hearthitagi/bz-view/tree/main/serve)部署到vercel：
+写好的[express代码](https://github.com/hearthitagi/bz-view/tree/serve)部署到vercel：
 1. 新建`vercel.json`
 ```json
 {
