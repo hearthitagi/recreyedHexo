@@ -7,7 +7,6 @@ categories:
 cover: 
 abbrlink: ebd9ab17
 date: 2022-12-18 18:41:16
-updated:
 ---
 ## `:has`选择器
 选择某元素下，符合条件的元素。例如

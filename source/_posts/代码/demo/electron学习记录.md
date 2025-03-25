@@ -7,7 +7,6 @@ categories:
 abbrlink: d98589a8
 date: 2024-12-23 11:00:57
 cover: https://lsky.kissshot.site/img/2025/02/17/67b29eacb7048.webp
-updated:
 ---
 [demo仓库](https://github.com/hearthitagi/electron-demo)
 # 1. 安装
