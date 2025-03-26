@@ -497,19 +497,6 @@ gitalk:
   owner:
   admin:
   option:
-# Valine
-# https://valine.js.org
-
-waline:
-  serverURL: https://spontaneous-marigold-9c165f.netlify.app/.netlify/functions/comment
-  bg:
-  # Use Waline pageview count as the page view count
-  pageview: false
-  option:
-    imageUploader: true
-    reaction: false
-# Utterances
-# https://utteranc.es/
 
 # Twikoo
 # https://github.com/imaegoo/twikoo
