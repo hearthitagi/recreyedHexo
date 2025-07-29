@@ -113,7 +113,7 @@ error_404:
 
 post_meta:
   page: # 主页页面
-    date_type: updated # 日期类型: created / updated / both
+    date_type: created # 日期类型: created / updated / both
     date_format: date # 日期格式: date / relative
     categories: false # 是否显示分类
     tags: true # 是否显示标签
