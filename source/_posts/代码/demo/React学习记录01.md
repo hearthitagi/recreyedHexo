@@ -420,3 +420,78 @@ function WelcomeDialog() {
   );
 }
 ```
+
+# 9.深入JSX
+```javascript
+//可以使用下列方式引用组件
+import React from 'react';
+import { PhotoStory, VideoStory } from './stories';
+
+const MyComponents = {
+  DatePicker: function DatePicker(props) {
+    return <div>Imagine a {props.color} datepicker here.</div>;
+  }
+}
+function BlueDatePicker() {
+  return <MyComponents.DatePicker color="blue" />;
+}
+
+//或者
+const components = {
+  photo: PhotoStory,
+  video: VideoStory
+};
+function Story(props) {
+  const SpecificStory = components[props.storyType];
+  return <SpecificStory story={props.story} />;
+}
+```
+# 10.ref
+可以使用ref来引用子组件或DOM元素的实例。  
+
+下面的代码`this.textInput`就是`CustomTextInput`组件的实例，在DOM挂载后的生命周期中调用了`CustomTextInput`组件的`focusTextInput`方法  
+
+**注意：只有类组件，ref才会生效**
+```javascript
+class AutoFocusTextInput extends React.Component {
+  componentDidMount() {
+    this.textInput.focusTextInput();
+  }
+  render() {
+    return (
+      <CustomTextInput
+        ref={ input => this.textInput = input; } />
+    );
+
+  }
+```
+ 将上述代码`input => this.textInput = input;`暂时起名叫做**引用DOM函数**。  
+ 
+ 使用props由父组件将**引用DOM函数**传递给子组件的方式，可以使父组件获取到子组件的DOM实例。  
+
+**这种方法类组件和函数式组件都可以使用，且可以多级组件传递。**
+```javascript
+function CustomTextInput(props) {
+  return (
+    <div>
+      <input ref={props.inputRef} />
+    </div>
+  );
+}
+function Parent(props) {
+  return (
+    <div>
+      My input: <CustomTextInput inputRef={props.inputRef} />
+    </div>
+  );
+}
+
+class Grandparent extends React.Component {
+  render() {
+    return (
+      <Parent
+        inputRef={el => this.inputElement = el}
+      />
+    );
+  }
+}
