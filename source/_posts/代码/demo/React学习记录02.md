@@ -8,7 +8,7 @@ date: 2025-09-04 20:00:00
 updated: 2025-09-04 20:00:00
 cover: https://lsky.kissshot.site/img/2025/04/07/67f31509b3a67.webp
 ---
-> 专注React19与旧版变化
+> 参考React19文档
 
 **React组件构建思路**  
 
@@ -18,15 +18,28 @@ cover: https://lsky.kissshot.site/img/2025/04/07/67f31509b3a67.webp
 4. 验证 state 应该被放置在哪里
 5. 添加反向数据流
 
-# 1.变化
-## 1.1Hook
-使用state前需要先引入
+# 1.组件
 ```javascript
-import { useState } from 'react';
+//标准组件格式
+export function Profile() {
+  return (
+    <img
+      src="https://i.imgur.com/QIrZWGIs.jpg"
+      alt="Alan L. Hart"
+    />
+  );
+}
 
-function MyButton() {  
-const [count, setCount] = useState(0);  
-// ...
-
+export default function Gallery() {
+  return (
+    <section>
+      <h1>了不起的科学家们</h1>
+      <Profile />
+      <Profile />
+    </section>
+  );
+}
+//导入组件
+import Gallery from './Gallery.js';
+import { Profile } from './Gallery.js';
 ```
-
