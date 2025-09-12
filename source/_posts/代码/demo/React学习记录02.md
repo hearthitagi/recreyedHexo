@@ -387,3 +387,5 @@ flushSync(() => {
 
 listRef.current.lastChild.scrollIntoView();
 ```
+
+# 6.自定义Hook
