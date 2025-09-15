@@ -1,5 +1,5 @@
 ---
-title: Umijs学习记录02
+title: Umijs学习记录
 tags:
   - UmiJS
 categories:
