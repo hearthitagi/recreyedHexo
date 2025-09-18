@@ -92,6 +92,30 @@ export default function Profile() {
 }
 ```
 **条件渲染与列表渲染与前文旧版react变化不大，此处省略**
+## 1.3 内置组件
+### 1.3.1 React.memo
+高阶组件，通过浅比较props是否变化，来决定是否跳过组件重新渲染，适用于重渲染父组件而跳过子组件的情况
+```javascript
+import { memo } from 'react';
+
+const ExpensiveChild = memo(({ data }) => {
+  console.log('ExpensiveChild 渲染了');
+  return <div>{data}</div>;
+});
+
+function Parent() {
+  const [count, setCount] = useState(0);
+  const stableData = "这是一个稳定的值";
+
+  return (
+    <div>
+      <button onClick={() => setCount(c => c + 1)}>点击我 {count}</button>
+      {/* 即使父组件因 count 变化而重新渲染，ExpensiveChild 不会重新渲染 */}
+      <ExpensiveChild data={stableData} />
+    </div>
+  );
+}
+```
 
 # 2.处理事件
 事件可以通过props传递
@@ -316,6 +340,63 @@ function ChildComponent() {
   );
 }
 ```
+
+### 4.1.4 useCallback（函数记忆）
+- 用于缓存函数本身的引用
+- 接收一个内联回调函数和依赖项数组，只有依赖项变化时，才会返回一个新的函数实例，
+- 适用于将回调函数传递被React.memo优化过的子组件时（或作为其他Hook如useEffect的依赖项时），避免因函数引用变化导致的不必要重渲染
+```javascript
+import { useState, useCallback, memo } from 'react';
+
+const ChildButton = memo(({ onClick }) => {
+  console.log('ChildButton 渲染了');
+  return <button onClick={onClick}>点击我</button>;
+});
+
+function Parent() {
+  const [count, setCount] = useState(0);
+
+  // 使用 useCallback 缓存函数，空依赖数组表示该函数永不改变
+  const handleClick = useCallback(() => {
+    console.log('按钮被点击');
+  }, []);
+
+  return (
+    <div>
+      <p>计数: {count}</p>
+      <button onClick={() => setCount(c => c + 1)}>增加计数</button>
+      {/* 父组件重新渲染时，handleClick 的引用不变，ChildButton 不会重新渲染 */}
+      <ChildButton onClick={handleClick} />
+    </div>
+  );
+}
+```
+### 4.1.5 useMemo(值记忆)
+- 用于缓存计算成本较高的函数结果
+- 接收函数和依赖项数组，只有当依赖项发生变化时，才会重新调用函数来计算结果。  
+```javascript
+import { useMemo, useState } from 'react';
+
+function MyComponent({ list }) {
+  const [filter, setFilter] = useState('');
+
+  // 仅当 `list` 或 `filter` 变化时，才会重新执行昂贵的过滤计算
+  const filteredList = useMemo(() => {
+    console.log('正在进行昂贵的计算...');
+    return list.filter(item => item.name.includes(filter));
+  }, [list, filter]); // 依赖项
+
+  return (
+    <div>
+      <input value={filter} onChange={(e) => setFilter(e.target.value)} />
+      <ul>
+        {filteredList.map(item => <li key={item.id}>{item.name}</li>)}
+      </ul>
+    </div>
+  );
+}
+```
+
 ## 4.2状态提升/在组件间共享内容
 这部分与前文**8.1 状态提升**相似，不在赘述
 
@@ -389,3 +470,66 @@ listRef.current.lastChild.scrollIntoView();
 ```
 
 # 6.自定义Hook
+- Hook名字以**use**开头
+- 自定义Hook共享的是状态逻辑（数据处理过程），而不是状态（数据）本身。
+- 只能在函数组件或其他自定义Hook的顶层调用Hook，不能在普通函数或逻辑语句中调用。
+```javascript
+import { useState, useEffect } from 'react';
+
+function useFetch(url) {
+  // 定义状态来存储数据、加载状态和错误信息
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    // 定义一个异步函数来获取数据
+    const fetchData = async () => {
+      setLoading(true); // 开始请求时设置 loading 为 true
+      setError(null);   // 重置错误状态
+      try {
+        const response = await fetch(url);
+        if (!response.ok) { // 如果 HTTP 状态码不在 200-299 范围内，抛出错误
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const result = await response.json();
+        setData(result); // 请求成功，设置数据
+      } catch (err) {
+        setError(err.message); // 请求失败，设置错误信息
+      } finally {
+        setLoading(false); // 无论成功与否，请求结束，设置 loading 为 false
+      }
+    };
+
+    fetchData(); // 执行异步函数
+  }, [url]); // 依赖数组：当 url 变化时，effect 会重新执行
+
+  // 返回状态和函数，供组件使用
+  return { data, loading, error };
+}
+```
+在接口中使用
+```javascript
+import React from 'react';
+import useFetch from './useFetch'; // 导入自定义 Hook
+
+function UserList() {
+  // 使用 useFetch Hook，传入 API URL
+  const { data: users, loading, error } = useFetch('https://jsonplaceholder.typicode.com/users');
+
+  // 根据状态渲染不同的 UI
+  if (loading) return <div>Loading users...</div>;
+  if (error) return <div>Error: {error}</div>;
+  if (!users || users.length === 0) return <div>No users found.</div>;
+
+  return (
+    <ul>
+      {users.map(user => (
+        <li key={user.id}>{user.name} ({user.email})</li>
+      ))}
+    </ul>
+  );
+}
+
+export default UserList;
+```
