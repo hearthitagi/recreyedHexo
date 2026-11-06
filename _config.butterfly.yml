@@ -28,7 +28,6 @@ menu:
     代码: /categories/代码/ || fas fa-code
     杂记: /categories/杂记/ || fas fa-mug-saucer
   友人帐: /link/ || fas fa-link
-  留言: /comments/ || fas fa-envelope
   # 关于: /about/ || fas fa-heart
 
 # --------------------------------------
@@ -166,7 +165,7 @@ toc:
 post_copyright:
   enable: true
   decode: true
-  author_href: https://hitagi.site/
+  author_href: https://blog.kissshot.site/
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh
 
@@ -253,8 +252,9 @@ aside:
     limit: 5
     sort: date # Sort: date / updated
     sort_order:
+  # 最新评论卡片依赖评论系统，评论系统移除后关闭
   card_newest_comments:
-    enable: true
+    enable: false
     sort_order:
     limit: 5
     # Unit: mins, save data to localStorage
@@ -469,51 +469,17 @@ share:
     item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
 
 # --------------------------------------
-# 评论
+# 评论（已移除）
 # --------------------------------------
 
+# use 置空后，主题不会渲染评论区、不加载任何评论脚本
 comments:
-  # Up to two comments system, the first will be shown as default
   # Leave it empty if you don't need comments
-  # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  # Format of two comments system : Disqus,Waline
-  use: [Artalk,Twikoo]
-  # Display the comment name next to the button
+  use:
   text: false
-  # Lazyload: The comment system will be load when comment element enters the browser's viewport.
-  # If you set it to true, the comment count will be invalid
-  lazyload: true
-  # Display comment count in post's top_img
-  count: true
-  # Display comment count in Home Page
+  lazyload: false
+  count: false
   card_post_count: false
-
-# Gitalk
-# https://github.com/gitalk/gitalk
-gitalk:
-  client_id:
-  client_secret:
-  repo:
-  owner:
-  admin:
-  option:
-
-# Twikoo
-# https://github.com/imaegoo/twikoo
-twikoo:
-  envId: https://taupe-flan-bb5ab5.netlify.app/.netlify/functions/twikoo
-  region: ap-southeast-1
-  visitor: false
-  option:
-
-# Artalk
-# https://artalk.js.org/guide/frontend/config.html
-artalk:
-  server: https://artalk.v6.kissshot.site:33120
-  site: hitagi-blog
-  # Use Artalk visitor count as the page view count
-  visitor: false
-  option:
 
 # --------------------------------------
 # Chat Services
@@ -667,7 +633,8 @@ font:
 
 # Font settings for the site title and site subtitle
 blog_title_font:
-  font_link: https://fonts.googleapis.com/css?family=Playball&display=swap
+  # 字体已本地化到 source/fonts，@font-face 写在 custom.css
+  font_link:
   font_family: Playball
 
 # The setting of divider icon
@@ -901,7 +868,8 @@ CDN:
   # Note: Dev version can only use 'local' for internal scripts
   # Note: When setting third-party scripts to 'local', you need to install hexo-butterfly-extjs
   internal_provider: local
-  third_party_provider: jsdelivr
+  # 所有实际使用的第三方库都由下方 option 指向本地文件，无需外部 CDN
+  third_party_provider: local
 
   # Add version number to url, true or false
   version: false
@@ -910,7 +878,13 @@ CDN:
   # For example: https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
   custom_format:
 
+  # 首屏实际用到的第三方库已下载到 source/plugins，改走本地路径
   option:
+    fontawesome: /plugins/fontawesome/css/all.min.css
+    egjs_infinitegrid: /plugins/vendor/infinitegrid.min.js
+    instantpage: /plugins/vendor/instantpage.min.js
+    medium_zoom: /plugins/vendor/medium-zoom.min.js
+    lazyload: /plugins/vendor/lazyload.iife.min.js
     # abcjs_basic_js:
     # activate_power_mode:
     # algolia_js:

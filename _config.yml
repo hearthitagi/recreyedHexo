@@ -13,7 +13,9 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://blog.kissshot.site/
+# 现有 48 篇文章的 URL 由时间戳构成，改动此行会让全部已发布链接失效。
+# 需要稳定短链时，请在新文章 front-matter 中单独写 permalink（见 scaffolds/post.md）
 permalink: :layout/:year:month:day:hour:minute:second.html
 permalink_defaults:
 pretty_urls:
@@ -92,6 +94,16 @@ pagination_dir: page
 include:
 exclude:
 ignore:
+
+# Sitemap & Feed
+sitemap:
+  path: sitemap.xml
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  order_by: -date
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/

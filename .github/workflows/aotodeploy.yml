@@ -1,59 +1,50 @@
-# 当有改动推送到master分支时，启动Action
 name: 自动部署
 
 on:
   push:
     branches:
-      - main #2020年10月后github新建仓库默认分支改为main，注意更改
+      - main
   release:
     types:
-      - published 
+      - published
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: 检查分支
-      uses: actions/checkout@v3
-      with:
-        ref: main #2020年10月后github新建仓库默认分支改为main，注意更改
+      - name: 检出源码
+        uses: actions/checkout@v4
+        with:
+          ref: main
 
-    - name: 安装 Node
-      uses: actions/setup-node@v3
-      with:
-        node-version: "19.0.0"
+      - name: 安装 Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
 
-    - name: 安装 Hexo
-      run: |
-        export TZ='Kissshot'
-        npm install hexo-cli -g
+      - name: 安装依赖
+        run: npm ci
 
-    - name: 缓存 Hexo
-      uses: actions/cache@v3
-      id: cache
-      with:
-        path: node_modules
-        key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+      - name: 生成静态文件
+        env:
+          TZ: Asia/Shanghai
+        run: |
+          npx hexo clean
+          npx hexo generate
 
-    - name: 安装依赖
-      if: steps.cache.outputs.cache-hit != 'true'
-      run: |
-        npm install --save
-
-    - name: 生成静态文件
-      run: |
-        hexo clean
-        hexo generate
-
-    - name: 部署 #此处master:master 指从本地的master分支提交到远程仓库的master分支，若远程仓库没有对应分支则新建一个。如有其他需要，可以根据自己的需求更改。
-      run: |
-        cd ./public
-        git init
-        git config --global user.name '${{ secrets.GITHUBUSERNAME }}'
-        git config --global user.email '${{ secrets.GITHUBEMAIL }}'
-        git add .
-        git commit -m "${{ github.event.head_commit.message }} $(date +"%Z %Y-%m-%d %A %H:%M:%S") Updated By Github Actions"
-        git push --force --quiet "https://${{ secrets.GITHUBUSERNAME }}:${{ secrets.GITHUBTOKEN }}@github.com/${{ secrets.GITHUBUSERNAME }}/${{ secrets.GITHUBUSERNAME }}.github.io.git" master:main
+      - name: 部署
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.GITHUBTOKEN }}
+          external_repository: ${{ secrets.GITHUBUSERNAME }}/${{ secrets.GITHUBUSERNAME }}.github.io
+          publish_branch: main
+          publish_dir: ./public
+          force_orphan: true
+          user_name: ${{ secrets.GITHUBUSERNAME }}
+          user_email: ${{ secrets.GITHUBEMAIL }}
+          commit_message: ${{ github.event.head_commit.message || 'Update by GitHub Actions' }}
