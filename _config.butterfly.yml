@@ -6,11 +6,11 @@ categoryBar:
   enable: true # 开关
   message:
   - title: 杂记
-    cover: https://lsky.kissshot.site/img/2025/02/07/67a56dd0dcb11.webp
+    cover: https://img.kissshot.site/vgxfxatynr5w7v6ngy66pmrgzq.webp
   # - title: 博客
-  #   cover: https://lsky.kissshot.site/img/2025/02/07/67a56dd0e0852.webp
+  #   cover: 
   - title: 代码
-    cover: https://lsky.kissshot.site/img/2025/02/07/67a56dd0dbf76.webp
+    cover: https://img.kissshot.site/uymwzkxgyorlvjbdswruntnxby.webp
 # --------------------------------------
 # 导航设置
 # --------------------------------------
@@ -64,7 +64,7 @@ social:
 favicon: /img/favicon.svg
 
 avatar:
-  img: https://lsky.kissshot.site/img/2025/02/07/67a56c61e74fd.webp
+  img: https://img.kissshot.site/rh7dfppe6ndhti52c6lxfvgpwy.webp
   effect: false
 
 # Disable all banner images
@@ -88,7 +88,7 @@ footer_img: transparent
 
 # Website Background
 # Can set it to color or image url
-background: https://lsky.kissshot.site/img/2025/02/06/67a4528aa1546.jpg
+background: https://img.kissshot.site/5xk6xjbv7vjovgbg24u53jbkpy.jpg
 
 cover:
   # Disable the cover or not
@@ -97,7 +97,7 @@ cover:
   archives_enable: true
   # When cover is not set, the default cover is displayed
   default_cover:
-    - https://lsky.kissshot.site/img/2025/02/07/67a56b2c9cb55.webp
+    - https://img.kissshot.site/nbqyskvlb2ib6f43nkvxq725aq.webp
 
 # Replace Broken Images
 error_img:

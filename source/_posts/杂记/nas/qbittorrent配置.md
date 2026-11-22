@@ -8,7 +8,7 @@ categories:
   - 代码
 date: 2025-03-25 16:46:00
 updated: 2025-03-25 16:46:00
-cover: https://lsky.kissshot.site/img/2025/03/24/67e1171d73f23.webp
+cover: https://img.kissshot.site/nbqyskvlb2ib6f43nkvxq725aq.webp
 ---
 # 1.安装
 
